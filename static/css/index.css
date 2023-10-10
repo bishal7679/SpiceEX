@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  /* background: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 2em;
+  color: #fff;
+  user-select: none;
+  margin-left: 15px;
+  font-weight: 700;
+}
+
+.navbar a.prmry {
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navbar a.prmry:hover {
+  color: #fff;
+}
+
+.navbar ul li a.prmry::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 4vw;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.navbar ul li a.tglle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 10vw;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.tggle-padding {
+  margin-bottom: 100px;
+}
+
+
+.navbar ul li a.prmry:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.navbar .btnlogin-popup {
+  width: 130px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
+  transform: 0.5s;
+}
+
+.navbar .btnlogin-popup:hover {
+  background: #fff;
+  color: #162938;
+}
+
+.wrapper {
+  position: relative;
+  width: 420px;
+  height: 440px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: scale(0);
+  transition: transform .5s ease, height .2s ease;
+}
+
+.wrapper.active-popup {
+  transform: scale(1);
+}
+
+.wrapper.active {
+  height: 520px;
+  /* width: 490px; */
+}
+
+.wrapper .form-box {
+  width: 100%;
+  padding: 30px;
+}
+
+.wrapper .form-box.login {
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+  transition: none;
+  transform: translateX(-400px);
+}
+
+.wrapper .form-box.signup {
+  position: absolute;
+  transition: none;
+  transform: translateX(400px);
+
+}
+
+.wrapper.active .form-box.signup {
+  transition: none;
+  transform: translateX(0);
+}
+
+.wrapper .icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: #101d28;
+  font-size: 2em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.form-box h2 {
+  font-size: 2em;
+  color: #162938;
+  text-align: center;
+  font-family: 'Roboto Mono' monospace;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #162938;
+  margin: 30px 0;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #162938;
+  font-weight: 500;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+  top: -5px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #162938;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: #141212;
+  line-height: 57px;
+}
+
+.remember-forget {
+  font-size: .9em;
+  color: #101b23;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forget label input {
+  accent-color: #162938;
+  margin-right: 3px;
+}
+
+.remember-forget a {
+  color: #161d23;
+  text-decoration: none;
+}
+
+.remember-forget a:hover {
+  text-decoration: underline;
+}
+
+
+
+.btn1 {
+  width: 100%;
+  height: 45px;
+  background: #101d28;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.login-register {
+  font-size: 0.9em;
+  color: #162938;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+.login-register p a {
+  color: #162938;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-register p a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------------------search flight page design------------------------------------------- */
+
+.showcase {
+  max-width: 420px;
+  position: relative;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 300px rgba(0, 0, 0, 0.5);
+  border: 5px solid rgba(255, 255, 255, 1);
+  backdrop-filter: blur(10px);
+  border: 1px solid #ced4da;
+  margin: auto;
+  transition: transform 0.5s ease-in-out;
+  z-index: 5;
+}
+
+@media (max-width: 350px) {
+  .showcase {
+    height: auto;
+  }
+
+  .showcase.active {
+    height: 620px;
+    transform: translateY(20%);
+  }
+}
+
+.showcase .form-page {
+  width: 100%;
+  padding: 1px;
+}
+
+.showcase.active .form-page.booking {
+  transition: none;
+  transform: scale(0);
+}
+
+
+.showcase .form-page.personal {
+  position: absolute;
+  transition: none;
+  transform: scale(0);
+
+}
+
+.showcase.active .form-page.personal {
+  transition: transform 0.5s ease, height 0.2s ease;
+  transform: scale(1);
+}
+
+#message {
+  color: red;
+  font-size: 12px;
+}
+
+.radio-btn {
+  margin: 0 20px;
+}
+
+.radio-btn .rdbtn {
+  margin: 20px 10px 20px 0;
+  box-shadow: none;
+}
+
+.radio-btn .rdbtn::after {
+  content: '';
+  height: 15px;
+  width: 15px;
+  top: -2px;
+  left: -1px;
+  background-color: #fff;
+  position: relative;
+  display: inline-block;
+  border: 3px solid #fff;
+  visibility: visible;
+  border-radius: 50%;
+}
+
+.radio-btn .rdbtn:checked::after {
+  content: '';
+  background-color: #000;
+  transition: 0.5s;
+}
+
+.radio-btn span {
+  color: #fff;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.booking-form {
+  padding: 0 20px 20px;
+}
+
+.booking-form label {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.booking-form input::placeholder {
+  color: #fff !important;
+}
+
+.input-grp {
+  width: 151px;
+  display: inline-block;
+}
+
+.form-control {
+  font-size: 12px !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+  background: transparent !important;
+  box-shadow: none !important;
+
+}
+
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+.select-date::-webkit-calender-picker-indicator {
+  background: transparent !important;
+}
+
+.custom-select {
+  color: #fff;
+  font-size: 12px !important;
+  border: 1px solid #ced4da !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
+.custom-select option {
+  color: #333;
+}
+
+.primarybtn {
+  width: 100%;
+  padding: 9px 0 !important;
+  font-size: 16px !important;
+  border: 1px solid #ced4da !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  color: #fff;
+}
+
+.primarybtn:hover {
+  background: #fff !important;
+  color: #000 !important;
+  transition: 0.5s !important;
+}
+
+/* ---------------------------------Payment---------------------------------------------------- */

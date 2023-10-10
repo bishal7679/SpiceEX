@@ -1,0 +1,73 @@
+{{template "base" .}}
+{{define "bslink"}}
+<link rel="stylesheet" href="/static/css/index.css">
+{{end}}
+{{define "content"}}
+{{$book:= index .Data "bookingDetails"}}
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="mt-5">Booking Details Summary</h1>
+      <hr>
+      <table class="table table-striped">
+        <thead></thead>
+        <tbody>
+          <tr>
+            <td>Name:</td>
+            <td>{{$book.Full_Name}}</td>
+          </tr>
+          <tr>
+            <td>Address:</td>
+            <td>{{$book.Address}}</td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td>{{$book.Email}}</td>
+          </tr>
+          <tr>
+            <td>Phone:</td>
+            <td>{{$book.Country_Code}}{{$book.Mobile_No}}</td>
+          </tr>
+          <tr>
+            <td>State:</td>
+            <td>{{$book.State_Name}}</td>
+          </tr>
+          <tr>
+            <td>City:</td>
+            <td>{{$book.City_Name}}</td>
+          </tr>
+          <tr>
+            <td>TravelWay:</td>
+            <td>{{$book.Travelway}}</td>
+          </tr>
+          <tr>
+            <td>TravelClass:</td>
+            <td>{{$book.Travel_Class}}</td>
+          </tr>
+          <tr>
+            <td>Flying_From:</td>
+            <td>{{$book.Flying_From}}</td>
+          </tr>
+          <tr>
+            <td>Flying_To:</td>
+            <td>{{$book.Flying_To}}</td>
+          </tr>
+          <tr>
+            <td>Departure:</td>
+            <td>{{$book.Departing_Date}}</td>
+          </tr>
+          <tr>
+            <td>Return:</td>
+            <td>{{$book.Returning_Date}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col text-center">
+      <a href="/payment" class="btn btn-success">Go to payment</a>
+    </div>
+  </div>
+</div>
+{{end}}

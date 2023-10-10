@@ -1,0 +1,173 @@
+{{template "base" .}}
+{{define "bslink"}}
+<link rel="stylesheet" href="/static/css/index.css">
+
+{{end}}
+{{define "css"}}
+<style>
+  body {
+    background-color: rgba(96, 127, 143, 0.36);
+    padding-top: 64px;
+  }
+</style>
+{{end}}
+{{define "navigbar"}}
+<nav class="navbar navbar-expand-lg bg-opacity-50 bg-black navbar-dark fixed-top box-shadow">
+  <h2 class="logo">SpiceEx ✈️</h2>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Locations
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/indonesia">Indonesia</a>
+          <a class="dropdown-item" href="/japan">Japan</a>
+          <a class="dropdown-item text-primary" href="/southkorea">South Korea</a>
+          <a class="dropdown-item" href="/thailand">Thailand</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link mx-md-2 prmry" href="/">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link mx-md-2 prmry" href="/book-flight">Service<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link mx-md-2 prmry" href="/plans">Plans<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link mx-md-2 prmry" href="/contact">Contact<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+{{end}}
+{{define "content"}}
+<section id="thailandPhotos" class="container">
+  <div class="text-center my-5">
+    <h5 class="display-6 font-monospace">THE BEST DESTINATION OF YOUR TRIP</h5>
+    <h2 class="display-4 text-primary">Discover Thailand</h2>
+
+    <div class="row">
+      <div class="col-md">
+        <img class="img-fluid mb-3" src="/static/images/Thailand/01.jpeg" alt="Photo 1">
+        <img class="img-fluid mb-3" src="/static/images/Thailand/02.jpeg" alt="Photo 2">
+        <img class="img-fluid mb-3" src="/static/images/Thailand/03.jpeg" alt="Photo 3">
+      </div>
+      <div class="col-md">
+        <img class="img-fluid mb-3" src="/static/images/Thailand/04.jpeg" alt="Photo 4">
+        <img class="img-fluid mb-3" src="/static/images/Thailand/06.jpeg" alt="Photo 5">
+      </div>
+      <div class="col-md">
+        <img class="img-fluid mb-3" src="/static/images/Thailand/05.jpeg" alt="Photo 6">
+        <img class="img-fluid mb-3" src="/static/images/Thailand/07.jpeg" alt="Photo 7">
+      </div>
+    </div>
+</section>
+
+<section id="eventsTable" class="container">
+  <div class="text-center my-5">
+    <h5 class="display-6 font-monospace">DISCOVER WHAT HAPPENS IN THE COUNTRY</h5>
+    <h2 class="display-4 text-primary">Next Events</h2>
+  </div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Data</th>
+        <th scope="col">Event</th>
+        <th scope="col">Ticket</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-secondary">1/25</td>
+        <td class="text-secondary">Chinese New Year</td>
+        <td><a class="btn btn-outline-secondary btn-block btn-sm" style="max-width: 140px;" href="">Buy
+            Ticket</a></td>
+      </tr>
+
+      <tr>
+        <td class="text-secondary">2/10</td>
+        <td class="text-secondary">Makha Bucha Day</td>
+        <td><a class="btn btn-outline-secondary btn-block btn-sm" style="max-width: 140px;" href="">Buy
+            Ticket</a></td>
+      </tr>
+      <tr>
+        <td class="text-secondary">4/13-14</td>
+        <td class="text-secondary">Songkran Festival</td>
+        <td><a class="btn btn-outline-secondary btn-block btn-sm" style="max-width: 140px;" href="">Buy
+            Ticket</a></td>
+      </tr>
+      <tr>
+        <td class="text-secondary">5/23-24</td>
+        <td class="text-secondary">End of Ramadan</td>
+        <td><a class="btn btn-outline-secondary btn-block btn-sm" style="max-width: 140px;" href="">Buy
+            Ticket</a></td>
+      </tr>
+      <tr>
+        <td class="text-secondary">7/6</td>
+        <td class="text-secondary">Khao Phansa Day</td>
+        <td><a class="btn btn-outline-secondary btn-block btn-sm" style="max-width: 140px;" href="">Buy
+            Ticket</a></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+{{end}}
+{{define "footer"}}
+<footer class="bg-dark text-light mt-5">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-md-3 col-6">
+        <h6>PAGES</h6>
+        <ul class="list-unstyled">
+          <li><a href="/">Home</a></li>
+          <li><a href="/book-flight">Service</a></li>
+          <li><a href="/plans">Plans</a></li>
+
+        </ul>
+      </div>
+      <div class="col-md-3 col-6">
+        <h6>LOCATIONS</h6>
+        <ul class="list-unstyled">
+          <li><a href="/indonesia">Indonesia</a></li>
+          <li><a href="/japan">Japan</a></li>
+          <li><a href="/southkorea">South Korea</a></li>
+          <li><a href="/thailand">Thailand</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6>CONTACT US</h6>
+        <ul class="list-unstyled text-secondary">
+          <li>contact@SpiceEx.com</li>
+          <li>+55 47 99999-9999</li>
+          <li>Monday-Friday - 8am to 6pm</li>
+          <li>Saturday - 9am to 1pm</li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h6>FOLLOW US</h6>
+        <ul class="list-unstyled">
+          <li class="mb-1"><a class="btn btn-outline-secondary btn-block btn-sm" style="max-width: 140px;"
+              href="https://facebook.com">Facebook</a></li>
+          <li class="mb-1"><a class="btn btn-outline-secondary btn-block btn-sm" style="max-width: 140px;"
+              href="https://www.twitter.com">Instagram</a></li>
+          <li class="mb-1"><a class="btn btn-outline-secondary btn-block btn-sm" style="max-width: 140px;"
+              href="https://www.linkedin.com/in/">Linkedin</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="bg-primary text-center py-3">
+    <p class="mb-0">SpiceEx © 2023. Some rights reserved.</p>
+  </div>
+</footer>
+{{end}}

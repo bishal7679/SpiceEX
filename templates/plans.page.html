@@ -1,0 +1,151 @@
+{{template "base" .}}
+{{define "bslink"}}
+<link rel="stylesheet" href="/static/css/index.css">
+
+{{end}}
+{{define "navigbar"}}
+<nav class="navbar navbar-expand-lg bg-opacity-50 bg-black navbar-dark fixed-top box-shadow">
+  <h2 class="logo">SpiceEx ✈️</h2>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Locations
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/indonesia">Indonesia</a>
+          <a class="dropdown-item" href="/japan">Japan</a>
+          <a class="dropdown-item text-primary" href="/southkorea">South Korea</a>
+          <a class="dropdown-item" href="/thailand">Thailand</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link mx-md-2 prmry" href="/">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link mx-md-2 prmry" href="/book-flight">Service<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link mx-md-2 prmry" href="/plans">Plans<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link mx-md-2 prmry" href="/contact">Contact<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+{{end}}
+{{define "content"}}
+<div id="main-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#main-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+    </li>
+    <li data-bs-target="#main-carousel" data-bs-slide-to="1" aria-label="Slide 2"></li>
+    <li data-bs-target="#main-carousel" data-bs-slide-to="2" aria-label="Slide 3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/static/images/nature2.jpg" class="d-block w-100" alt="woman-laptop">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p> -->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/static/images/nature4.jpg" class="d-block w-100" alt="tray">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p> -->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/static/images/nature3.jpg" class="d-block w-100" alt="Outside">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="text-center mt-4">Welcome to SpiceEx Trip Plans</h1>
+      <p>We
+        believe
+        that travel has the power to transform lives and open hearts to new cultures, landscapes, and perspectives.
+        We curate a collection of handpicked destinations and immersive travel experiences, tailored
+        to ignite your wanderlust and create memories that last a lifetime. Whether you're seeking a thrilling outdoor
+        adventure, a romantic gateway, or a cultural exploration, we have the perfect itinerary waiting for you.
+        Our team of travel experts are passionate about crafting unique and personalized journeys that cater to your
+        preferences and aspirations.From breathtaking natural wonders to vibrant city escapes, we'll guide you through
+        the hidden gems and iconic landmarks that make each destination truly remarkable🔥
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col text-center">
+      <a href="/chooseplan" class="btn btn-success">Explore Plans</a>
+    </div>
+  </div>
+</div>
+
+{{end}}
+{{define "footer"}}
+<footer class="bg-dark text-light mt-5">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-md-3 col-6">
+        <h6>PAGES</h6>
+        <ul class="list-unstyled">
+          <li><a href="/">Home</a></li>
+          <li><a href="/book-flight">Service</a></li>
+          <li><a href="/plans">Plans</a></li>
+
+        </ul>
+      </div>
+      <div class="col-md-3 col-6">
+        <h6>LOCATIONS</h6>
+        <ul class="list-unstyled">
+          <li><a href="/indonesia">Indonesia</a></li>
+          <li><a href="/japan">Japan</a></li>
+          <li><a href="/southkorea">South Korea</a></li>
+          <li><a href="/thailand">Thailand</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6>CONTACT US</h6>
+        <ul class="list-unstyled text-secondary">
+          <li>contact@SpiceEx.com</li>
+          <li>+55 47 99999-9999</li>
+          <li>Monday-Friday - 8am to 6pm</li>
+          <li>Saturday - 9am to 1pm</li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h6>FOLLOW US</h6>
+        <ul class="list-unstyled">
+          <li class="mb-1"><a class="btn btn-outline-secondary btn-block btn-sm" style="max-width: 140px;"
+              href="https://facebook.com">Facebook</a></li>
+          <li class="mb-1"><a class="btn btn-outline-secondary btn-block btn-sm" style="max-width: 140px;"
+              href="https://www.twitter.com">Instagram</a></li>
+          <li class="mb-1"><a class="btn btn-outline-secondary btn-block btn-sm" style="max-width: 140px;"
+              href="https://www.linkedin.com/in/">Linkedin</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="bg-primary text-center py-3">
+    <p class="mb-0">SpiceEx © 2023. Some rights reserved.</p>
+  </div>
+</footer>
+{{end}}

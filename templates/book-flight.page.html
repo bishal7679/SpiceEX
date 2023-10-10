@@ -1,0 +1,231 @@
+{{template "base" .}}
+{{define "bslink"}}
+<link rel="stylesheet" href="/static/css/index.css">
+{{end}}
+{{define "css"}}
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    max-width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+    background: url('/static/images/airport.jpg') no-repeat center center/cover;
+
+  }
+
+  body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 66px 63px 116px #000;
+  }
+
+  .showcase.active {
+    height: 630px;
+    transform: translateY(15%);
+    margin: auto;
+  }
+
+  .showcase {
+    height: 500px;
+    transform: translateY(15%);
+
+  }
+
+  .showcase.active .form-page.personal {
+    top: 2%;
+  }
+</style>
+{{end}}
+{{define "navigbar"}}
+<nav class="navbar navbar-expand-md bg-opacity-50 bg-black navbar-dark fixed-top box-shadow">
+  <h2 class="logo">SpiceEx ✈️</h2>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Locations
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/indonesia">Indonesia</a>
+          <a class="dropdown-item" href="/japan">Japan</a>
+          <a class="dropdown-item text-primary" href="/southkorea">South Korea</a>
+          <a class="dropdown-item" href="/thailand">Thailand</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link mx-md-2 prmry" href="/">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link mx-md-2 prmry" href="/book-flight">Service<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link mx-md-2 prmry" href="/plans">Plans<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link mx-md-2 prmry" href="/contact">Contact<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+{{end}}
+{{define "content"}}
+<div class="showcase">
+
+  {{$book := index .Data "bookingDetails"}}
+
+  <form action="/book-flight" method="post" class="needs-validation" enctype="multipart/form-data">
+    <input type="hidden" name="csrf_token" value="{{.CSRFToken}}">
+    <div class="form-page booking">
+
+      <div class="radio-btn">
+        <input type="radio" class="rdbtn" name="check" checked="checked" value="Roundtrip"><span>Roundtrip</span>
+        <input type="radio" class="rdbtn" name="check" value="One-way"><span>One Way</span>
+        <input type="radio" class="rdbtn" name="check" value="Multi-City"><span>Multi-City</span>
+      </div>
+      <div class="booking-form">
+        <label for="flying_from">Flying From</label>
+        {{with .Form.Errors.Get "flying_from"}}
+        <label class="text-danger">{{.}}</label>
+        {{end}}
+        <input type="text" name="flying_from" class="form-control {{with .Form.Errors.Get " flying_from"}} is-invalid
+          {{end}}" value="{{$book.Flying_From}}" placeholder="City or Airport">
+        <label for="flying_to">Flying To</label>
+        {{with .Form.Errors.Get "flying_to"}}
+        <label class="text-danger">{{.}}</label>
+        {{end}}
+        <input type="text" name="flying_to" class="form-control {{with .Form.Errors.Get " flying_to"}} is-invalid
+          {{end}}" value="{{$book.Flying_To}}" placeholder="City or Airport">
+
+        <div class="input-grp">
+          <label>Departing</label>
+          {{with .Form.Errors.Get "depart"}}
+          <label class="text-danger">{{.}}</label>
+          {{end}}
+          <input type="date" name="depart" value="{{$book.Departing_Date}}" class="form-control select-date">
+        </div>
+        <div class="input-grp">
+          <label>Returning</label>
+          {{with .Form.Errors.Get "return"}}
+          <label class="text-danger">{{.}}</label>
+          {{end}}
+          <input type="date" name="return" value="{{$book.Returning_Date}}" class="form-control select-date">
+        </div>
+        <div class="input-grp">
+          <label>Adults</label>
+          <input class="form-control" name="adult_no" value="1">
+        </div>
+        <div class="input-grp">
+          <label>Children</label>
+          <input class="form-control" name="child_no" value="0">
+        </div>
+        <div class="input-grp">
+          <label>Travel Class</label>
+          <select class="custom-select" name="travel_class">
+            <option value="Economy">Economy Class</option>
+            <option value="Business">Business Class</option>
+          </select>
+
+        </div>
+        <div class="input-grp">
+          <button type="button" class="nextbutton primarybtn">Next step ➜</button>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------------------------- -->
+    <div class="form-page personal">
+
+      <div class="booking-form">
+
+        <label>Full Name</label>
+        {{with .Form.Errors.Get "full_name"}}
+        <label class="text-danger">{{.}}</label>
+        {{end}}
+        <input type="text" name="full_name" class="form-control mb-2" value="{{$book.Full_Name}}"
+          placeholder="Your full Name">
+        <label>Address</label>
+        {{with .Form.Errors.Get "address"}}
+        <label class="text-danger">{{.}}</label>
+        {{end}}
+        <input type="text" name="address" class="form-control mb-2" value="{{$book.Address}}"
+          placeholder="Your Address">
+        <label class="fw-bolder">Booking details will be sent to</label><br>
+        <label for="email">Email</label>
+        {{with .Form.Errors.Get "email"}}
+        <label class="text-danger">{{.}}</label>
+        {{end}}
+        <input type="email" name="email" class="form-control mb-2" value="{{$book.Email}}"
+          placeholder="Your Email address">
+        <!-- <div class="input-grp">
+          <label class="fw-bolder">Booking details will be sent to</label>
+        </div> -->
+        <div class="input-grp">
+          <label>Country Code</label>
+          {{with .Form.Errors.Get "country_code"}}
+          <label class="text-danger">{{.}}</label>
+          {{end}}
+          <input type="text" name="country_code" class="form-control mb-2" value="{{$book.Country_Code}}"
+            placeholder="Ex:- +91" required />
+        </div>
+        <div class="input-grp">
+          <label>Mobile No</label>
+          {{with .Form.Errors.Get "mobile_no"}}
+          <label class="text-danger">{{.}}</label>
+          {{end}}
+          <input type="number" name="mobile_no" class="form-control mb-2" value="{{$book.Mobile_No}}" required />
+        </div>
+        <div class="input-grp">
+          <label>Pincode</label>
+          {{with .Form.Errors.Get "pincode"}}
+          <label class="text-danger">{{.}}</label>
+          {{end}}
+          <input type="number" name="pincode" class="form-control mb-2" value="{{$book.Pincode}}" required />
+        </div>
+        <div class="input-grp">
+          <label>State</label>
+          {{with .Form.Errors.Get "state"}}
+          <label class="text-danger">{{.}}</label>
+          {{end}}
+          <input class="form-control mb-2" name="state" value="{{$book.State_Name}}" required />
+        </div>
+        <div class="input-grp">
+          <label>City</label>
+          {{with .Form.Errors.Get "city"}}
+          <label class="text-danger">{{.}}</label>
+          {{end}}
+          <input class="form-control mb-2" name="city" value="{{$book.City_Name}}" required />
+        </div>
+
+        <label class="fw-bolder">Upload any ID provided by Government</label>
+        <input type="file" id="file1" name="uploadfile" class="form-control" placeholder="only *.pdf/*.jpg/*.jpeg"
+          onchange="return fileValidation()" required />
+        <div id="message" class="mt-2"></div>
+
+
+        <div class="input-grp">
+          <button type="button" class="backbutton primarybtn">⬅ Back</button>
+        </div>
+        <div class="input-grp">
+          <input type="submit" value="Book Now" class="bookbutton mt-2 primarybtn"></input>
+        </div>
+
+
+      </div>
+    </div>
+  </form>
+
+</div>
+{{end}}
