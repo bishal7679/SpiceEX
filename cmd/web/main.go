@@ -10,6 +10,7 @@ import (
 
 	"github.com/alexedwards/scs/v2"
 	"github.com/bishal7679/Booking-app/internal/config"
+	"github.com/bishal7679/Booking-app/internal/driver"
 	handler "github.com/bishal7679/Booking-app/internal/handlers"
 	"github.com/bishal7679/Booking-app/internal/helpers"
 	"github.com/bishal7679/Booking-app/internal/models"
@@ -23,10 +24,12 @@ var infoLog *log.Logger
 var errorLog *log.Logger
 
 func main() {
-	err := run()
+	db, err := run()
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer db.SQL.Close()
+
 	fmt.Println(fmt.Sprintf("Starting application on port : %s", PortNumber))
 	// _ = http.ListenAndServe(PortNumber, nil)
 	srv := &http.Server{
@@ -38,7 +41,7 @@ func main() {
 
 }
 
-func run() error {
+func run() (*driver.DB, error) {
 	// what am i going to put in the session
 	gob.Register(models.BookingDetails{})
 	// change this to true when you are in production environment
@@ -57,19 +60,28 @@ func run() error {
 	session.Cookie.Secure = app.InProduction
 
 	app.Session = session
+
+	// connect to database
+	log.Println("Connecting to database")
+	db, err := driver.ConnectSQL("host=localhost port=5432 dbname=bookings user=postgres password=")
+	if err != nil {
+		log.Fatal("cannot connect to the database! Dying...")
+	}
+	log.Println("Connected to database!")
+
 	tc, err := render.CreateTemplateCache()
 	if err != nil {
 		log.Fatal("cannot create template cache!")
-		return err
+		return nil, err
 	}
 
 	app.TemplateCache = tc
 	app.UseCache = false
-	repo := handler.NewRepo(&app)
+	repo := handler.NewRepo(&app,db)
 	handler.Newhandlers(repo)
 
 	render.NewTemplate(&app)
 	helpers.NewHelpers(&app)
 
-	return nil
+	return db, nil
 }

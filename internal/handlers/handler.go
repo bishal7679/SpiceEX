@@ -4,13 +4,13 @@ import (
 	"net/http"
 
 	"github.com/bishal7679/Booking-app/internal/config"
+	"github.com/bishal7679/Booking-app/internal/driver"
 	"github.com/bishal7679/Booking-app/internal/forms"
 	"github.com/bishal7679/Booking-app/internal/helpers"
-
-	// "github.com/bishal7679/Booking-app/internal/forms"
-	// "github.com/bishal7679/Booking-app/internal/helpers"
 	"github.com/bishal7679/Booking-app/internal/models"
 	"github.com/bishal7679/Booking-app/internal/render"
+	"github.com/bishal7679/Booking-app/internal/repository"
+	"github.com/bishal7679/Booking-app/internal/repository/dbrepo"
 )
 
 var Repo *Repository
@@ -18,12 +18,14 @@ var Repo *Repository
 // Repository is the repository type
 type Repository struct {
 	App *config.AppConfig
+	DB repository.DatabaseRepo
 }
 
 // NewRepo creates a new repository
-func NewRepo(a *config.AppConfig) *Repository {
+func NewRepo(a *config.AppConfig,db *driver.DB) *Repository {
 	return &Repository{
 		App: a,
+		DB: dbrepo.NewpostgresRepo(db.SQL,a),
 	}
 }
 
