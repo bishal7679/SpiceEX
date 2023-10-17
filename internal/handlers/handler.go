@@ -1,16 +1,19 @@
 package handler
 
 import (
+	"log"
 	"net/http"
+	"strconv"
+	"time"
 
-	"github.com/bishal7679/Booking-app/internal/config"
-	"github.com/bishal7679/Booking-app/internal/driver"
-	"github.com/bishal7679/Booking-app/internal/forms"
-	"github.com/bishal7679/Booking-app/internal/helpers"
-	"github.com/bishal7679/Booking-app/internal/models"
-	"github.com/bishal7679/Booking-app/internal/render"
-	"github.com/bishal7679/Booking-app/internal/repository"
-	"github.com/bishal7679/Booking-app/internal/repository/dbrepo"
+	"github.com/bishal7679/SpiceEx/internal/config"
+	"github.com/bishal7679/SpiceEx/internal/driver"
+	"github.com/bishal7679/SpiceEx/internal/forms"
+	"github.com/bishal7679/SpiceEx/internal/helpers"
+	"github.com/bishal7679/SpiceEx/internal/models"
+	"github.com/bishal7679/SpiceEx/internal/render"
+	"github.com/bishal7679/SpiceEx/internal/repository"
+	"github.com/bishal7679/SpiceEx/internal/repository/dbrepo"
 )
 
 var Repo *Repository
@@ -18,14 +21,14 @@ var Repo *Repository
 // Repository is the repository type
 type Repository struct {
 	App *config.AppConfig
-	DB repository.DatabaseRepo
+	DB  repository.DatabaseRepo
 }
 
 // NewRepo creates a new repository
-func NewRepo(a *config.AppConfig,db *driver.DB) *Repository {
+func NewRepo(a *config.AppConfig, db *driver.DB) *Repository {
 	return &Repository{
 		App: a,
-		DB: dbrepo.NewpostgresRepo(db.SQL,a),
+		DB:  dbrepo.NewpostgresRepo(db.SQL, a),
 	}
 }
 
@@ -38,7 +41,7 @@ func Newhandlers(r *Repository) {
 func (m *Repository) Home(w http.ResponseWriter, r *http.Request) {
 	// remoteIP := r.RemoteAddr
 	// m.App.Session.Put(r.Context(), "remote_ip", remoteIP)
-	render.RenderTemplate(w, r, "home.page.html", &models.TemplateData{})
+	render.Template(w, r, "home.page.html", &models.TemplateData{})
 
 }
 
@@ -50,14 +53,14 @@ func (m *Repository) Plans(w http.ResponseWriter, r *http.Request) {
 
 	// remoteIP := m.App.Session.GetString(r.Context(), "remote_ip")
 	// stringmap["remote_ip"] = remoteIP
-	render.RenderTemplate(w, r, "plans.page.html", &models.TemplateData{
+	render.Template(w, r, "plans.page.html", &models.TemplateData{
 		// StringMap: stringmap,
 	})
 }
 
 // Reservation renders the make a reservation page and displays form
 func (m *Repository) Plansignup(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, r, "plansignup.page.html", &models.TemplateData{})
+	render.Template(w, r, "plansignup.page.html", &models.TemplateData{})
 
 }
 
@@ -68,7 +71,7 @@ func (m *Repository) Bookflight(w http.ResponseWriter, r *http.Request) {
 	data := make(map[string]interface{})
 	data["bookingDetails"] = emptyBookingDetails
 
-	render.RenderTemplate(w, r, "book-flight.page.html", &models.TemplateData{
+	render.Template(w, r, "book-flight.page.html", &models.TemplateData{
 		Form: forms.New(nil),
 		Data: data,
 	})
@@ -87,17 +90,27 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 	// Parse the form data, including the uploaded file
 	err := r.ParseMultipartForm(10 << 20) // 10MB maximum file size
 	if err != nil {
+		log.Println("error in 1")
 		helpers.ServerError(w, err)
 		return
 	}
 
 	// Retrieve the uploaded file
-	file, fileheader, err := r.FormFile("uploadfile")
+	file, handler, err := r.FormFile("uploadfile")
 	if err != nil {
+		log.Println("error in 2")
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
 	}
 	defer file.Close()
+
+	// Read the file data
+	data := make([]byte, handler.Size)
+	_, err = file.Read(data)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
 
 	// Validate file type, for example, only allow image files
 	// if handler.Header.Get("Content-Type") != "image/jpeg" && handler.Header.Get("Content-Type") != "image/png" && handler.Header.Get("Content-Type") != "image/pdf" {
@@ -113,12 +126,33 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 	// }
 	// defer outputFile.Close()
 
+	departDate := r.Form.Get("depart")
+	returnDate := r.Form.Get("return")
+
+	// 2023-01-01 --- 01/02 03:04:05PM '06 -0700
+
+	layout := "2006-01-02"
+	Depart_Date, err := time.Parse(layout, departDate)
+	if err != nil {
+		helpers.ServerError(w,err)
+	}
+	Return_Date, err := time.Parse(layout, returnDate)
+	if err != nil {
+		helpers.ServerError(w,err)
+	}
+
+	userID, err := strconv.Atoi(r.Form.Get("user_id"))
+	if err != nil {
+		helpers.ServerError(w,err)
+	}
+	
+
 	bookingDetails := models.BookingDetails{
 		Travelway:         r.Form.Get("check"),
 		Flying_From:       r.Form.Get("flying_from"),
 		Flying_To:         r.Form.Get("flying_to"),
-		Departing_Date:    r.Form.Get("depart"),
-		Returning_Date:    r.Form.Get("return"),
+		Departing_Date:    Depart_Date,
+		Returning_Date:    Return_Date,
 		Travel_Class:      r.Form.Get("travel_class"),
 		Full_Name:         r.Form.Get("full_name"),
 		Address:           r.Form.Get("address"),
@@ -128,7 +162,8 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 		Pincode:           r.Form.Get("pincode"),
 		City_Name:         r.Form.Get("city"),
 		State_Name:        r.Form.Get("state"),
-		Upload_File_As_ID: fileheader.Filename,
+		UserID: userID,
+		Upload_File_As_ID: data,
 	}
 	form := forms.New(r.PostForm)
 
@@ -141,42 +176,49 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 		data := make(map[string]interface{})
 		data["bookingDetails"] = bookingDetails
 
-		render.RenderTemplate(w, r, "book-flight.page.html", &models.TemplateData{
+		render.Template(w, r, "book-flight.page.html", &models.TemplateData{
 			Form: form,
 			Data: data,
 		})
 		return
 
 	}
+
+	// inserting booking details to the database
+	err = m.DB.InsertBooking(bookingDetails)
+	if err != nil {
+		helpers.ServerError(w,err)
+	}
+
 	m.App.Session.Put(r.Context(), "bookingDetails", bookingDetails)
 	http.Redirect(w, r, "/booking-summary", http.StatusSeeOther)
 
 }
 
 func (m *Repository) Indonesia(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, r, "indonesia.page.html", &models.TemplateData{})
+	render.Template(w, r, "indonesia.page.html", &models.TemplateData{})
 }
 
 func (m *Repository) Japan(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, r, "japan.page.html", &models.TemplateData{})
+	render.Template(w, r, "japan.page.html", &models.TemplateData{})
 }
 
 func (m *Repository) Thailand(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, r, "thailand.page.html", &models.TemplateData{})
+	render.Template(w, r, "thailand.page.html", &models.TemplateData{})
 }
 
 func (m *Repository) Southkorea(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, r, "southKorea.page.html", &models.TemplateData{})
+	render.Template(w, r, "southKorea.page.html", &models.TemplateData{})
 }
 
 // Majors renders the room page
 func (m *Repository) Payment(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, r, "payment.page.html", &models.TemplateData{})
+	render.Template(w, r, "payment.page.html", &models.TemplateData{})
 }
 
 // Availability renders the search availability page
 func (m *Repository) Chooseplan(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, r, "chooseplan.page.html", &models.TemplateData{})
+	render.Template(w, r, "chooseplan.page.html", &models.TemplateData{})
 }
 
 // Contact renders the contact page
@@ -185,7 +227,7 @@ func (m *Repository) Contact(w http.ResponseWriter, r *http.Request) {
 	var emptyContactDetails models.ContactDetails
 	data := make(map[string]interface{})
 	data["contactDetails"] = emptyContactDetails
-	render.RenderTemplate(w, r, "contact.page.html", &models.TemplateData{
+	render.Template(w, r, "contact.page.html", &models.TemplateData{
 		Form: forms.New(nil),
 		Data: data,
 	})
@@ -213,7 +255,7 @@ func (m *Repository) PostContact(w http.ResponseWriter, r *http.Request) {
 		data := make(map[string]interface{})
 		data["contactDetails"] = contactDetails
 
-		render.RenderTemplate(w, r, "contact.page.html", &models.TemplateData{
+		render.Template(w, r, "contact.page.html", &models.TemplateData{
 			Form: form,
 			Data: data,
 		})
@@ -236,7 +278,7 @@ func (m *Repository) BookingSummary(w http.ResponseWriter, r *http.Request) {
 	m.App.Session.Remove(r.Context(), "bookingDetails")
 	data := make(map[string]interface{})
 	data["bookingDetails"] = bookingDetails
-	render.RenderTemplate(w, r, "booking-summary.page.html", &models.TemplateData{
+	render.Template(w, r, "booking-summary.page.html", &models.TemplateData{
 		Data: data,
 	})
 }

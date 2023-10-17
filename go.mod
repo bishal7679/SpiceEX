@@ -1,4 +1,4 @@
-module github.com/bishal7679/Booking-app
+module github.com/bishal7679/SpiceEx
 
 go 1.18
 

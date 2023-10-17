@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"runtime/debug"
 
-	"github.com/bishal7679/Booking-app/internal/config"
+	"github.com/bishal7679/SpiceEx/internal/config"
 )
 
 var app *config.AppConfig

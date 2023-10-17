@@ -1,0 +1,7 @@
+add_foreign_key("bookingsrestriction","booking_id", {"flightbookings": ["id"]},{
+   "on_delete": "cascade",
+   "on_update": "cascade",
+})
+
+add_index("flightbookings", "email", {})
+add_index("flightbookings", "full_name", {})

@@ -1,0 +1,5 @@
+add_index("bookingsrestriction", ["flying_from","flying_to"], {})
+add_index("bookingsrestriction", ["depart","return"], {})
+add_index("bookingsrestriction", "booking_id", {})
+
+

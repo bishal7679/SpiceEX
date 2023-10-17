@@ -1,0 +1,4 @@
+drop_foreign_key("bookingsrestriction","bookingsrestriction_flightbookings_id_fk",{})
+
+drop_index("flightbookings","flightbookings_email_idx")
+drop_index("flightbookings","flightbookings_full_name_idx")

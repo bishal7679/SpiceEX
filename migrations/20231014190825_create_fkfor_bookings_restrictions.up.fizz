@@ -1,0 +1,11 @@
+add_foreign_key("bookingsrestriction","user_id", {"usersignup": ["id"]},{
+   "on_delete": "cascade",
+   "on_update": "cascade",
+})
+
+add_foreign_key("bookingsrestriction","restriction_id", {"restrictions": ["id"]},{
+   "on_delete": "cascade",
+   "on_update": "cascade",
+})
+
+

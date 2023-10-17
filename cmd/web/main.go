@@ -9,12 +9,12 @@ import (
 	"time"
 
 	"github.com/alexedwards/scs/v2"
-	"github.com/bishal7679/Booking-app/internal/config"
-	"github.com/bishal7679/Booking-app/internal/driver"
-	handler "github.com/bishal7679/Booking-app/internal/handlers"
-	"github.com/bishal7679/Booking-app/internal/helpers"
-	"github.com/bishal7679/Booking-app/internal/models"
-	"github.com/bishal7679/Booking-app/internal/render"
+	"github.com/bishal7679/SpiceEx/internal/config"
+	"github.com/bishal7679/SpiceEx/internal/driver"
+	handler "github.com/bishal7679/SpiceEx/internal/handlers"
+	"github.com/bishal7679/SpiceEx/internal/helpers"
+	"github.com/bishal7679/SpiceEx/internal/models"
+	"github.com/bishal7679/SpiceEx/internal/render"
 )
 
 var PortNumber = ":8000"
@@ -44,6 +44,9 @@ func main() {
 func run() (*driver.DB, error) {
 	// what am i going to put in the session
 	gob.Register(models.BookingDetails{})
+	gob.Register(models.BookingRestriction{})
+	gob.Register(models.Restriction{})
+	gob.Register(models.UserSignup{})
 	// change this to true when you are in production environment
 	app.InProduction = false
 
@@ -80,7 +83,7 @@ func run() (*driver.DB, error) {
 	repo := handler.NewRepo(&app,db)
 	handler.Newhandlers(repo)
 
-	render.NewTemplate(&app)
+	render.NewRenderer(&app)
 	helpers.NewHelpers(&app)
 
 	return db, nil

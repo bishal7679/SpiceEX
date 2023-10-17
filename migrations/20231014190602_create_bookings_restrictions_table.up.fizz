@@ -1,0 +1,15 @@
+ create_table("bookingsrestriction") {
+  t.Column("id", "integer", {primary: true})
+  t.Column("check", "string", {"size": 10})
+  t.Column("flying_from", "string", {})
+  t.Column("flying_to", "string", {})
+  t.Column("depart", "date", {})
+  t.Column("return", "date", {})
+  t.Column("country_code", "string", {"size": 5})
+  t.Column("mobile_no", "string", {"size": 15})
+  t.Column("booking_id", "integer", {})
+  t.Column("user_id", "integer", {})
+  t.Column("restriction_id", "integer", {})
+
+
+}

@@ -1,0 +1,4 @@
+drop_index("bookingsrestriction","bookingsrestriction_booking_id_idx")
+drop_index("bookingsrestriction","bookingsrestriction_depart_return_idx")
+drop_index("bookingsrestriction","bookingsrestriction_flying_from_flying_to_idx")
+

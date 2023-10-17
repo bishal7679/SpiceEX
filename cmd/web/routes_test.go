@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/bishal7679/Booking-app/internal/config"
+	"github.com/bishal7679/SpiceEx/internal/config"
 	"github.com/go-chi/chi"
 )
 

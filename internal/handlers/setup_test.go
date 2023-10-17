@@ -12,9 +12,9 @@ import (
 	"html/template"
 
 	"github.com/alexedwards/scs/v2"
-	"github.com/bishal7679/Booking-app/internal/config"
-	"github.com/bishal7679/Booking-app/internal/models"
-	"github.com/bishal7679/Booking-app/internal/render"
+	"github.com/bishal7679/SpiceEx/internal/config"
+	"github.com/bishal7679/SpiceEx/internal/models"
+	"github.com/bishal7679/SpiceEx/internal/render"
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
 	"github.com/justinas/nosurf"
@@ -52,7 +52,7 @@ func getRoutes() http.Handler {
 	repo := NewRepo(&app)
 	Newhandlers(repo)
 
-	render.NewTemplate(&app)
+	render.NewRenderer(&app)
 
 	mux := chi.NewRouter()
 	mux.Use(middleware.Recoverer)

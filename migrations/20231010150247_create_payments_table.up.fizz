@@ -1,0 +1,7 @@
+create_table("payments") {
+  t.Column("id", "integer", {primary: true})
+  t.Column("email", "string", {})
+  t.Column("card_number", "string", {"size": 16})
+  t.Column("validity", "string", {})
+  t.Column("cvv", "integer", {"size": 3})
+}

@@ -1,0 +1,1 @@
+drop_foreign_key("flightbookings", "flightbookings_usersignup_id_fk", {})

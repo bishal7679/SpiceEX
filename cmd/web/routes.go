@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	//"github.com/bishal7679/golang-repo/pkg/config"
-	"github.com/bishal7679/Booking-app/internal/config"
-	handler "github.com/bishal7679/Booking-app/internal/handlers"
+	"github.com/bishal7679/SpiceEx/internal/config"
+	handler "github.com/bishal7679/SpiceEx/internal/handlers"
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
 )
@@ -17,7 +17,7 @@ func Routes(app *config.AppConfig) http.Handler {
 	// mux.Get("/about", http.HandlerFunc(Repo.About))
 	mux := chi.NewRouter()
 	mux.Use(middleware.Recoverer)
-	// mux.Use(NoSurf)
+	mux.Use(NoSurf)
 	// mux.Use(WriteToConsole)
 	mux.Use(SessionLoad)
 	mux.Get("/", handler.Repo.Home)

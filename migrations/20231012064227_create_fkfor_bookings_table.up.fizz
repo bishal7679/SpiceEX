@@ -1,0 +1,4 @@
+add_foreign_key("flightbookings","user_id", {"usersignup": ["id"]},{
+   "on_delete": "cascade",
+   "on_update": "cascade",
+})

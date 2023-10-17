@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/bishal7679/Booking-app/internal/models"
+	"github.com/bishal7679/SpiceEx/internal/models"
 )
 
 func TestAddDefaultData(t *testing.T) {
@@ -39,7 +39,7 @@ func TestRenderTemplate(t *testing.T) {
 	}
 
 	var ww myWriter
-	err = RenderTemplate(&ww, r, "non-existent.page.html", &models.TemplateData{})
+	err =	Template(&ww, r, "non-existent.page.html", &models.TemplateData{})
 	if err == nil {
 		t.Error("error writing template to browser")
 	}
@@ -62,8 +62,8 @@ func getSession() (*http.Request, error) {
 	return r, nil
 }
 
-func TestNewTemplates(t *testing.T) {
-	NewTemplate(app)
+func TestNewRenderer(t *testing.T) {
+	NewRenderer(app)
 }
 
 func TestCreateTemplateCache(t *testing.T) {

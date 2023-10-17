@@ -1,0 +1,2 @@
+drop_foreign_key("bookingsrestriction", "bookingsrestriction_restrictions_id_fk", {})
+drop_foreign_key("bookingsrestriction", "bookingsrestriction_usersignup_id_fk", {})

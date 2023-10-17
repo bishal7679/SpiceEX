@@ -1,0 +1,25 @@
+ create_table("flightbookings") {
+  t.Column("id", "integer", {primary: true})
+  t.Column("check", "string", {"size": 10})
+  t.Column("flying_from", "string", {})
+  t.Column("flying_to", "string", {})
+  t.Column("depart", "date", {})
+  t.Column("return", "date", {})
+  t.Column("travel_class", "string", {"size": 8})
+  t.Column("full_name", "string", {"size": 50})
+  t.Column("address", "string", {"size": 100})
+  t.Column("email", "string", {})
+  t.Column("country_code", "string", {"size": 5})
+  t.Column("mobile_no", "string", {"size": 15})
+  t.Column("pincode", "string", {})
+  t.Column("city", "string", {})
+  t.Column("state", "string", {})
+  t.Column("govtidentity", "bytea", {})
+  t.Column("user_id", "integer", {})
+
+
+
+
+
+
+}
