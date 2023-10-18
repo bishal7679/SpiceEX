@@ -4,7 +4,6 @@ import (
 	"log"
 	"net/http"
 	"strconv"
-	"time"
 
 	"github.com/bishal7679/SpiceEx/internal/config"
 	"github.com/bishal7679/SpiceEx/internal/driver"
@@ -126,33 +125,33 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 	// }
 	// defer outputFile.Close()
 
-	departDate := r.Form.Get("depart")
-	returnDate := r.Form.Get("return")
+	// departDate := r.Form.Get("depart")
+	// returnDate := r.Form.Get("return")
 
-	// 2023-01-01 --- 01/02 03:04:05PM '06 -0700
+	// // 2023-01-01 --- 01/02 03:04:05PM '06 -0700
 
-	layout := "2006-01-02"
-	Depart_Date, err := time.Parse(layout, departDate)
-	if err != nil {
-		helpers.ServerError(w,err)
-	}
-	Return_Date, err := time.Parse(layout, returnDate)
-	if err != nil {
-		helpers.ServerError(w,err)
-	}
+	// layout := "2006-01-02"
+	// Depart_Date, err := time.Parse(layout, departDate)
+	// if err != nil {
+	// 	helpers.ServerError(w,err)
+	// }
+	// Return_Date, err := time.Parse(layout, returnDate)
+	// if err != nil {
+	// 	helpers.ServerError(w,err)
+	// }
 
 	userID, err := strconv.Atoi(r.Form.Get("user_id"))
 	if err != nil {
-		helpers.ServerError(w,err)
+		helpers.ServerError(w, err)
+		return
 	}
-	
 
 	bookingDetails := models.BookingDetails{
 		Travelway:         r.Form.Get("check"),
 		Flying_From:       r.Form.Get("flying_from"),
 		Flying_To:         r.Form.Get("flying_to"),
-		Departing_Date:    Depart_Date,
-		Returning_Date:    Return_Date,
+		Departing_Date:    r.Form.Get("depart"),
+		Returning_Date:    r.Form.Get("return"),
 		Travel_Class:      r.Form.Get("travel_class"),
 		Full_Name:         r.Form.Get("full_name"),
 		Address:           r.Form.Get("address"),
@@ -162,7 +161,7 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 		Pincode:           r.Form.Get("pincode"),
 		City_Name:         r.Form.Get("city"),
 		State_Name:        r.Form.Get("state"),
-		UserID: userID,
+		UserID:            userID,
 		Upload_File_As_ID: data,
 	}
 	form := forms.New(r.PostForm)
@@ -185,9 +184,29 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// inserting booking details to the database
-	err = m.DB.InsertBooking(bookingDetails)
+	newBookingID, err := m.DB.InsertBooking(bookingDetails)
 	if err != nil {
-		helpers.ServerError(w,err)
+		helpers.ServerError(w, err)
+		return
+	}
+
+	restriction := models.BookingRestriction{
+		Travelway:     r.Form.Get("check"),
+		UserID:        userID,
+		BookingID:     newBookingID,
+		RestrictionID: 1,
+		FlyingFrom:    r.Form.Get("flying_from"),
+		FlyingTo:      r.Form.Get("flying_to"),
+		Depart:        r.Form.Get("depart"),
+		Return:        r.Form.Get("return"),
+		CountryCode:  r.Form.Get("country_code"),
+		MobileNo:     r.Form.Get("mobile_no"),
+	}
+
+	err = m.DB.InsertBookingRestriction(restriction)
+	if err != nil {
+		helpers.ServerError(w, err)
+		return
 	}
 
 	m.App.Session.Put(r.Context(), "bookingDetails", bookingDetails)

@@ -12,13 +12,15 @@ func (m *postgresDBRepo) AllUsers() bool {
 }
 
 // InsertBooking inserts a booking into the database
-func (m *postgresDBRepo) InsertBooking(book models.BookingDetails) error {
+func (m *postgresDBRepo) InsertBooking(book models.BookingDetails) (int, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
 	defer cancel()
 
-	stmt := `insert into flightbookings (check, flying_from, flying_to, depart, return, travel_class, full_name, address, email, country_code, mobile_no, pincode, city, state, govtidentity, user_id, created_at, updated_at) values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18)`
+	var newID int
 
-	_, err := m.DB.ExecContext(ctx,stmt,
+	stmt := `insert into flightbookings (travelway, flying_from, flying_to, depart, return, travel_class, full_name, address, email, country_code, mobile_no, pincode, city, state, govtidentity, user_id, created_at, updated_at) values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18) returning id`
+
+	err := m.DB.QueryRowContext(ctx, stmt,
 		book.Travelway,
 		book.Flying_From,
 		book.Flying_To,
@@ -37,8 +39,35 @@ func (m *postgresDBRepo) InsertBooking(book models.BookingDetails) error {
 		book.UserID,
 		time.Now(),
 		time.Now(),
-	)
+	).Scan(&newID)
 
+	if err != nil {
+		return 0, err
+	}
+	return newID, nil
+}
+
+// InsertBookingRestriction inserts a booking restrictio into database
+func (m *postgresDBRepo) InsertBookingRestriction(r models.BookingRestriction) error {
+	ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
+	defer cancel()
+
+	stmt := `insert into bookingsrestriction (travelway, flying_from, flying_to, depart, return, country_code, mobile_no, booking_id, user_id, restriction_id, created_at, updated_at) values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)`
+
+	_, err := m.DB.ExecContext(ctx, stmt,
+		r.Travelway,
+		r.FlyingFrom,
+		r.FlyingTo,
+		r.Depart,
+		r.Return,
+		r.CountryCode,
+		r.MobileNo,
+		r.BookingID,
+		r.UserID,
+		r.RestrictionID,
+		time.Now(),
+		time.Now(),
+	)
 	if err != nil {
 		return err
 	}

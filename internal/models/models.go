@@ -10,8 +10,8 @@ type BookingDetails struct {
 	Travelway         string
 	Flying_From       string
 	Flying_To         string
-	Departing_Date    time.Time
-	Returning_Date    time.Time
+	Departing_Date    string
+	Returning_Date    string
 	Travel_Class      string
 	Full_Name         string
 	Address           string
@@ -57,11 +57,12 @@ type Restriction struct {
 // BookingRestriction is the BookingRestriction model
 type BookingRestriction struct {
 	ID int
-	Check string
+	Travelway string
 	FlyingFrom string
 	FlyingTo string
 	Depart string
 	Return string
+	CountryCode string
 	MobileNo string
 	BookingID int
 	UserID int
