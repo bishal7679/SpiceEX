@@ -41,6 +41,14 @@
   .showcase.active .form-page.personal {
     top: 2%;
   }
+
+  .return-none {
+    display: none;
+  }
+
+  .primarybutton-transform {
+    transform: translateY(10px);
+  }
 </style>
 {{end}}
 {{define "navigbar"}}
@@ -117,7 +125,7 @@
           {{end}}
           <input type="date" name="depart" value="{{$book.Departing_Date}}" class="form-control select-date">
         </div>
-        <div class="input-grp">
+        <div class="input-grp returning" id="returning">
           <label>Returning</label>
           {{with .Form.Errors.Get "return"}}
           <label class="text-danger">{{.}}</label>
@@ -169,9 +177,6 @@
         {{end}}
         <input type="email" name="email" class="form-control mb-2" value="{{$book.Email}}"
           placeholder="Your Email address">
-        <!-- <div class="input-grp">
-          <label class="fw-bolder">Booking details will be sent to</label>
-        </div> -->
         <div class="input-grp">
           <label>Country Code</label>
           {{with .Form.Errors.Get "country_code"}}
@@ -229,4 +234,28 @@
   </form>
 
 </div>
+{{end}}
+{{define "js"}}
+<script>
+  const radioButtons = document.querySelectorAll('.rdbtn');
+  const returning = document.querySelector(".returning");
+  const primarybutton = document.querySelector(".primarybtn");
+  const returningid = document.getElementById("returning");
+
+  radioButtons.forEach(radioButton => {
+    radioButton.addEventListener('change', () => {
+      if (radioButton.checked) {
+        if (radioButton.value == "One-way") {
+          returning.classList.add("return-none")
+          primarybutton.classList.add("primarybutton-transform")
+          returningid.remove;
+        } else {
+          returning.classList.remove("return-none")
+          primarybutton.classList.remove("primarybutton-transform")
+          returningid.append;
+        }
+      }
+    });
+  });
+</script>
 {{end}}

@@ -165,8 +165,13 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 		Upload_File_As_ID: data,
 	}
 	form := forms.New(r.PostForm)
+	if (bookingDetails.Travelway == "One-way") {
 
-	form.Required("flying_from", "flying_to", "depart", "return", "full_name", "address", "email")
+		form.Required("flying_from", "flying_to", "depart", "full_name", "address", "email")
+	} else {
+		form.Required("flying_from", "flying_to", "depart", "return", "full_name", "address", "email")
+
+	}
 
 	form.MinLength("full_name", 6)
 
@@ -199,8 +204,8 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 		FlyingTo:      r.Form.Get("flying_to"),
 		Depart:        r.Form.Get("depart"),
 		Return:        r.Form.Get("return"),
-		CountryCode:  r.Form.Get("country_code"),
-		MobileNo:     r.Form.Get("mobile_no"),
+		CountryCode:   r.Form.Get("country_code"),
+		MobileNo:      r.Form.Get("mobile_no"),
 	}
 
 	err = m.DB.InsertBookingRestriction(restriction)

@@ -2,6 +2,13 @@
 {{define "bslink"}}
 <link rel="stylesheet" href="/static/css/index.css">
 {{end}}
+{{define "css"}}
+<style>
+  .returndate {
+    display: none;
+  }
+</style>
+{{end}}
 {{define "content"}}
 {{$book:= index .Data "bookingDetails"}}
 <div class="container">
@@ -56,7 +63,7 @@
             <td>Departure:</td>
             <td>{{$book.Departing_Date}}</td>
           </tr>
-          <tr>
+          <tr class="returndate">
             <td>Return:</td>
             <td>{{$book.Returning_Date}}</td>
           </tr>
@@ -70,4 +77,11 @@
     </div>
   </div>
 </div>
+{{end}}
+{{define "js"}}
+{{$book2:= index .Data "bookingDetails" } }
+<script>
+  const returndate = document.getElementsByClassName("returndate");
+
+</script>
 {{end}}
