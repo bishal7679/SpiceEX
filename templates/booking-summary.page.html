@@ -63,7 +63,7 @@
             <td>Departure:</td>
             <td>{{$book.Departing_Date}}</td>
           </tr>
-          <tr class="returndate">
+          <tr id="returning">
             <td>Return:</td>
             <td>{{$book.Returning_Date}}</td>
           </tr>
@@ -79,9 +79,13 @@
 </div>
 {{end}}
 {{define "js"}}
-{{$book2:= index .Data "bookingDetails" } }
+{{$book2:= index .Data "bookingDetails"}}
 <script>
-  const returndate = document.getElementsByClassName("returndate");
+  const returndate = document.getElementById("returning");
+  var value = $book2.Travelway
+  if (value == "One-way") {
+    returndate.classList.add("returndate")
+  }
 
 </script>
 {{end}}

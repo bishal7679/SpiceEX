@@ -73,3 +73,26 @@ func (m *postgresDBRepo) InsertBookingRestriction(r models.BookingRestriction) e
 	}
 	return nil
 }
+
+func (m *postgresDBRepo) SearchExistanceBooking(country_code, mobile_no, departing, returning, travelway string) (int, error) {
+	ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
+	defer cancel()
+
+	var numRows int
+
+	query := `
+		select
+			count(id)
+		from
+			bookingsrestriction
+		where
+			($1 == country_code and $2 == mobile_no and $3 == depart and $4 == return) or ($5 == travelway and $3 == depart);`
+
+	row := m.DB.QueryRowContext(ctx,query,country_code,mobile_no,departing,returning,travelway)
+	err := row.Scan(&numRows)
+	if err != nil {
+		return 0, err
+	}
+	return numRows, nil
+}
+
