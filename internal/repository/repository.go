@@ -8,4 +8,6 @@ type DatabaseRepo interface {
 	InsertBooking(book models.BookingDetails) (int,error)
 
 	InsertBookingRestriction(r models.BookingRestriction) error
+
+	SearchExistanceBookingByUserID(country_code, mobile_no, departing, returning, travelway string, userID int) (bool, error)
 }

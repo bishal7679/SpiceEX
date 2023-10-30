@@ -128,7 +128,7 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 	// departDate := r.Form.Get("depart")
 	// returnDate := r.Form.Get("return")
 
-	// // 2023-01-01 --- 01/02 03:04:05PM '06 -0700
+	// 2023-01-01 --- 01/02 03:04:05PM '06 -0700
 
 	// layout := "2006-01-02"
 	// Depart_Date, err := time.Parse(layout, departDate)
