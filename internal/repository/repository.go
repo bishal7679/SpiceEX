@@ -10,4 +10,6 @@ type DatabaseRepo interface {
 	InsertBookingRestriction(r models.BookingRestriction) error
 
 	SearchExistanceBookingByUserID(country_code, mobile_no, departing, returning, travelway string, userID int) (bool, error)
+
+	CountPassangerForDate(departing, returning, travelway, flying_from, flying_to string) (int,error)
 }

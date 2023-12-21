@@ -30,6 +30,10 @@ func main() {
 	}
 	defer db.SQL.Close()
 
+	defer close(app.MailChan)
+	fmt.Println("starting mail listening...")
+	listenForMail()
+
 	fmt.Println(fmt.Sprintf("Starting application on port : %s", PortNumber))
 	// _ = http.ListenAndServe(PortNumber, nil)
 	srv := &http.Server{
@@ -47,6 +51,9 @@ func run() (*driver.DB, error) {
 	gob.Register(models.BookingRestriction{})
 	gob.Register(models.Restriction{})
 	gob.Register(models.UserSignup{})
+
+	mailChan := make(chan models.MailData)
+	app.MailChan = mailChan
 	// change this to true when you are in production environment
 	app.InProduction = false
 
@@ -80,7 +87,7 @@ func run() (*driver.DB, error) {
 
 	app.TemplateCache = tc
 	app.UseCache = false
-	repo := handler.NewRepo(&app,db)
+	repo := handler.NewRepo(&app, db)
 	handler.Newhandlers(repo)
 
 	render.NewRenderer(&app)

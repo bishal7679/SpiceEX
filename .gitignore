@@ -2,3 +2,4 @@ database.yml
 coverage.out
 run.sh
 .idea
+.env

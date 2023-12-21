@@ -1,0 +1,80 @@
+{{template "base" .}}
+{{define "bslink"}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+{{end}}
+{{define "css"}}
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    max-width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+    background: url('/static/images/airport.jpg') no-repeat center center/cover;
+
+
+  }
+
+  body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 66px 63px 116px #000;
+  }
+
+  p {
+    margin: 0%;
+  }
+
+  .container {
+    max-width: 480px;
+    /* margin: 20px auto; */
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    border: 5px solid rgba(255, 255, 255, 1);
+    backdrop-filter: blur(30px);
+    transform: translateY(50px);
+    border: 1px solid #ced4da;
+    z-index: 1000;
+  }
+</style>
+{{end}}
+
+{{define "content"}}
+<div class="container d-lg-flex">
+  <h1>Oops! flight is just full :(</h1>
+  <h4>choose other Dates...</h4>
+  <div class="row">
+    <div class="col text-center">
+      <a href="/book-flight" class="btn btn-success">Try Again!</a>
+    </div>
+  </div>
+</div>
+</div>
+
+
+{{end}}

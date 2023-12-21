@@ -86,7 +86,7 @@ func (m *postgresDBRepo) SearchExistanceBookingByUserID(country_code, mobile_no,
 		from
 			bookingsrestriction
 		where
-			(user_id = $1 and $2 = country_code and $3 = mobile_no and $4 < return and $5 > depart) or (user_id = $1 and $6 = "One-way" and $4 = depart);`
+			($1 = user_id and $2 = country_code and $3 = mobile_no and $4 < return and $5 > depart and $6 = travelway) or ($1 = user_id and $4 = depart and $5 = return);`
 
 	row := m.DB.QueryRowContext(ctx,query,userID,country_code,mobile_no,departing,returning,travelway)
 	err := row.Scan(&numRows)
@@ -98,5 +98,28 @@ func (m *postgresDBRepo) SearchExistanceBookingByUserID(country_code, mobile_no,
 		return true, nil
 	}
 	return false, nil
+}
+
+// counting passengers for a flight to check whether its full or not
+func(m *postgresDBRepo) CountPassangerForDate(departing, returning, travelway, flying_from, flying_to string) (int,error){
+	ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
+	defer cancel()
+
+	var numRows int
+
+	query := `
+		select
+			count(id)
+		from
+			flightbookings
+		where
+			$1 = travelway and $2 = depart and $3 = return and $4 = flying_from and $5 = flying_to;`
+
+	row2 := m.DB.QueryRowContext(ctx,query,travelway,departing,returning,flying_from,flying_to)
+	err := row2.Scan(&numRows)
+	if err != nil {
+		return 0, err
+	}
+	return numRows, nil
 }
 

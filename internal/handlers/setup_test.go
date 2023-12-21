@@ -49,7 +49,7 @@ func getRoutes() http.Handler {
 
 	app.TemplateCache = tc
 	app.UseCache = true
-	repo := NewRepo(&app)
+	repo := NewRepo(&app,db)
 	Newhandlers(repo)
 
 	render.NewRenderer(&app)

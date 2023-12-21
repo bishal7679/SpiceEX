@@ -53,7 +53,7 @@
 {{end}}
 {{define "navigbar"}}
 <nav class="navbar navbar-expand-md bg-opacity-50 bg-black navbar-dark fixed-top box-shadow">
-  <h2 class="logo">SpiceEx ✈️</h2>
+  <h2 class="logo">SpiceEx 🛫</h2>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -224,7 +224,7 @@
           <button type="button" class="backbutton primarybtn">⬅ Back</button>
         </div>
         <div class="input-grp">
-          <input type="submit" value="Book Now" class="bookbutton mt-2 primarybtn"></input>
+          <input type="submit" value="Book Now" class="bookbutton mt-2 primarybtn" onclick="myFunction()"></input>
         </div>
 
 
@@ -256,5 +256,8 @@
       }
     });
   });
+  function myFunction() {
+    document.getElementById("myForm").reset();
+  }
 </script>
 {{end}}

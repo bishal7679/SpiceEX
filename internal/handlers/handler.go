@@ -1,6 +1,7 @@
 package handler
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"strconv"
@@ -165,7 +166,7 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 		Upload_File_As_ID: data,
 	}
 	form := forms.New(r.PostForm)
-	if (bookingDetails.Travelway == "One-way") {
+	if bookingDetails.Travelway == "One-way" {
 
 		form.Required("flying_from", "flying_to", "depart", "full_name", "address", "email")
 	} else {
@@ -188,6 +189,20 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 
 	}
 
+	// checking passenger limit for a flight
+	psgr, _ := m.DB.CountPassangerForDate(bookingDetails.Departing_Date, bookingDetails.Returning_Date, bookingDetails.Travelway, bookingDetails.Flying_From, bookingDetails.Flying_To)
+	if psgr > 180 {
+		fmt.Println(psgr)
+		http.Redirect(w, r, "/flight-full", http.StatusSeeOther)
+		return
+	}
+
+	// cheking spam booking of an user on same date
+	isExist, _ := m.DB.SearchExistanceBookingByUserID(bookingDetails.Country_Code, bookingDetails.Mobile_No, bookingDetails.Departing_Date, bookingDetails.Returning_Date, bookingDetails.Travelway, bookingDetails.UserID)
+	if !isExist {
+		http.Redirect(w, r, "/flight-full", http.StatusSeeOther)
+		return
+	}
 	// inserting booking details to the database
 	newBookingID, err := m.DB.InsertBooking(bookingDetails)
 	if err != nil {
@@ -214,9 +229,41 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// send booking notifications!
+	htmlMessage := fmt.Sprintf(`
+				<h3>Booking Confirmed</h3>🎉<br>
+				<h4>%s to %s</h4> - 6S 676 <br>
+				%s, 18:30-21:00
+				🛫 <strong>Take-off</strong>
+				%s, 18:30
+				🛬 <strong>Landing</strong>
+				%s, 21:00
+				🕓 <strong>Flight duration</strong>
+				2 hrs, 30 mins
+				👩‍✈️ <strong>Passenger name</strong>
+				%s
+				Seat
+				-
+				🎟️ <strong>Confirmation number</strong>
+				ANBYKY <br>
+				<hr>
+				<p>Thank You for choosing SpiceEx</p>
+				<p>Have a safe Journey!</p>
+
+	`,bookingDetails.Flying_From,bookingDetails.Flying_To,bookingDetails.Departing_Date,bookingDetails.Departing_Date,bookingDetails.Returning_Date,bookingDetails.Full_Name)
+
+	msg := models.MailData{
+		To:      bookingDetails.Email,
+		From:    "bishalhnj127@gmail.com",
+		Subject: "Your SpiceEx Itinerary - ANBYKY",
+		Content: htmlMessage,
+	}
+
+	m.App.MailChan <- msg
+
+	// ---------------------------------------------------------------
 	m.App.Session.Put(r.Context(), "bookingDetails", bookingDetails)
 	http.Redirect(w, r, "/booking-summary", http.StatusSeeOther)
-
 }
 
 func (m *Repository) Indonesia(w http.ResponseWriter, r *http.Request) {
@@ -243,6 +290,10 @@ func (m *Repository) Payment(w http.ResponseWriter, r *http.Request) {
 // Availability renders the search availability page
 func (m *Repository) Chooseplan(w http.ResponseWriter, r *http.Request) {
 	render.Template(w, r, "chooseplan.page.html", &models.TemplateData{})
+}
+
+func (m *Repository) FlightFull(w http.ResponseWriter, r *http.Request) {
+	render.Template(w, r, "oops.page.html", &models.TemplateData{})
 }
 
 // Contact renders the contact page

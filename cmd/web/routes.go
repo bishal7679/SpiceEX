@@ -35,6 +35,7 @@ func Routes(app *config.AppConfig) http.Handler {
 
 	mux.Get("/contact", handler.Repo.Contact)
 	mux.Post("/contact", handler.Repo.PostContact)
+	mux.Get("/flight-full", handler.Repo.FlightFull)
 	fileServer := http.FileServer(http.Dir("./static/"))
 	mux.Handle("/static/*", http.StripPrefix("/static", fileServer))
 	return mux
