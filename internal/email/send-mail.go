@@ -1,16 +1,22 @@
-package main
+package email
 
 import (
 	"log"
 	"os"
 	"time"
 
+	"github.com/bishal7679/SpiceEx/internal/config"
 	"github.com/bishal7679/SpiceEx/internal/models"
 	"github.com/joho/godotenv"
 	mail "github.com/xhit/go-simple-mail/v2"
 )
 
-func listenForMail() {
+var app *config.AppConfig
+
+func NewMail(a *config.AppConfig) {
+	app = a
+}
+func ListenForMail() {
 	go func() {
 		for {
 			msg := <-app.MailChan
@@ -20,9 +26,9 @@ func listenForMail() {
 }
 
 func init() {
-	 if err := godotenv.Load(); err != nil {
-        log.Print("No .env file found")
-    }
+	if err := godotenv.Load(); err != nil {
+		log.Print("No .env file found")
+	}
 }
 func sendMsg(m models.MailData) {
 	// its weird that its actually creating a SMTP server not client
@@ -30,8 +36,8 @@ func sendMsg(m models.MailData) {
 	server.Host = "smtp.gmail.com"
 	server.Port = 587
 	server.KeepAlive = false
-	server.ConnectTimeout = 10 * time.Second
-	server.SendTimeout = 10 * time.Second
+	server.ConnectTimeout = 20 * time.Second
+	server.SendTimeout = 20 * time.Second
 	server.Username = m.From
 	server.Password = os.Getenv("GMAIL_PASS")
 	server.Encryption = mail.EncryptionSTARTTLS
@@ -39,13 +45,11 @@ func sendMsg(m models.MailData) {
 	// creating a client to server
 	client, err := server.Connect()
 	if err != nil {
-		errorLog.Println(err)
+		app.ErrorLog.Println(err)
 	}
-
 	email := mail.NewMSG()
 	email.SetFrom(m.From).AddTo(m.To).SetSubject(m.Subject)
 	email.SetBody(mail.TextHTML, m.Content)
-	// email.Attach(&mail.File{FilePath: "/static/images/logo.png", Name:"Gopher.png", Inline: true})
 
 	err = email.Send(client)
 	if err != nil {

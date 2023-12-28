@@ -1,0 +1,2999 @@
+{{template "base" .}}
+{{define "css"}}
+<style type="text/css">
+  @media only screen and (min-width: 620px) {
+    .u-row {
+      width: 600px !important;
+    }
+
+    .u-row .u-col {
+      vertical-align: top;
+    }
+
+    .u-row .u-col-25 {
+      width: 150px !important;
+    }
+
+    .u-row .u-col-33p33 {
+      width: 199.98px !important;
+    }
+
+    .u-row .u-col-50 {
+      width: 300px !important;
+    }
+
+    .u-row .u-col-100 {
+      width: 600px !important;
+    }
+
+  }
+
+  @media (max-width: 620px) {
+    .u-row-container {
+      max-width: 100% !important;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+
+    .u-row .u-col {
+      min-width: 320px !important;
+      max-width: 100% !important;
+      display: block !important;
+    }
+
+    .u-row {
+      width: 100% !important;
+    }
+
+    .u-col {
+      width: 100% !important;
+    }
+
+    .u-col>div {
+      margin: 0 auto;
+    }
+
+    .no-stack .u-col {
+      min-width: 0 !important;
+      display: table-cell !important;
+    }
+
+    .no-stack .u-col-50 {
+      width: 50% !important;
+    }
+
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  table,
+  tr,
+  td {
+    vertical-align: top;
+    border-collapse: collapse;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .ie-container table,
+  .mso-container table {
+    table-layout: fixed;
+  }
+
+  * {
+    line-height: inherit;
+  }
+
+  a[x-apple-data-detectors='true'] {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  table,
+  td {
+    color: #000000;
+  }
+
+  #u_body a {
+    color: #0000ee;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 480px) {
+    #u_content_heading_1 .v-container-padding-padding {
+      padding: 40px 51px 10px !important;
+    }
+
+    #u_content_heading_1 .v-font-size {
+      font-size: 31px !important;
+    }
+
+    #u_content_heading_1 .v-line-height {
+      line-height: 110% !important;
+    }
+
+    #u_content_image_1 .v-container-padding-padding {
+      padding: 10px 10px 40px !important;
+    }
+
+    #u_content_image_1 .v-src-width {
+      width: auto !important;
+    }
+
+    #u_content_image_1 .v-src-max-width {
+      max-width: 82% !important;
+    }
+
+    #u_content_text_26 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_26 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_29 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_29 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_28 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_28 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_27 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_27 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_30 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_30 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_31 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_31 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_32 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_32 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_image_7 .v-src-width {
+      width: auto !important;
+    }
+
+    #u_content_image_7 .v-src-max-width {
+      max-width: 95% !important;
+    }
+
+    #u_column_3 .v-col-border {
+      border-top: 0px solid transparent !important;
+      border-left: 0px solid transparent !important;
+      border-right: 0px solid transparent !important;
+      border-bottom: 0px solid transparent !important;
+    }
+
+    #u_content_image_4 .v-container-padding-padding {
+      padding: 30px 10px 0px !important;
+    }
+
+    #u_content_image_4 .v-src-width {
+      width: auto !important;
+    }
+
+    #u_content_image_4 .v-src-max-width {
+      max-width: 25% !important;
+    }
+
+    #u_content_image_4 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_17 .v-container-padding-padding {
+      padding: 10px 10px 0px !important;
+    }
+
+    #u_content_text_17 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_heading_3 .v-container-padding-padding {
+      padding: 0px 10px !important;
+    }
+
+    #u_content_heading_3 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_9 .v-container-padding-padding {
+      padding: 10px 10px 30px !important;
+    }
+
+    #u_content_text_9 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_column_4 .v-col-border {
+      border-top: 1px solid #22255e !important;
+      border-left: 0px solid transparent !important;
+      border-right: 0px solid transparent !important;
+      border-bottom: 1px solid #22255e !important;
+    }
+
+    #u_content_image_5 .v-container-padding-padding {
+      padding: 30px 10px !important;
+    }
+
+    #u_column_5 .v-col-border {
+      border-top: 0px solid transparent !important;
+      border-left: 0px solid transparent !important;
+      border-right: 0px solid transparent !important;
+      border-bottom: 0px solid transparent !important;
+    }
+
+    #u_content_image_6 .v-container-padding-padding {
+      padding: 20px 10px 0px !important;
+    }
+
+    #u_content_image_6 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_3 .v-container-padding-padding {
+      padding: 10px 10px 0px !important;
+    }
+
+    #u_content_text_3 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_heading_5 .v-container-padding-padding {
+      padding: 0px 10px !important;
+    }
+
+    #u_content_heading_5 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_10 .v-container-padding-padding {
+      padding: 10px 10px 30px !important;
+    }
+
+    #u_content_text_10 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_heading_7 .v-container-padding-padding {
+      padding: 0px 10px !important;
+    }
+
+    #u_content_divider_2 .v-container-padding-padding {
+      padding: 15px 0px 0px !important;
+    }
+
+    #u_content_text_23 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_23 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_25 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_25 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_33 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_33 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_34 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_34 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_35 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_35 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_36 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_36 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_37 .v-container-padding-padding {
+      padding: 5px !important;
+    }
+
+    #u_content_text_37 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_41 .v-container-padding-padding {
+      padding: 5px !important;
+    }
+
+    #u_content_text_41 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_image_3 .v-container-padding-padding {
+      padding: 0px 10px 30px !important;
+    }
+
+    #u_content_image_3 .v-src-width {
+      width: auto !important;
+    }
+
+    #u_content_image_3 .v-src-max-width {
+      max-width: 65% !important;
+    }
+
+    #u_content_text_43 .v-container-padding-padding {
+      padding: 0px 10px 10px !important;
+    }
+
+    #u_content_text_43 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_44 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_44 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_45 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_45 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_46 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_46 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_47 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_47 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_48 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_48 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_49 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_49 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_50 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_50 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_51 .v-container-padding-padding {
+      padding: 5px 10px 10px !important;
+    }
+
+    #u_content_text_51 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_54 .v-container-padding-padding {
+      padding: 5px !important;
+    }
+
+    #u_content_text_54 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_text_55 .v-container-padding-padding {
+      padding: 5px !important;
+    }
+
+    #u_content_text_55 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_content_heading_2 .v-container-padding-padding {
+      padding: 30px 10px 0px !important;
+    }
+
+    #u_content_heading_2 .v-font-size {
+      font-size: 18px !important;
+    }
+
+    #u_content_text_15 .v-container-padding-padding {
+      padding: 10px !important;
+    }
+
+    #u_content_text_15 .v-text-align {
+      text-align: center !important;
+    }
+
+    #u_row_12 .v-row-background-image--inner {
+      background-image: url('https://i.ibb.co/jHM8ZkX/image-18.png') !important;
+      background-position: center top !important;
+      background-repeat: no-repeat !important;
+    }
+
+    #u_row_12 .v-row-background-image--outer {
+      background-position: center top !important;
+      background-repeat: no-repeat !important;
+    }
+
+    #u_row_12.v-row-background-image--outer {
+      background-position: center top !important;
+      background-repeat: no-repeat !important;
+    }
+
+    #u_content_heading_6 .v-container-padding-padding {
+      padding: 33px 151px 0px 10px !important;
+    }
+
+    #u_content_heading_6 .v-font-size {
+      font-size: 26px !important;
+    }
+
+    #u_content_heading_6 .v-color {
+      color: #22255e !important;
+    }
+
+    #u_content_divider_6 .v-container-padding-padding {
+      padding: 10px !important;
+    }
+
+    #u_content_button_1 .v-container-padding-padding {
+      padding: 10px 10px 47px !important;
+    }
+
+    #u_content_button_1 .v-size-width {
+      width: 50% !important;
+    }
+
+    #u_content_button_2 .v-container-padding-padding {
+      padding: 10px 10px 30px !important;
+    }
+
+    #u_content_button_2 .v-size-width {
+      width: 65% !important;
+    }
+
+    #u_content_image_9 .v-container-padding-padding {
+      padding: 30px 10px 10px !important;
+    }
+
+    #u_content_image_9 .v-src-width {
+      width: auto !important;
+    }
+
+    #u_content_image_9 .v-src-max-width {
+      max-width: 25% !important;
+    }
+
+    #u_content_text_19 .v-container-padding-padding {
+      padding: 10px 10px 0px !important;
+    }
+
+    #u_content_text_19 .v-text-align {
+      text-align: left !important;
+    }
+
+    #u_content_text_20 .v-container-padding-padding {
+      padding: 5px 10px 30px !important;
+    }
+
+    #u_content_text_20 .v-text-align {
+      text-align: left !important;
+    }
+
+    #u_content_image_8 .v-container-padding-padding {
+      padding: 38px 10px 10px !important;
+    }
+
+    #u_content_image_8 .v-src-width {
+      width: auto !important;
+    }
+
+    #u_content_image_8 .v-src-max-width {
+      max-width: 36% !important;
+    }
+
+    #u_content_text_11 .v-container-padding-padding {
+      padding: 10px 10px 0px !important;
+    }
+
+    #u_content_text_11 .v-text-align {
+      text-align: left !important;
+    }
+
+    #u_content_text_16 .v-container-padding-padding {
+      padding: 5px 10px 30px !important;
+    }
+
+    #u_content_text_16 .v-text-align {
+      text-align: left !important;
+    }
+
+    #u_content_social_2 .v-container-padding-padding {
+      padding: 30px 10px 10px !important;
+    }
+
+    #u_content_text_deprecated_3 .v-container-padding-padding {
+      padding: 30px 10px !important;
+    }
+  }
+</style>
+{{end}}
+{{define "content"}}
+{{$book:= index .Data "bookingDetails"}}
+<table id="u_body"
+  style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto;background-color: transparent;width:100%"
+  cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr style="vertical-align: top">
+      <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+        <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background-color: transparent;"><![endif]-->
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="600" class="v-col-border" style="background-color: #01a9da;width: 600px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
+              <div class="u-col u-col-100"
+                style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
+                <div style="background-color: #01a9da;height: 100%;width: 100% !important;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_heading_1" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:60px 10px 10px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <!--[if mso]><table width="100%"><tr><td><![endif]-->
+                            <h1 class="v-color v-text-align v-line-height v-font-size"
+                              style="margin: 0px; color: #22255e; line-height: 140%; text-align: center; word-wrap: break-word; font-family: arial black,AvenirNext-Heavy,avant garde,arial; font-size: 40px; font-weight: 700;">
+                              <span><span><span><span><span><span>It's Time to Fly with SpiceEx! Your Flight is
+                                          Confirmed</span></span></span></span></span>🎉</span>
+                            </h1>
+                            <!--[if mso]></td></tr></table><![endif]-->
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_image_1" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:10px 10px 60px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td class="v-text-align" style="padding-right: 0px;padding-left: 0px;" align="center">
+
+                                  <img align="center" border="0" src="https://i.ibb.co/K2FGqtT/image-19.png"
+                                    alt="image-19" title="image"
+                                    style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 66%;max-width: 382.8px;"
+                                    width="382.8" class="v-src-width v-src-max-width" />
+
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table style="font-family:'Open Sans',sans-serif;" role="presentation" cellpadding="0"
+                      cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:0px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td class="v-text-align" style="padding-right: 0px;padding-left: 0px;" align="center">
+
+                                  <img align="center" border="0" src="https://i.ibb.co/sRT442j/image-20.png" alt="image"
+                                    title="image"
+                                    style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 600px;"
+                                    width="600" class="v-src-width v-src-max-width" />
+
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="600" class="v-col-border" style="background-color: #ffffff;width: 600px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-100"
+                style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_26" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 23px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <div><span style="color: #615959; line-height: 19.6px;">{{$book.Flying_From}} to Kolkata –
+                                  6E
+                                  676</span></div>
+                              <div><span style="color: #615959; line-height: 19.6px;">8 Dec, 18:30–21:00</span></div>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="300" class="v-col-border" style="background-color: #ffffff;width: 300px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-50"
+                style="max-width: 320px;min-width: 300px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_29" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 16px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;">🛫 <span
+                                  style="color: #615959; line-height: 19.6px;">Take-off</span></p>
+                              <p style="line-height: 140%;"><span style="color: #615959; line-height: 19.6px;">      8
+                                  Dec, 18:30</span></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]><td align="center" width="300" class="v-col-border" style="background-color: #ffffff;width: 300px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-50"
+                style="max-width: 320px;min-width: 300px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_28" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 16px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><span style="color: #615959; line-height: 19.6px;">👩‍✈️
+                                  Passenger name</span></p>
+                              <p style="line-height: 140%;"><span style="color: #615959; line-height: 19.6px;">     
+                                  Mr. {{$book.Full_Name}}</span></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="300" class="v-col-border" style="background-color: #ffffff;width: 300px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-50"
+                style="max-width: 320px;min-width: 300px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_27" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 16px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;">🛬 <span
+                                  style="color: #615959; line-height: 19.6px;">Landing  </span></p>
+                              <p style="line-height: 140%;"><span style="color: #615959; line-height: 19.6px;">      8
+                                  Dec, 21:00</span></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]><td align="center" width="300" class="v-col-border" style="background-color: #ffffff;width: 300px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-50"
+                style="max-width: 320px;min-width: 300px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_30" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 16px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><span style="color: #615959; line-height: 19.6px;">     
+                                  Seat</span></p>
+                              <p style="line-height: 140%;"><span style="color: #615959; line-height: 19.6px;">     
+                                  --</span></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="300" class="v-col-border" style="background-color: #ffffff;width: 300px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-50"
+                style="max-width: 320px;min-width: 300px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_31" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 16px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;">🕓 <span style="color: #615959; line-height: 19.6px;"><span
+                                    style="line-height: 19.6px;">Flight duration</span></span></p>
+                              <p style="line-height: 140%;"><span style="color: #615959; line-height: 19.6px;">     
+                                  <span style="line-height: 19.6px;">2 hrs, 30 mins</span></span></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]><td align="center" width="300" class="v-col-border" style="background-color: #ffffff;width: 300px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-50"
+                style="max-width: 320px;min-width: 300px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_32" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 16px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><span style="color: #615959; line-height: 19.6px;"><span
+                                    style="line-height: 19.6px;">🎟️ Confirmation number</span></span></p>
+                              <p style="line-height: 140%;"><span style="color: #615959; line-height: 19.6px;">      
+                                  ANBYKY</span></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="600" class="v-col-border" style="background-color: #ffffff;width: 600px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-100"
+                style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_image_7" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:21px 10px 18px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td class="v-text-align" style="padding-right: 0px;padding-left: 0px;" align="center">
+
+                                  <img align="center" border="0" src="https://i.ibb.co/MPdWT2Q/image-10.png" alt="image"
+                                    title="image"
+                                    style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 80%;max-width: 464px;"
+                                    width="464" class="v-src-width v-src-max-width" />
+
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="200" class="v-col-border" style="background-color: #ffffff;width: 200px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div id="u_column_3" class="u-col u-col-33p33"
+                style="max-width: 320px;min-width: 200px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_image_4" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:0px 10px 0px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td class="v-text-align" style="padding-right: 0px;padding-left: 0px;" align="left">
+
+                                  <img align="left" border="0" src="https://i.ibb.co/FqJBkWw/image-3.png" alt="image"
+                                    title="image"
+                                    style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 25%;max-width: 42.5px;"
+                                    width="42.5" class="v-src-width v-src-max-width" />
+
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_text_17" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:10px 10px 0px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 16px; color: #22255e; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;">Departure</p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_heading_3" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:0px 10px 0px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <!--[if mso]><table width="100%"><tr><td><![endif]-->
+                            <h1 class="v-color v-text-align v-line-height v-font-size"
+                              style="margin: 0px; color: #22255e; line-height: 100%; text-align: left; word-wrap: break-word; font-size: 40px; font-weight: 400;">
+                              <strong>UK</strong>
+                            </h1>
+                            <!--[if mso]></td></tr></table><![endif]-->
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_text_9" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 10px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 16px; color: #22255e; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;">Tue, 20 Feb 2023</p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]><td align="center" width="200" class="v-col-border" style="background-color: #ffffff;width: 200px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div id="u_column_4" class="u-col u-col-33p33"
+                style="max-width: 320px;min-width: 200px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_image_5" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:37px 10px 10px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td class="v-text-align" style="padding-right: 0px;padding-left: 0px;" align="center">
+
+                                  <img align="center" border="0" src="https://i.ibb.co/TW5tKrw/image-2.png" alt="image"
+                                    title="image"
+                                    style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 20%;max-width: 36px;"
+                                    width="36" class="v-src-width v-src-max-width" />
+
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]><td align="center" width="200" class="v-col-border" style="background-color: #ffffff;width: 200px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div id="u_column_5" class="u-col u-col-33p33"
+                style="max-width: 320px;min-width: 200px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_image_6" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:0px 20px 0px 10px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td class="v-text-align" style="padding-right: 0px;padding-left: 0px;" align="right">
+
+                                  <img align="right" border="0" src="https://i.ibb.co/12Yr7LX/image-1.png" alt="image"
+                                    title="image"
+                                    style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 22%;max-width: 37.4px;"
+                                    width="37.4" class="v-src-width v-src-max-width" />
+
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_text_3" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:10px 20px 0px 10px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 16px; color: #22255e; line-height: 140%; text-align: right; word-wrap: break-word;">
+                              <p style="line-height: 140%;">Arrival</p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_heading_5" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:0px 20px 0px 10px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <!--[if mso]><table width="100%"><tr><td><![endif]-->
+                            <h1 class="v-color v-text-align v-line-height v-font-size"
+                              style="margin: 0px; color: #22255e; line-height: 100%; text-align: right; word-wrap: break-word; font-size: 40px; font-weight: 400;">
+                              <span><strong>AUS</strong></span>
+                            </h1>
+                            <!--[if mso]></td></tr></table><![endif]-->
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_text_10" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 20px 30px 10px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 16px; color: #22255e; line-height: 140%; text-align: right; word-wrap: break-word;">
+                              <p style="line-height: 140%;">Tue, 20 Feb 2023</p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="600" class="v-col-border" style="background-color: #ffffff;width: 600px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-100"
+                style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table style="font-family:'Open Sans',sans-serif;" role="presentation" cellpadding="0"
+                      cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:0px 10px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td class="v-text-align" style="padding-right: 0px;padding-left: 0px;" align="center">
+
+                                  <img align="center" border="0" src="https://i.ibb.co/PMCBxFn/image-15.jpg" alt=""
+                                    title=""
+                                    style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 580px;"
+                                    width="580" class="v-src-width v-src-max-width" />
+
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_heading_7" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <!--[if mso]><table width="100%"><tr><td><![endif]-->
+                            <h1 class="v-color v-text-align v-line-height v-font-size"
+                              style="margin: 0px; color: #22255e; line-height: 140%; text-align: center; word-wrap: break-word; font-family: 'Open Sans',sans-serif; font-size: 22px; font-weight: 400;">
+                              <span><span><strong>Your Trip Details</strong></span></span>
+                            </h1>
+                            <!--[if mso]></td></tr></table><![endif]-->
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table style="font-family:'Open Sans',sans-serif;" role="presentation" cellpadding="0"
+                      cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:0px 10px 2px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <table height="0px" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
+                              style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;border-top: 9px solid #9dc1e9;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                              <tbody>
+                                <tr style="vertical-align: top">
+                                  <td
+                                    style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                                    <span>&#160;</span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_divider_2" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:10px 0px 0px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <table height="0px" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
+                              style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;border-top: 1px solid #BBBBBB;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                              <tbody>
+                                <tr style="vertical-align: top">
+                                  <td
+                                    style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                                    <span>&#160;</span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="200" class="v-col-border" style="background-color: #eaecec;width: 200px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-33p33"
+                style="max-width: 320px;min-width: 200px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #eaecec;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_23" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 11px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><span
+                                  style="color: #615959; line-height: 19.6px;">Status</span></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]><td align="center" width="200" class="v-col-border" style="background-color: #eaecec;width: 200px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-33p33"
+                style="max-width: 320px;min-width: 200px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #eaecec;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_25" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 11px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><span style="color: #615959; line-height: 19.6px;">Date of
+                                  Booking*</span></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]><td align="center" width="200" class="v-col-border" style="background-color: #eaecec;width: 200px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-33p33"
+                style="max-width: 320px;min-width: 200px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #eaecec;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_33" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 11px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><span style="color: #615959; line-height: 19.6px;">Payment
+                                  Status</span></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="198" class="v-col-border" style="background-color: #ffffff;width: 198px;padding: 0px;border-top: 0px solid transparent;border-left: 1px solid #CCC;border-right: 1px solid #CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-33p33"
+                style="max-width: 320px;min-width: 200px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 1px solid #CCC;border-right: 1px solid #CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_34" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:8px 10px 16px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><strong>CONFIRMED</strong></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]><td align="center" width="199" class="v-col-border" style="background-color: #ffffff;width: 199px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 1px solid #CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-33p33"
+                style="max-width: 320px;min-width: 200px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 1px solid #CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_35" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:8px 10px 16px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><strong>27Nov23 03:16:07 (UTC)</strong></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]><td align="center" width="199" class="v-col-border" style="background-color: #ffffff;width: 199px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 1px solid #CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-33p33"
+                style="max-width: 320px;min-width: 200px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 1px solid #CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_36" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:8px 10px 16px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><strong>Approved</strong></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="598" class="v-col-border" style="background-color: #ffffff;width: 598px;padding: 0px;border-top: 0px solid transparent;border-left: 1px solid #CCC;border-right: 1px solid #CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-100"
+                style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 1px solid #CCC;border-right: 1px solid #CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_37" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:3px 10px 16px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 10px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <div>*Booking Date reflects in UTC (Universal Time Coordinated), all other timings
+                                mentioned are as per Local Time.</div>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="600" class="v-col-border" style="background-color: #eaecec;width: 600px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-100"
+                style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #eaecec;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_41" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:9px 10px 16px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 12px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><em><strong>SpiceEx Flight(s)</strong></em></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="300" class="v-col-border" style="background-color: #ffffff;width: 300px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-50"
+                style="max-width: 320px;min-width: 300px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_image_3" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:26px 5px 27px 0px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td class="v-text-align" style="padding-right: 0px;padding-left: 0px;" align="center">
+
+                                  <img align="center" border="0" src="https://i.ibb.co/ggsDg2B/image-4.png" alt="image"
+                                    title="image"
+                                    style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 68%;max-width: 200.6px;"
+                                    width="200.6" class="v-src-width v-src-max-width" />
+
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]><td align="center" width="300" class="v-col-border" style="background-color: #ffffff;width: 300px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-50"
+                style="max-width: 320px;min-width: 300px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_43" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:30px 10px 0px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 16px; color: #4e4e4e; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><span style="color: #615959; line-height: 22.4px;">Mr.
+                                  Bishal Das</span></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="150" class="v-col-border" style="background-color: #eaecec;width: 150px;padding: 0px;border-top: 1px solid #CCC;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-25"
+                style="max-width: 320px;min-width: 150px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #eaecec;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 1px solid #CCC;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_44" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 11px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><strong><span
+                                    style="color: #615959; line-height: 19.6px;">From (Terminal)</span></strong></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]><td align="center" width="150" class="v-col-border" style="background-color: #eaecec;width: 150px;padding: 0px;border-top: 1px solid #CCC;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-25"
+                style="max-width: 320px;min-width: 150px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #eaecec;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 1px solid #CCC;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_45" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 11px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><strong><span
+                                    style="color: #615959; line-height: 19.6px;">Departs</span></strong></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]><td align="center" width="150" class="v-col-border" style="background-color: #eaecec;width: 150px;padding: 0px;border-top: 1px solid #CCC;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-25"
+                style="max-width: 320px;min-width: 150px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #eaecec;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 1px solid #CCC;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_46" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 11px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><span
+                                  style="color: #615959; line-height: 19.6px;"><strong>Arrives</strong></span></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]><td align="center" width="150" class="v-col-border" style="background-color: #eaecec;width: 150px;padding: 0px;border-top: 1px solid #CCC;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-25"
+                style="max-width: 320px;min-width: 150px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #eaecec;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 1px solid #CCC;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_47" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 11px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><span
+                                  style="color: #615959; line-height: 19.6px;"><strong>To</strong>
+                                  <strong>(Terminal)</strong></span></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="148" class="v-col-border" style="background-color: #ffffff;width: 148px;padding: 0px;border-top: 0px solid transparent;border-left: 1px solid #CCC;border-right: 1px solid #CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-25"
+                style="max-width: 320px;min-width: 150px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 1px solid #CCC;border-right: 1px solid #CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_48" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 11px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><span style="color: #000000; line-height: 19.6px;">Bengaluru
+                                  (T1)</span></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]><td align="center" width="149" class="v-col-border" style="background-color: #ffffff;width: 149px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 1px solid #CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-25"
+                style="max-width: 320px;min-width: 150px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 1px solid #CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_49" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 11px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><span
+                                  style="color: #000000; line-height: 19.6px;">18:30</span></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]><td align="center" width="149" class="v-col-border" style="background-color: #ffffff;width: 149px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 1px solid #CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-25"
+                style="max-width: 320px;min-width: 150px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 1px solid #CCC;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_50" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 11px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><span
+                                  style="color: #000000; line-height: 19.6px;">21:00</span></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]><td align="center" width="150" class="v-col-border" style="background-color: #ffffff;width: 150px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-25"
+                style="max-width: 320px;min-width: 150px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 1px solid #CCC;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_51" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 11px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;">Kolkata (T2)</p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="600" class="v-col-border" style="background-color: #ffffff;width: 600px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-100"
+                style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table style="font-family:'Open Sans',sans-serif;" role="presentation" cellpadding="0"
+                      cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:0px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td class="v-text-align" style="padding-right: 0px;padding-left: 0px;" align="center">
+
+                                  <img align="center" border="0" src="https://i.ibb.co/HYQ8xN7/image-16.jpg" alt=""
+                                    title=""
+                                    style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 600px;"
+                                    width="600" class="v-src-width v-src-max-width" />
+
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="600" class="v-col-border" style="background-color: #ffffff;width: 600px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-100"
+                style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table style="font-family:'Open Sans',sans-serif;" role="presentation" cellpadding="0"
+                      cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:3px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td class="v-text-align" style="padding-right: 0px;padding-left: 0px;" align="center">
+
+                                  <img align="center" border="0" src="https://i.ibb.co/dpn16Pj/image-13.jpg" alt=""
+                                    title=""
+                                    style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 594px;"
+                                    width="594" class="v-src-width v-src-max-width" />
+
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table style="font-family:'Open Sans',sans-serif;" role="presentation" cellpadding="0"
+                      cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:2px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td class="v-text-align" style="padding-right: 0px;padding-left: 0px;" align="center">
+
+                                  <img align="center" border="0" src="https://i.ibb.co/8gHZ3Kw/image-14.jpg" alt=""
+                                    title=""
+                                    style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 596px;"
+                                    width="596" class="v-src-width v-src-max-width" />
+
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_text_54" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:9px 10px 16px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 13px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><span style="line-height: 18.2px;"><strong>Travel and
+                                    Baggage Information</strong></span></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_text_55" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:9px 10px 16px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 13px; color: #0a0a0a; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;">•  Airport counters close <strong>60
+                                  minutes</strong> prior to the scheduled departure time.<br />•  Boarding gates
+                                close <strong>25 minutes</strong> prior to the scheduled departure
+                                time.<br />•  <strong> Check-in Baggage: </strong>25 kg per person (Only 1 bag
+                                allowed). Excess baggage/additional piece is subject to applicable
+                                charges.<br />•  <strong> Hand Baggage: </strong>One hand bag up to 7 kgs and 115 cms
+                                (L+W+H), shall be allowed per customer. For contactless travel we recommend to place
+                                it under the seat in front, on board.<br />•  All passengers must present valid photo
+                                identification in original at the time of check-in.<br />•  <strong> For Cards issued
+                                  outside India: </strong>All our customers using cards issued outside India will be
+                                unable to perform web check-in, as card verification is necessary. Customers
+                                travelling on such bookings must present either a hard or soft copy of their signed
+                                card for verification at the time of check-in at the airport. If the transaction
+                                remains un-verified, the amount will be refunded, and you can complete the same
+                                booking using an alternate mode of payment. Please note that failing which, your
+                                booking will be cancelled and the amount will be forfeited. We strongly recommend you
+                                to check your registered email ID for all the notifications regarding your
+                                booking.<br />•  <strong>Carry a printed or soft copy of boarding pass and baggage
+                                  tag</strong>, you can print them at the airport kiosk as well. Please note only
+                                certain airports are equipped with kiosks which print baggage tags, hence it is
+                                advised that you mention your name and PNR on a thick paper and tag it to your baggage
+                                before reaching the airport.<br />•  <strong>Remember to wear your mask, carrying a
+                                  sanitiser is recommended</strong>.</p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_heading_2" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:28px 10px 0px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <!--[if mso]><table width="100%"><tr><td><![endif]-->
+                            <h1 class="v-color v-text-align v-line-height v-font-size"
+                              style="margin: 0px; color: #22255e; line-height: 140%; text-align: center; word-wrap: break-word; font-family: 'Open Sans',sans-serif; font-size: 22px; font-weight: 400;">
+                              <span><span><span><span><span><span><span><span><strong>Paid with Visa **** ****
+                                                65768</strong></span></span></span></span></span></span></span></span>
+                            </h1>
+                            <!--[if mso]></td></tr></table><![endif]-->
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_text_15" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:31px 60px 10px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #34495e; line-height: 140%; text-align: center; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><strong>Fare Summary</strong></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table style="font-family:'Open Sans',sans-serif;" role="presentation" cellpadding="0"
+                      cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:0px 0px 10px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <table height="0px" align="center" border="0" cellpadding="0" cellspacing="0" width="100%"
+                              style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;border-top: 1px solid #BBBBBB;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                              <tbody>
+                                <tr style="vertical-align: top">
+                                  <td
+                                    style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                                    <span>&#160;</span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="600" class="v-col-border" style="width: 600px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-100"
+                style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
+                <div
+                  style="height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <!--[if gte mso 9]>
+      <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;min-width: 320px;max-width: 600px;">
+        <tr>
+          <td background="https://cdn.templates.unlayer.com/assets/1675427330767-new2.png" valign="top" width="100%">
+      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width: 600px;">
+        <v:fill type="frame" src="https://cdn.templates.unlayer.com/assets/1675427330767-new2.png" /><v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+      <![endif]-->
+
+        <div id="u_row_12" class="u-row-container v-row-background-image--outer"
+          style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-image: url('https://i.ibb.co/VTCzFtd/image-21.png');background-repeat: no-repeat;background-position: center top;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-image: url('images/image-21.png');background-repeat: no-repeat;background-position: center top;background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="600" class="v-col-border" style="width: 600px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-100"
+                style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
+                <div
+                  style="height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_heading_6" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:115px 300px 0px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <!--[if mso]><table width="100%"><tr><td><![endif]-->
+                            <h1 class="v-color v-text-align v-line-height v-font-size"
+                              style="margin: 0px; color: #22255e; line-height: 120%; text-align: left; word-wrap: break-word; font-size: 40px; font-weight: 400;">
+                              <span><strong>GET READY TO FLY</strong></span>
+                            </h1>
+                            <!--[if mso]></td></tr></table><![endif]-->
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_divider_6" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:10px 10px 10px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <table height="0px" align="left" border="0" cellpadding="0" cellspacing="0" width="22%"
+                              style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;border-top: 4px solid #22255e;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                              <tbody>
+                                <tr style="vertical-align: top">
+                                  <td
+                                    style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                                    <span>&#160;</span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_button_1" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:10px 10px 100px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <!--[if mso]><style>.v-button {background: transparent !important;}</style><![endif]-->
+                            <div class="v-text-align" align="left">
+                              <!--[if mso]><table border="0" cellspacing="0" cellpadding="0"><tr><td align="center" bgcolor="#01a9da" style="padding:10px 20px;" valign="top"><![endif]-->
+                              <a href="https://www.unlayer.com" target="_blank"
+                                class="v-button v-size-width v-font-size"
+                                style="box-sizing: border-box;display: inline-block;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #ffffff; background-color: #01a9da; border-radius: 4px;-webkit-border-radius: 4px; -moz-border-radius: 4px; width:28%; max-width:100%; overflow-wrap: break-word; word-break: break-word; word-wrap:break-word; mso-border-alt: none;font-size: 14px;">
+                                <span class="v-line-height"
+                                  style="display:block;padding:10px 20px;line-height:120%;"><span
+                                    style="line-height: 16.8px;">Learn More</span></span>
+                              </a>
+                              <!--[if mso]></td></tr></table><![endif]-->
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_button_2" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:20px 10px 60px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <!--[if mso]><style>.v-button {background: transparent !important;}</style><![endif]-->
+                            <div class="v-text-align" align="center">
+                              <!--[if mso]><table border="0" cellspacing="0" cellpadding="0"><tr><td align="center" bgcolor="#01a9da" style="padding:10px 20px;" valign="top"><![endif]-->
+                              <a href="https://www.unlayer.com" target="_blank"
+                                class="v-button v-size-width v-font-size"
+                                style="box-sizing: border-box;display: inline-block;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #ffffff; background-color: #01a9da; border-radius: 4px;-webkit-border-radius: 4px; -moz-border-radius: 4px; width:35%; max-width:100%; overflow-wrap: break-word; word-break: break-word; word-wrap:break-word; mso-border-alt: none;font-size: 14px;">
+                                <span class="v-line-height"
+                                  style="display:block;padding:10px 20px;line-height:120%;"><span
+                                    style="line-height: 16.8px;">Download pdf</span></span>
+                              </a>
+                              <!--[if mso]></td></tr></table><![endif]-->
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+        <!--[if gte mso 9]>
+      </v:textbox></v:rect>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row no-stack"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="300" class="v-col-border" style="background-color: #ffffff;width: 300px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-50"
+                style="max-width: 320px;min-width: 300px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_image_9" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:60px 10px 10px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td class="v-text-align" style="padding-right: 0px;padding-left: 0px;" align="left">
+
+                                  <img align="left" border="0" src="https://i.ibb.co/ypx8QK7/image-12.png" alt="image"
+                                    title="image"
+                                    style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 18%;max-width: 48.6px;"
+                                    width="48.6" class="v-src-width v-src-max-width" />
+
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_text_19" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:10px 10px 0px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 16px; color: #22255e; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><strong>Check Password</strong></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_text_20" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 30px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #34495e; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;">Lorem ipsum dolor sit amet, consec tetuer adip iscing
+                                elit, sed diam nonu mmy nibh euismod.</p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]><td align="center" width="300" class="v-col-border" style="background-color: #ffffff;width: 300px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-50"
+                style="max-width: 320px;min-width: 300px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #ffffff;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_image_8" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:61px 10px 10px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td class="v-text-align" style="padding-right: 0px;padding-left: 0px;" align="left">
+
+                                  <img align="left" border="0" src="https://i.ibb.co/qpWdKyK/image-11.png" alt="image"
+                                    title="image"
+                                    style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 31%;max-width: 83.7px;"
+                                    width="83.7" class="v-src-width v-src-max-width" />
+
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_text_11" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:10px 10px 0px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 16px; color: #22255e; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;"><strong>Arrive on time</strong></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table id="u_content_text_16" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:5px 10px 30px 20px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #34495e; line-height: 140%; text-align: left; word-wrap: break-word;">
+                              <p style="line-height: 140%;">Lorem ipsum dolor sit amet, consec tetuer adip iscing
+                                elit, sed diam nonu mmy nibh euismod.</p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="600" class="v-col-border" style="background-color: #01a9da;width: 600px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-100"
+                style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
+                <div
+                  style="background-color: #01a9da;height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_social_2" style="font-family:'Open Sans',sans-serif;" role="presentation"
+                      cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:40px 10px 10px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div align="center">
+                              <div style="display: table; max-width:281px;">
+                                <!--[if (mso)|(IE)]><table width="281" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-collapse:collapse;" align="center"><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; mso-table-lspace: 0pt;mso-table-rspace: 0pt; width:281px;"><tr><![endif]-->
+
+
+                                <!--[if (mso)|(IE)]><td width="32" style="width:32px; padding-right: 15px;" valign="top"><![endif]-->
+                                <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32"
+                                  style="width: 32px !important;height: 32px !important;display: inline-block;border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;margin-right: 15px">
+                                  <tbody>
+                                    <tr style="vertical-align: top">
+                                      <td align="left" valign="middle"
+                                        style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+                                        <a href="#" title="Facebook" target="_blank">
+                                          <img src="https://i.ibb.co/XxgQkdC/image-5.png" alt="Facebook"
+                                            title="Facebook" width="32"
+                                            style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <!--[if (mso)|(IE)]></td><![endif]-->
+
+                                <!--[if (mso)|(IE)]><td width="32" style="width:32px; padding-right: 15px;" valign="top"><![endif]-->
+                                <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32"
+                                  style="width: 32px !important;height: 32px !important;display: inline-block;border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;margin-right: 15px">
+                                  <tbody>
+                                    <tr style="vertical-align: top">
+                                      <td align="left" valign="middle"
+                                        style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+                                        <a href="#" title="Twitter" target="_blank">
+                                          <img src="https://i.ibb.co/vZ55Bvj/image-6.png" alt="Twitter" title="Twitter"
+                                            width="32"
+                                            style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <!--[if (mso)|(IE)]></td><![endif]-->
+
+                                <!--[if (mso)|(IE)]><td width="32" style="width:32px; padding-right: 15px;" valign="top"><![endif]-->
+                                <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32"
+                                  style="width: 32px !important;height: 32px !important;display: inline-block;border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;margin-right: 15px">
+                                  <tbody>
+                                    <tr style="vertical-align: top">
+                                      <td align="left" valign="middle"
+                                        style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+                                        <a href="https://www.linkedin.com/company/unlayer/mycompany/" title="LinkedIn"
+                                          target="_blank">
+                                          <img src="https://i.ibb.co/jH3kH8F/image-7.png" alt="LinkedIn"
+                                            title="LinkedIn" width="32"
+                                            style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <!--[if (mso)|(IE)]></td><![endif]-->
+
+                                <!--[if (mso)|(IE)]><td width="32" style="width:32px; padding-right: 15px;" valign="top"><![endif]-->
+                                <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32"
+                                  style="width: 32px !important;height: 32px !important;display: inline-block;border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;margin-right: 15px">
+                                  <tbody>
+                                    <tr style="vertical-align: top">
+                                      <td align="left" valign="middle"
+                                        style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
+                                        <a href="https://www.instagram.com/unlayer_official/" title="Instagram"
+                                          target="_blank">
+                                          <img src="https://i.ibb.co/Yt8bW6q/image-8.png" alt="Instagram"
+                                            title="Instagram" width="32"
+                                            style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <!--[if (mso)|(IE)]></td><![endif]-->
+
+                                <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+                              </div>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table style="font-family:'Open Sans',sans-serif;" role="presentation" cellpadding="0"
+                      cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:10px 10px 30px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #ffffff; line-height: 140%; text-align: center; word-wrap: break-word;">
+                              <p style="font-size: 14px; line-height: 140%;">email@website.com </p>
+                              <p style="font-size: 14px; line-height: 140%;">+12 458 4658</p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="u-row-container v-row-background-image--outer" style="padding: 0px;background-color: transparent">
+          <div class="u-row"
+            style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: transparent;">
+            <div class="v-row-background-image--inner"
+              style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
+              <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="v-row-background-image--outer" style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr class="v-row-background-image--inner" style="background-color: transparent;"><![endif]-->
+
+              <!--[if (mso)|(IE)]><td align="center" width="600" class="v-col-border" style="width: 600px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;" valign="top"><![endif]-->
+              <div class="u-col u-col-100"
+                style="max-width: 320px;min-width: 600px;display: table-cell;vertical-align: top;">
+                <div
+                  style="height: 100%;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                  <!--[if (!mso)&(!IE)]><!-->
+                  <div class="v-col-border"
+                    style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
+                    <!--<![endif]-->
+
+                    <table id="u_content_text_deprecated_3" style="font-family:'Open Sans',sans-serif;"
+                      role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+                      <tbody>
+                        <tr>
+                          <td class="v-container-padding-padding"
+                            style="overflow-wrap:break-word;word-break:break-word;padding:30px 60px;font-family:'Open Sans',sans-serif;"
+                            align="left">
+
+                            <div class="v-color v-text-align v-line-height v-font-size"
+                              style="font-size: 14px; color: #ffffff; line-height: 140%; text-align: center; word-wrap: break-word;">
+                              <p style="font-size: 14px; line-height: 140%;"><span
+                                  style="text-decoration: underline; font-size: 14px; line-height: 19.6px;">Lorem
+                                  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                  ut labore et dolore.</span></p>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!--[if (!mso)&(!IE)]><!-->
+                  </div><!--<![endif]-->
+                </div>
+              </div>
+              <!--[if (mso)|(IE)]></td><![endif]-->
+              <!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]-->
+            </div>
+          </div>
+        </div>
+
+
+
+        <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+{{end}}

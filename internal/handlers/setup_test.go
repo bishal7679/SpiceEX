@@ -13,6 +13,7 @@ import (
 
 	"github.com/alexedwards/scs/v2"
 	"github.com/bishal7679/SpiceEx/internal/config"
+	"github.com/bishal7679/SpiceEx/internal/driver"
 	"github.com/bishal7679/SpiceEx/internal/models"
 	"github.com/bishal7679/SpiceEx/internal/render"
 	"github.com/go-chi/chi"
@@ -42,6 +43,13 @@ func getRoutes() http.Handler {
 	session.Cookie.Secure = app.InProduction
 
 	app.Session = session
+
+	log.Println("Connecting to database")
+	db, err := driver.ConnectSQL("host=localhost port=5432 dbname=bookings user=postgres password=")
+	if err != nil {
+		log.Fatal("cannot connect to the database! Dying...")
+	}
+	log.Println("Connected to database!")
 	tc, err := render.CreateTemplateCache()
 	if err != nil {
 		log.Fatal("cannot create template cache")

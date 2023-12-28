@@ -11,6 +11,7 @@ import (
 	"github.com/alexedwards/scs/v2"
 	"github.com/bishal7679/SpiceEx/internal/config"
 	"github.com/bishal7679/SpiceEx/internal/driver"
+	"github.com/bishal7679/SpiceEx/internal/email"
 	handler "github.com/bishal7679/SpiceEx/internal/handlers"
 	"github.com/bishal7679/SpiceEx/internal/helpers"
 	"github.com/bishal7679/SpiceEx/internal/models"
@@ -32,7 +33,7 @@ func main() {
 
 	defer close(app.MailChan)
 	fmt.Println("starting mail listening...")
-	listenForMail()
+	email.ListenForMail()
 
 	fmt.Println(fmt.Sprintf("Starting application on port : %s", PortNumber))
 	// _ = http.ListenAndServe(PortNumber, nil)
@@ -92,6 +93,7 @@ func run() (*driver.DB, error) {
 
 	render.NewRenderer(&app)
 	helpers.NewHelpers(&app)
+	email.NewMail(&app)
 
 	return db, nil
 }

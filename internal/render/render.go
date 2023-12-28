@@ -97,3 +97,29 @@ func CreateTemplateCache() (map[string]*template.Template, error) {
 	}
 	return myCache, nil
 }
+
+func EmailTemplate(w http.ResponseWriter, r *http.Request, tmpl string, td *models.TemplateData) (string,error) {
+	// get the template cache from the app config
+	var tc map[string]*template.Template
+	if app.UseCache {
+		tc = app.TemplateCache
+
+	} else {
+		tc, _ = CreateTemplateCache()
+	}
+
+	t, ok := tc[tmpl]
+	if !ok {
+		//log.Fatal("could not get the template from template cache")
+		log.Panic("can't get template from cache")
+	}
+
+	buf := new(bytes.Buffer)
+	td = AddDefaultData(td, r)
+	err := t.Execute(buf, td)
+	if err != nil {
+		log.Fatal(err)
+	}
+	return buf.String(),nil
+
+}

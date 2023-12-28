@@ -90,7 +90,6 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 	// Parse the form data, including the uploaded file
 	err := r.ParseMultipartForm(10 << 20) // 10MB maximum file size
 	if err != nil {
-		log.Println("error in 1")
 		helpers.ServerError(w, err)
 		return
 	}
@@ -185,6 +184,7 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 			Form: form,
 			Data: data,
 		})
+		
 		return
 
 	}
@@ -230,33 +230,44 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// send booking notifications!
-	htmlMessage := fmt.Sprintf(`
-				<h3>Booking Confirmed</h3>🎉<br>
-				<h4>%s to %s</h4> - 6S 676 <br>
-				%s, 18:30-21:00
-				🛫 <strong>Take-off</strong>
-				%s, 18:30
-				🛬 <strong>Landing</strong>
-				%s, 21:00
-				🕓 <strong>Flight duration</strong>
-				2 hrs, 30 mins
-				👩‍✈️ <strong>Passenger name</strong>
-				%s
-				Seat
-				-
-				🎟️ <strong>Confirmation number</strong>
-				ANBYKY <br>
-				<hr>
-				<p>Thank You for choosing SpiceEx</p>
-				<p>Have a safe Journey!</p>
+	// htmlMessage := fmt.Sprintf(`
+	// 			<h3>Booking Confirmed</h3>🎉<br>
+	// 			<h4>%s to %s</h4> - 6S 676 <br>
+	// 			%s, 18:30-21:00
+	// 			🛫 <strong>Take-off</strong>
+	// 			%s, 18:30
+	// 			🛬 <strong>Landing</strong>
+	// 			%s, 21:00
+	// 			🕓 <strong>Flight duration</strong>
+	// 			2 hrs, 30 mins
+	// 			👩‍✈️ <strong>Passenger name</strong>
+	// 			%s
+	// 			Seat
+	// 			-
+	// 			🎟️ <strong>Confirmation number</strong>
+	// 			ANBYKY <br>
+	// 			<hr>
+	// 			<p>Thank You for choosing SpiceEx</p>
+	// 			<p>Have a safe Journey!</p>
 
-	`,bookingDetails.Flying_From,bookingDetails.Flying_To,bookingDetails.Departing_Date,bookingDetails.Departing_Date,bookingDetails.Returning_Date,bookingDetails.Full_Name)
+	// `,bookingDetails.Flying_From,bookingDetails.Flying_To,bookingDetails.Departing_Date,bookingDetails.Departing_Date,bookingDetails.Returning_Date,bookingDetails.Full_Name)
 
+	data2 := make(map[string]interface{})
+	data2["bookingDetails"] = bookingDetails
+	temp, err := render.EmailTemplate(w, r, "email.page.html", &models.TemplateData{
+			Form: form,
+			Data: data2,
+		})
+	if err != nil {
+		fmt.Println(err)
+	}
+	// fmt.Println(temp)
 	msg := models.MailData{
 		To:      bookingDetails.Email,
 		From:    "bishalhnj127@gmail.com",
 		Subject: "Your SpiceEx Itinerary - ANBYKY",
-		Content: htmlMessage,
+		Content: temp,
+
 	}
 
 	m.App.MailChan <- msg
@@ -279,7 +290,7 @@ func (m *Repository) Thailand(w http.ResponseWriter, r *http.Request) {
 }
 
 func (m *Repository) Southkorea(w http.ResponseWriter, r *http.Request) {
-	render.Template(w, r, "southKorea.page.html", &models.TemplateData{})
+	render.Template(w, r, "email.page.html", &models.TemplateData{})
 }
 
 // Majors renders the room page
