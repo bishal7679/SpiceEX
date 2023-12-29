@@ -1,0 +1,4858 @@
+{
+  "AAL": {
+    "Code": "AAL",
+    "Lat": 57.09,
+    "Lon": 9.85,
+    "Name": "Aalborg",
+    "Country": "DK",
+    "Region": "DK-81"
+  },
+  "AAP": {
+    "Code": "AAP",
+    "Lat": -0.37,
+    "Lon": 117.25,
+    "Name": "Samarinda",
+    "Country": "ID",
+    "Region": "ID-KI"
+  },
+  "ABQ": {
+    "Code": "ABQ",
+    "Lat": 35.04,
+    "Lon": -106.61,
+    "Name": "Albuquerque",
+    "Country": "US",
+    "Region": "US-NM"
+  },
+  "ABV": {
+    "Code": "ABV",
+    "Lat": 9.01,
+    "Lon": 7.26,
+    "Name": "Abuja",
+    "Country": "NG",
+    "Region": "NG-FC"
+  },
+  "ABZ": {
+    "Code": "ABZ",
+    "Lat": 57.2,
+    "Lon": -2.2,
+    "Name": "Aberdeen",
+    "Country": "GB",
+    "Region": "GB-SCT"
+  },
+  "ACA": {
+    "Code": "ACA",
+    "Lat": 16.76,
+    "Lon": -99.75,
+    "Name": "Acapulco",
+    "Country": "MX",
+    "Region": "MX-GRO"
+  },
+  "ACC": {
+    "Code": "ACC",
+    "Lat": 5.61,
+    "Lon": -0.17,
+    "Name": "Accra",
+    "Country": "GH",
+    "Region": "GH-AA"
+  },
+  "ADA": {
+    "Code": "ADA",
+    "Lat": 36.98,
+    "Lon": 35.28,
+    "Name": "Adana",
+    "Country": "TR",
+    "Region": "TR-01"
+  },
+  "ADB": {
+    "Code": "ADB",
+    "Lat": 38.29,
+    "Lon": 27.16,
+    "Name": "İzmir",
+    "Country": "TR",
+    "Region": "TR-35"
+  },
+  "ADD": {
+    "Code": "ADD",
+    "Lat": 8.98,
+    "Lon": 38.8,
+    "Name": "Addis Ababa",
+    "Country": "ET",
+    "Region": "ET-AA"
+  },
+  "ADL": {
+    "Code": "ADL",
+    "Lat": -34.95,
+    "Lon": 138.53,
+    "Name": "Adelaide",
+    "Country": "AU",
+    "Region": "AU-SA"
+  },
+  "ADW": {
+    "Code": "ADW",
+    "Lat": 38.81,
+    "Lon": -76.87,
+    "Name": "Camp Springs",
+    "Country": "US",
+    "Region": "US-MD"
+  },
+  "AER": {
+    "Code": "AER",
+    "Lat": 43.45,
+    "Lon": 39.96,
+    "Name": "Sochi",
+    "Country": "RU",
+    "Region": "RU-KDA"
+  },
+  "AFW": {
+    "Code": "AFW",
+    "Lat": 32.99,
+    "Lon": -97.32,
+    "Name": "Fort Worth",
+    "Country": "US",
+    "Region": "US-TX"
+  },
+  "AGP": {
+    "Code": "AGP",
+    "Lat": 36.67,
+    "Lon": -4.5,
+    "Name": "Málaga",
+    "Country": "ES",
+    "Region": "ES-AN"
+  },
+  "AGS": {
+    "Code": "AGS",
+    "Lat": 33.37,
+    "Lon": -81.96,
+    "Name": "Augusta",
+    "Country": "US",
+    "Region": "US-GA"
+  },
+  "AKL": {
+    "Code": "AKL",
+    "Lat": -37.01,
+    "Lon": 174.79,
+    "Name": "Auckland",
+    "Country": "NZ",
+    "Region": "NZ-AUK"
+  },
+  "AKT": {
+    "Code": "AKT",
+    "Lat": 34.59,
+    "Lon": 32.99,
+    "Name": "Akrotiri",
+    "Country": "GB",
+    "Region": "GB-U-A"
+  },
+  "ALA": {
+    "Code": "ALA",
+    "Lat": 43.35,
+    "Lon": 77.04,
+    "Name": "Almaty",
+    "Country": "KZ",
+    "Region": "KZ-ALM"
+  },
+  "ALC": {
+    "Code": "ALC",
+    "Lat": 38.28,
+    "Lon": -0.56,
+    "Name": "Alicante",
+    "Country": "ES",
+    "Region": "ES-V"
+  },
+  "ALG": {
+    "Code": "ALG",
+    "Lat": 36.69,
+    "Lon": 3.22,
+    "Name": "Algiers",
+    "Country": "DZ",
+    "Region": "DZ-35"
+  },
+  "ALP": {
+    "Code": "ALP",
+    "Lat": 36.18,
+    "Lon": 37.22,
+    "Name": "Aleppo",
+    "Country": "SY",
+    "Region": "SY-HL"
+  },
+  "AMA": {
+    "Code": "AMA",
+    "Lat": 35.22,
+    "Lon": -101.71,
+    "Name": "Amarillo",
+    "Country": "US",
+    "Region": "US-TX"
+  },
+  "AMM": {
+    "Code": "AMM",
+    "Lat": 31.72,
+    "Lon": 35.99,
+    "Name": "Amman",
+    "Country": "JO",
+    "Region": "JO-AM"
+  },
+  "AMS": {
+    "Code": "AMS",
+    "Lat": 52.31,
+    "Lon": 4.76,
+    "Name": "Amsterdam",
+    "Country": "NL",
+    "Region": "NL-NH"
+  },
+  "ANC": {
+    "Code": "ANC",
+    "Lat": 61.17,
+    "Lon": -150,
+    "Name": "Anchorage",
+    "Country": "US",
+    "Region": "US-AK"
+  },
+  "ARN": {
+    "Code": "ARN",
+    "Lat": 59.65,
+    "Lon": 17.92,
+    "Name": "Stockholm",
+    "Country": "SE",
+    "Region": "SE-AB"
+  },
+  "ASB": {
+    "Code": "ASB",
+    "Lat": 37.99,
+    "Lon": 58.36,
+    "Name": "Ashgabat",
+    "Country": "TM",
+    "Region": "TM-A"
+  },
+  "ATH": {
+    "Code": "ATH",
+    "Lat": 37.94,
+    "Lon": 23.94,
+    "Name": "Athens",
+    "Country": "GR",
+    "Region": "GR-A1"
+  },
+  "ATL": {
+    "Code": "ATL",
+    "Lat": 33.64,
+    "Lon": -84.43,
+    "Name": "Atlanta",
+    "Country": "US",
+    "Region": "US-GA"
+  },
+  "ATQ": {
+    "Code": "ATQ",
+    "Lat": 31.71,
+    "Lon": 74.8,
+    "Name": "Amritsar",
+    "Country": "IN",
+    "Region": "IN-PB"
+  },
+  "AUH": {
+    "Code": "AUH",
+    "Lat": 24.43,
+    "Lon": 54.65,
+    "Name": "Abu Dhabi",
+    "Country": "AE",
+    "Region": "AE-AZ"
+  },
+  "AUS": {
+    "Code": "AUS",
+    "Lat": 30.19,
+    "Lon": -97.67,
+    "Name": "Austin",
+    "Country": "US",
+    "Region": "US-TX"
+  },
+  "AVL": {
+    "Code": "AVL",
+    "Lat": 35.44,
+    "Lon": -82.54,
+    "Name": "Asheville",
+    "Country": "US",
+    "Region": "US-NC"
+  },
+  "AYT": {
+    "Code": "AYT",
+    "Lat": 36.9,
+    "Lon": 30.8,
+    "Name": "Antalya",
+    "Country": "TR",
+    "Region": "TR-07"
+  },
+  "BAB": {
+    "Code": "BAB",
+    "Lat": 39.14,
+    "Lon": -121.44,
+    "Name": "Marysville",
+    "Country": "US",
+    "Region": "US-CA"
+  },
+  "BAD": {
+    "Code": "BAD",
+    "Lat": 32.5,
+    "Lon": -93.66,
+    "Name": "Bossier City",
+    "Country": "US",
+    "Region": "US-LA"
+  },
+  "BAH": {
+    "Code": "BAH",
+    "Lat": 26.27,
+    "Lon": 50.63,
+    "Name": "Manama",
+    "Country": "BH",
+    "Region": "BH-15"
+  },
+  "BCN": {
+    "Code": "BCN",
+    "Lat": 41.3,
+    "Lon": 2.08,
+    "Name": "Barcelona",
+    "Country": "ES",
+    "Region": "ES-CT"
+  },
+  "BDL": {
+    "Code": "BDL",
+    "Lat": 41.94,
+    "Lon": -72.68,
+    "Name": "Hartford",
+    "Country": "US",
+    "Region": "US-CT"
+  },
+  "BEG": {
+    "Code": "BEG",
+    "Lat": 44.82,
+    "Lon": 20.31,
+    "Name": "Belgrade",
+    "Country": "RS",
+    "Region": "RS-00"
+  },
+  "BEL": {
+    "Code": "BEL",
+    "Lat": -1.38,
+    "Lon": -48.48,
+    "Name": "Belém",
+    "Country": "BR",
+    "Region": "BR-PA"
+  },
+  "BEY": {
+    "Code": "BEY",
+    "Lat": 33.82,
+    "Lon": 35.49,
+    "Name": "Beirut",
+    "Country": "LB",
+    "Region": "LB-JL"
+  },
+  "BFI": {
+    "Code": "BFI",
+    "Lat": 47.53,
+    "Lon": -122.3,
+    "Name": "Seattle",
+    "Country": "US",
+    "Region": "US-WA"
+  },
+  "BFS": {
+    "Code": "BFS",
+    "Lat": 54.66,
+    "Lon": -6.22,
+    "Name": "Belfast",
+    "Country": "GB",
+    "Region": "GB-NIR"
+  },
+  "BGO": {
+    "Code": "BGO",
+    "Lat": 60.29,
+    "Lon": 5.22,
+    "Name": "Bergen",
+    "Country": "NO",
+    "Region": "NO-12"
+  },
+  "BGR": {
+    "Code": "BGR",
+    "Lat": 44.81,
+    "Lon": -68.83,
+    "Name": "Bangor",
+    "Country": "US",
+    "Region": "US-ME"
+  },
+  "BGW": {
+    "Code": "BGW",
+    "Lat": 33.26,
+    "Lon": 44.23,
+    "Name": "Baghdad",
+    "Country": "IQ",
+    "Region": "IQ-BG"
+  },
+  "BGY": {
+    "Code": "BGY",
+    "Lat": 45.67,
+    "Lon": 9.7,
+    "Name": "Bergamo",
+    "Country": "IT",
+    "Region": "IT-25"
+  },
+  "BHD": {
+    "Code": "BHD",
+    "Lat": 54.62,
+    "Lon": -5.87,
+    "Name": "Belfast",
+    "Country": "GB",
+    "Region": "GB-NIR"
+  },
+  "BHM": {
+    "Code": "BHM",
+    "Lat": 33.56,
+    "Lon": -86.75,
+    "Name": "Birmingham",
+    "Country": "US",
+    "Region": "US-AL"
+  },
+  "BHX": {
+    "Code": "BHX",
+    "Lat": 52.45,
+    "Lon": -1.75,
+    "Name": "Birmingham",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "BIL": {
+    "Code": "BIL",
+    "Lat": 45.81,
+    "Lon": -108.54,
+    "Name": "Billings",
+    "Country": "US",
+    "Region": "US-MT"
+  },
+  "BJV": {
+    "Code": "BJV",
+    "Lat": 37.25,
+    "Lon": 27.66,
+    "Name": "Bodrum",
+    "Country": "TR",
+    "Region": "TR-48"
+  },
+  "BKK": {
+    "Code": "BKK",
+    "Lat": 13.68,
+    "Lon": 100.75,
+    "Name": "Bangkok",
+    "Country": "TH",
+    "Region": "TH-10"
+  },
+  "BKO": {
+    "Code": "BKO",
+    "Lat": 12.53,
+    "Lon": -7.95,
+    "Name": "Bamako",
+    "Country": "ML",
+    "Region": "ML-2"
+  },
+  "BLA": {
+    "Code": "BLA",
+    "Lat": 10.11,
+    "Lon": -64.69,
+    "Name": "Barcelona",
+    "Country": "VE",
+    "Region": "VE-B"
+  },
+  "BLL": {
+    "Code": "BLL",
+    "Lat": 55.74,
+    "Lon": 9.15,
+    "Name": "Billund",
+    "Country": "DK",
+    "Region": "DK-83"
+  },
+  "BLQ": {
+    "Code": "BLQ",
+    "Lat": 44.54,
+    "Lon": 11.29,
+    "Name": "Bologna",
+    "Country": "IT",
+    "Region": "IT-45"
+  },
+  "BLR": {
+    "Code": "BLR",
+    "Lat": 13.2,
+    "Lon": 77.71,
+    "Name": "Bangalore",
+    "Country": "IN",
+    "Region": "IN-KA"
+  },
+  "BLV": {
+    "Code": "BLV",
+    "Lat": 38.55,
+    "Lon": -89.84,
+    "Name": "Belleville",
+    "Country": "US",
+    "Region": "US-IL"
+  },
+  "BMI": {
+    "Code": "BMI",
+    "Lat": 40.48,
+    "Lon": -88.92,
+    "Name": "Bloomington",
+    "Country": "US",
+    "Region": "US-IL"
+  },
+  "BNA": {
+    "Code": "BNA",
+    "Lat": 36.12,
+    "Lon": -86.68,
+    "Name": "Nashville",
+    "Country": "US",
+    "Region": "US-TN"
+  },
+  "BNE": {
+    "Code": "BNE",
+    "Lat": -27.38,
+    "Lon": 153.12,
+    "Name": "Brisbane",
+    "Country": "AU",
+    "Region": "AU-QLD"
+  },
+  "BOD": {
+    "Code": "BOD",
+    "Lat": 44.83,
+    "Lon": -0.72,
+    "Name": "Bordeaux",
+    "Country": "FR",
+    "Region": "FR-NAQ"
+  },
+  "BOG": {
+    "Code": "BOG",
+    "Lat": 4.7,
+    "Lon": -74.15,
+    "Name": "Bogota",
+    "Country": "CO",
+    "Region": "CO-CUN"
+  },
+  "BOH": {
+    "Code": "BOH",
+    "Lat": 50.78,
+    "Lon": -1.84,
+    "Name": "Bournemouth",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "BOI": {
+    "Code": "BOI",
+    "Lat": 43.56,
+    "Lon": -116.22,
+    "Name": "Boise",
+    "Country": "US",
+    "Region": "US-ID"
+  },
+  "BOJ": {
+    "Code": "BOJ",
+    "Lat": 42.57,
+    "Lon": 27.52,
+    "Name": "Burgas",
+    "Country": "BG",
+    "Region": "BG-02"
+  },
+  "BOM": {
+    "Code": "BOM",
+    "Lat": 19.09,
+    "Lon": 72.87,
+    "Name": "Mumbai",
+    "Country": "IN",
+    "Region": "IN-MM"
+  },
+  "BOO": {
+    "Code": "BOO",
+    "Lat": 67.27,
+    "Lon": 14.37,
+    "Name": "Bodø",
+    "Country": "NO",
+    "Region": "NO-18"
+  },
+  "BOS": {
+    "Code": "BOS",
+    "Lat": 42.36,
+    "Lon": -71.01,
+    "Name": "Boston",
+    "Country": "US",
+    "Region": "US-MA"
+  },
+  "BRE": {
+    "Code": "BRE",
+    "Lat": 53.05,
+    "Lon": 8.79,
+    "Name": "Bremen",
+    "Country": "DE",
+    "Region": "DE-HB"
+  },
+  "BRI": {
+    "Code": "BRI",
+    "Lat": 41.14,
+    "Lon": 16.76,
+    "Name": "Bari",
+    "Country": "IT",
+    "Region": "IT-75"
+  },
+  "BRS": {
+    "Code": "BRS",
+    "Lat": 51.38,
+    "Lon": -2.72,
+    "Name": "Bristol",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "BRU": {
+    "Code": "BRU",
+    "Lat": 50.9,
+    "Lon": 4.48,
+    "Name": "Brussels",
+    "Country": "BE",
+    "Region": "BE-BRU"
+  },
+  "BSB": {
+    "Code": "BSB",
+    "Lat": -15.87,
+    "Lon": -47.92,
+    "Name": "Brasília",
+    "Country": "BR",
+    "Region": "BR-DF"
+  },
+  "BSL": {
+    "Code": "BSL",
+    "Lat": 47.59,
+    "Lon": 7.53,
+    "Name": "Bâle",
+    "Country": "FR",
+    "Region": "FR-GES"
+  },
+  "BSR": {
+    "Code": "BSR",
+    "Lat": 30.55,
+    "Lon": 47.66,
+    "Name": "Basrah",
+    "Country": "IQ",
+    "Region": "IQ-BA"
+  },
+  "BTS": {
+    "Code": "BTS",
+    "Lat": 48.17,
+    "Lon": 17.21,
+    "Name": "Bratislava",
+    "Country": "SK",
+    "Region": "SK-BL"
+  },
+  "BUD": {
+    "Code": "BUD",
+    "Lat": 47.43,
+    "Lon": 19.26,
+    "Name": "Budapest",
+    "Country": "HU",
+    "Region": "HU-PE"
+  },
+  "BUF": {
+    "Code": "BUF",
+    "Lat": 42.94,
+    "Lon": -78.73,
+    "Name": "Buffalo",
+    "Country": "US",
+    "Region": "US-NY"
+  },
+  "BWI": {
+    "Code": "BWI",
+    "Lat": 39.18,
+    "Lon": -76.67,
+    "Name": "Baltimore",
+    "Country": "US",
+    "Region": "US-MD"
+  },
+  "BWN": {
+    "Code": "BWN",
+    "Lat": 4.94,
+    "Lon": 114.93,
+    "Name": "Bandar Seri Begawan",
+    "Country": "BN",
+    "Region": "BN-BM"
+  },
+  "BZE": {
+    "Code": "BZE",
+    "Lat": 17.54,
+    "Lon": -88.31,
+    "Name": "Belize City",
+    "Country": "BZ",
+    "Region": "BZ-BZ"
+  },
+  "BZZ": {
+    "Code": "BZZ",
+    "Lat": 51.75,
+    "Lon": -1.58,
+    "Name": "Brize Norton",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "CAE": {
+    "Code": "CAE",
+    "Lat": 33.94,
+    "Lon": -81.12,
+    "Name": "Columbia",
+    "Country": "US",
+    "Region": "US-SC"
+  },
+  "CAG": {
+    "Code": "CAG",
+    "Lat": 39.25,
+    "Lon": 9.05,
+    "Name": "Cagliari",
+    "Country": "IT",
+    "Region": "IT-88"
+  },
+  "CAI": {
+    "Code": "CAI",
+    "Lat": 30.12,
+    "Lon": 31.41,
+    "Name": "Cairo",
+    "Country": "EG",
+    "Region": "EG-C"
+  },
+  "CAN": {
+    "Code": "CAN",
+    "Lat": 23.39,
+    "Lon": 113.3,
+    "Name": "Guangzhou",
+    "Country": "CN",
+    "Region": "CN-44"
+  },
+  "CBM": {
+    "Code": "CBM",
+    "Lat": 33.64,
+    "Lon": -88.44,
+    "Name": "Columbus",
+    "Country": "US",
+    "Region": "US-MS"
+  },
+  "CBR": {
+    "Code": "CBR",
+    "Lat": -35.31,
+    "Lon": 149.2,
+    "Name": "Canberra",
+    "Country": "AU",
+    "Region": "AU-ACT"
+  },
+  "CCJ": {
+    "Code": "CCJ",
+    "Lat": 11.14,
+    "Lon": 75.96,
+    "Name": "Calicut",
+    "Country": "IN",
+    "Region": "IN-KL"
+  },
+  "CCS": {
+    "Code": "CCS",
+    "Lat": 10.6,
+    "Lon": -66.99,
+    "Name": "Caracas",
+    "Country": "VE",
+    "Region": "VE-X"
+  },
+  "CCU": {
+    "Code": "CCU",
+    "Lat": 22.65,
+    "Lon": 88.45,
+    "Name": "Kolkata",
+    "Country": "IN",
+    "Region": "IN-WB"
+  },
+  "CDG": {
+    "Code": "CDG",
+    "Lat": 49.01,
+    "Lon": 2.55,
+    "Name": "Paris",
+    "Country": "FR",
+    "Region": "FR-IDF"
+  },
+  "CEB": {
+    "Code": "CEB",
+    "Lat": 10.31,
+    "Lon": 123.98,
+    "Name": "Lapu-Lapu City",
+    "Country": "PH",
+    "Region": "PH-CEB"
+  },
+  "CGH": {
+    "Code": "CGH",
+    "Lat": -23.63,
+    "Lon": -46.66,
+    "Name": "São Paulo",
+    "Country": "BR",
+    "Region": "BR-SP"
+  },
+  "CGK": {
+    "Code": "CGK",
+    "Lat": -6.13,
+    "Lon": 106.66,
+    "Name": "Jakarta",
+    "Country": "ID",
+    "Region": "ID-BT"
+  },
+  "CGN": {
+    "Code": "CGN",
+    "Lat": 50.87,
+    "Lon": 7.14,
+    "Name": "Cologne",
+    "Country": "DE",
+    "Region": "DE-NW"
+  },
+  "CGO": {
+    "Code": "CGO",
+    "Lat": 34.52,
+    "Lon": 113.84,
+    "Name": "Zhengzhou",
+    "Country": "CN",
+    "Region": "CN-41"
+  },
+  "CGY": {
+    "Code": "CGY",
+    "Lat": 8.61,
+    "Lon": 124.46,
+    "Name": "Cagayan de Oro City",
+    "Country": "PH",
+    "Region": "PH-MSR"
+  },
+  "CHA": {
+    "Code": "CHA",
+    "Lat": 35.04,
+    "Lon": -85.2,
+    "Name": "Chattanooga",
+    "Country": "US",
+    "Region": "US-TN"
+  },
+  "CHC": {
+    "Code": "CHC",
+    "Lat": -43.49,
+    "Lon": 172.53,
+    "Name": "Christchurch",
+    "Country": "NZ",
+    "Region": "NZ-CAN"
+  },
+  "CHS": {
+    "Code": "CHS",
+    "Lat": 32.9,
+    "Lon": -80.04,
+    "Name": "Charleston",
+    "Country": "US",
+    "Region": "US-SC"
+  },
+  "CIA": {
+    "Code": "CIA",
+    "Lat": 41.8,
+    "Lon": 12.59,
+    "Name": "Rome",
+    "Country": "IT",
+    "Region": "IT-62"
+  },
+  "CID": {
+    "Code": "CID",
+    "Lat": 41.88,
+    "Lon": -91.71,
+    "Name": "Cedar Rapids",
+    "Country": "US",
+    "Region": "US-IA"
+  },
+  "CJJ": {
+    "Code": "CJJ",
+    "Lat": 36.72,
+    "Lon": 127.5,
+    "Name": "Cheongju",
+    "Country": "KR",
+    "Region": "KR-43"
+  },
+  "CJU": {
+    "Code": "CJU",
+    "Lat": 33.51,
+    "Lon": 126.49,
+    "Name": "Jeju City",
+    "Country": "KR",
+    "Region": "KR-49"
+  },
+  "CKG": {
+    "Code": "CKG",
+    "Lat": 29.72,
+    "Lon": 106.64,
+    "Name": "Chongqing",
+    "Country": "CN",
+    "Region": "CN-50"
+  },
+  "CLE": {
+    "Code": "CLE",
+    "Lat": 41.41,
+    "Lon": -81.85,
+    "Name": "Cleveland",
+    "Country": "US",
+    "Region": "US-OH"
+  },
+  "CLT": {
+    "Code": "CLT",
+    "Lat": 35.21,
+    "Lon": -80.94,
+    "Name": "Charlotte",
+    "Country": "US",
+    "Region": "US-NC"
+  },
+  "CMB": {
+    "Code": "CMB",
+    "Lat": 7.18,
+    "Lon": 79.88,
+    "Name": "Colombo",
+    "Country": "LK",
+    "Region": "LK-1"
+  },
+  "CMH": {
+    "Code": "CMH",
+    "Lat": 40,
+    "Lon": -82.89,
+    "Name": "Columbus",
+    "Country": "US",
+    "Region": "US-OH"
+  },
+  "CMN": {
+    "Code": "CMN",
+    "Lat": 33.37,
+    "Lon": -7.59,
+    "Name": "Casablanca",
+    "Country": "MA",
+    "Region": "MA-CAS"
+  },
+  "CNF": {
+    "Code": "CNF",
+    "Lat": -19.62,
+    "Lon": -43.97,
+    "Name": "Belo Horizonte",
+    "Country": "BR",
+    "Region": "BR-MG"
+  },
+  "CNX": {
+    "Code": "CNX",
+    "Lat": 18.77,
+    "Lon": 98.96,
+    "Name": "Chiang Mai",
+    "Country": "TH",
+    "Region": "TH-50"
+  },
+  "COK": {
+    "Code": "COK",
+    "Lat": 10.15,
+    "Lon": 76.4,
+    "Name": "Kochi",
+    "Country": "IN",
+    "Region": "IN-KL"
+  },
+  "COS": {
+    "Code": "COS",
+    "Lat": 38.81,
+    "Lon": -104.7,
+    "Name": "Colorado Springs",
+    "Country": "US",
+    "Region": "US-CO"
+  },
+  "CPH": {
+    "Code": "CPH",
+    "Lat": 55.62,
+    "Lon": 12.66,
+    "Name": "Copenhagen",
+    "Country": "DK",
+    "Region": "DK-84"
+  },
+  "CPT": {
+    "Code": "CPT",
+    "Lat": -33.96,
+    "Lon": 18.6,
+    "Name": "Cape Town",
+    "Country": "ZA",
+    "Region": "ZA-WC"
+  },
+  "CRK": {
+    "Code": "CRK",
+    "Lat": 15.19,
+    "Lon": 120.56,
+    "Name": "Angeles",
+    "Country": "PH",
+    "Region": "PH-PAM"
+  },
+  "CRL": {
+    "Code": "CRL",
+    "Lat": 50.46,
+    "Lon": 4.45,
+    "Name": "Brussels",
+    "Country": "BE",
+    "Region": "BE-WHT"
+  },
+  "CRP": {
+    "Code": "CRP",
+    "Lat": 27.77,
+    "Lon": -97.5,
+    "Name": "Corpus Christi",
+    "Country": "US",
+    "Region": "US-TX"
+  },
+  "CRW": {
+    "Code": "CRW",
+    "Lat": 38.37,
+    "Lon": -81.59,
+    "Name": "Charleston",
+    "Country": "US",
+    "Region": "US-WV"
+  },
+  "CSX": {
+    "Code": "CSX",
+    "Lat": 28.19,
+    "Lon": 113.22,
+    "Name": "Changsha",
+    "Country": "CN",
+    "Region": "CN-43"
+  },
+  "CTA": {
+    "Code": "CTA",
+    "Lat": 37.47,
+    "Lon": 15.07,
+    "Name": "Catania",
+    "Country": "IT",
+    "Region": "IT-82"
+  },
+  "CTS": {
+    "Code": "CTS",
+    "Lat": 42.78,
+    "Lon": 141.69,
+    "Name": "Chitose",
+    "Country": "JP",
+    "Region": "JP-01"
+  },
+  "CTU": {
+    "Code": "CTU",
+    "Lat": 30.58,
+    "Lon": 103.95,
+    "Name": "Chengdu",
+    "Country": "CN",
+    "Region": "CN-51"
+  },
+  "CUN": {
+    "Code": "CUN",
+    "Lat": 21.04,
+    "Lon": -86.88,
+    "Name": "Cancún",
+    "Country": "MX",
+    "Region": "MX-ROO"
+  },
+  "CUZ": {
+    "Code": "CUZ",
+    "Lat": -13.54,
+    "Lon": -71.94,
+    "Name": "Cusco",
+    "Country": "PE",
+    "Region": "PE-CUS"
+  },
+  "CVG": {
+    "Code": "CVG",
+    "Lat": 39.05,
+    "Lon": -84.67,
+    "Name": "Cincinnati",
+    "Country": "US",
+    "Region": "US-KY"
+  },
+  "CVS": {
+    "Code": "CVS",
+    "Lat": 34.38,
+    "Lon": -103.32,
+    "Name": "Clovis",
+    "Country": "US",
+    "Region": "US-NM"
+  },
+  "CWB": {
+    "Code": "CWB",
+    "Lat": -25.53,
+    "Lon": -49.18,
+    "Name": "Curitiba",
+    "Country": "BR",
+    "Region": "BR-PR"
+  },
+  "CWL": {
+    "Code": "CWL",
+    "Lat": 51.4,
+    "Lon": -3.34,
+    "Name": "Cardiff",
+    "Country": "GB",
+    "Region": "GB-WLS"
+  },
+  "DAB": {
+    "Code": "DAB",
+    "Lat": 29.18,
+    "Lon": -81.06,
+    "Name": "Daytona Beach",
+    "Country": "US",
+    "Region": "US-FL"
+  },
+  "DAC": {
+    "Code": "DAC",
+    "Lat": 23.84,
+    "Lon": 90.4,
+    "Name": "Dhaka",
+    "Country": "BD",
+    "Region": "BD-3"
+  },
+  "DAD": {
+    "Code": "DAD",
+    "Lat": 16.04,
+    "Lon": 108.2,
+    "Name": "Da Nang",
+    "Country": "VN",
+    "Region": "VN-60"
+  },
+  "DAL": {
+    "Code": "DAL",
+    "Lat": 32.85,
+    "Lon": -96.85,
+    "Name": "Dallas",
+    "Country": "US",
+    "Region": "US-TX"
+  },
+  "DAM": {
+    "Code": "DAM",
+    "Lat": 33.41,
+    "Lon": 36.52,
+    "Name": "Damascus",
+    "Country": "SY",
+    "Region": "SY-DI"
+  },
+  "DAR": {
+    "Code": "DAR",
+    "Lat": -6.88,
+    "Lon": 39.2,
+    "Name": "Dar es Salaam",
+    "Country": "TZ",
+    "Region": "TZ-02"
+  },
+  "DAY": {
+    "Code": "DAY",
+    "Lat": 39.9,
+    "Lon": -84.22,
+    "Name": "Dayton",
+    "Country": "US",
+    "Region": "US-OH"
+  },
+  "DBQ": {
+    "Code": "DBQ",
+    "Lat": 42.4,
+    "Lon": -90.71,
+    "Name": "Dubuque",
+    "Country": "US",
+    "Region": "US-IA"
+  },
+  "DCA": {
+    "Code": "DCA",
+    "Lat": 38.85,
+    "Lon": -77.04,
+    "Name": "Washington",
+    "Country": "US",
+    "Region": "US-DC"
+  },
+  "DEL": {
+    "Code": "DEL",
+    "Lat": 28.57,
+    "Lon": 77.1,
+    "Name": "New Delhi",
+    "Country": "IN",
+    "Region": "IN-DL"
+  },
+  "DEN": {
+    "Code": "DEN",
+    "Lat": 39.86,
+    "Lon": -104.67,
+    "Name": "Denver",
+    "Country": "US",
+    "Region": "US-CO"
+  },
+  "DFW": {
+    "Code": "DFW",
+    "Lat": 32.9,
+    "Lon": -97.04,
+    "Name": "Dallas-Fort Worth",
+    "Country": "US",
+    "Region": "US-TX"
+  },
+  "DHA": {
+    "Code": "DHA",
+    "Lat": 26.27,
+    "Lon": 50.15,
+    "Name": "",
+    "Country": "SA",
+    "Region": "SA-04"
+  },
+  "DJJ": {
+    "Code": "DJJ",
+    "Lat": -2.58,
+    "Lon": 140.52,
+    "Name": "Jayapura-Papua Island",
+    "Country": "ID",
+    "Region": "ID-PA"
+  },
+  "DKR": {
+    "Code": "DKR",
+    "Lat": 14.74,
+    "Lon": -17.49,
+    "Name": "Dakar",
+    "Country": "SN",
+    "Region": "SN-DK"
+  },
+  "DLC": {
+    "Code": "DLC",
+    "Lat": 38.97,
+    "Lon": 121.54,
+    "Name": "Dalian",
+    "Country": "CN",
+    "Region": "CN-21"
+  },
+  "DLF": {
+    "Code": "DLF",
+    "Lat": 29.36,
+    "Lon": -100.78,
+    "Name": "Del Rio",
+    "Country": "US",
+    "Region": "US-TX"
+  },
+  "DLH": {
+    "Code": "DLH",
+    "Lat": 46.84,
+    "Lon": -92.19,
+    "Name": "Duluth",
+    "Country": "US",
+    "Region": "US-MN"
+  },
+  "DLM": {
+    "Code": "DLM",
+    "Lat": 36.71,
+    "Lon": 28.79,
+    "Name": "Dalaman",
+    "Country": "TR",
+    "Region": "TR-48"
+  },
+  "DME": {
+    "Code": "DME",
+    "Lat": 55.41,
+    "Lon": 37.91,
+    "Name": "Moscow",
+    "Country": "RU",
+    "Region": "RU-MOS"
+  },
+  "DMK": {
+    "Code": "DMK",
+    "Lat": 13.91,
+    "Lon": 100.61,
+    "Name": "Bangkok",
+    "Country": "TH",
+    "Region": "TH-10"
+  },
+  "DMM": {
+    "Code": "DMM",
+    "Lat": 26.47,
+    "Lon": 49.8,
+    "Name": "Ad Dammam",
+    "Country": "SA",
+    "Region": "SA-04"
+  },
+  "DNA": {
+    "Code": "DNA",
+    "Lat": 26.36,
+    "Lon": 127.77,
+    "Name": "",
+    "Country": "JP",
+    "Region": "JP-47"
+  },
+  "DOH": {
+    "Code": "DOH",
+    "Lat": 25.27,
+    "Lon": 51.61,
+    "Name": "Doha",
+    "Country": "QA",
+    "Region": "QA-DA"
+  },
+  "DOV": {
+    "Code": "DOV",
+    "Lat": 39.13,
+    "Lon": -75.47,
+    "Name": "Dover",
+    "Country": "US",
+    "Region": "US-DE"
+  },
+  "DPS": {
+    "Code": "DPS",
+    "Lat": -8.75,
+    "Lon": 115.17,
+    "Name": "Denpasar-Bali Island",
+    "Country": "ID",
+    "Region": "ID-BA"
+  },
+  "DQM": {
+    "Code": "DQM",
+    "Lat": 19.5,
+    "Lon": 57.63,
+    "Name": "Duqm",
+    "Country": "OM",
+    "Region": "OM-WU"
+  },
+  "DRS": {
+    "Code": "DRS",
+    "Lat": 51.13,
+    "Lon": 13.77,
+    "Name": "Dresden",
+    "Country": "DE",
+    "Region": "DE-SN"
+  },
+  "DSA": {
+    "Code": "DSA",
+    "Lat": 53.48,
+    "Lon": -1.01,
+    "Name": "Doncaster",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "DSM": {
+    "Code": "DSM",
+    "Lat": 41.53,
+    "Lon": -93.66,
+    "Name": "Des Moines",
+    "Country": "US",
+    "Region": "US-IA"
+  },
+  "DSS": {
+    "Code": "DSS",
+    "Lat": 14.67,
+    "Lon": -17.07,
+    "Name": "Dakar",
+    "Country": "SN",
+    "Region": "SN-DK"
+  },
+  "DTM": {
+    "Code": "DTM",
+    "Lat": 51.52,
+    "Lon": 7.61,
+    "Name": "Dortmund",
+    "Country": "DE",
+    "Region": "DE-NW"
+  },
+  "DTW": {
+    "Code": "DTW",
+    "Lat": 42.21,
+    "Lon": -83.35,
+    "Name": "Detroit",
+    "Country": "US",
+    "Region": "US-MI"
+  },
+  "DUB": {
+    "Code": "DUB",
+    "Lat": 53.42,
+    "Lon": -6.27,
+    "Name": "Dublin",
+    "Country": "IE",
+    "Region": "IE-D"
+  },
+  "DUR": {
+    "Code": "DUR",
+    "Lat": -29.61,
+    "Lon": 31.12,
+    "Name": "Durban",
+    "Country": "ZA",
+    "Region": "ZA-NL"
+  },
+  "DUS": {
+    "Code": "DUS",
+    "Lat": 51.29,
+    "Lon": 6.77,
+    "Name": "Düsseldorf",
+    "Country": "DE",
+    "Region": "DE-NW"
+  },
+  "DVO": {
+    "Code": "DVO",
+    "Lat": 7.13,
+    "Lon": 125.65,
+    "Name": "Davao City",
+    "Country": "PH",
+    "Region": "PH-DAV"
+  },
+  "DWC": {
+    "Code": "DWC",
+    "Lat": 24.9,
+    "Lon": 55.16,
+    "Name": "Jebel Ali",
+    "Country": "AE",
+    "Region": "AE-DU"
+  },
+  "DXB": {
+    "Code": "DXB",
+    "Lat": 25.25,
+    "Lon": 55.36,
+    "Name": "Dubai",
+    "Country": "AE",
+    "Region": "AE-DU"
+  },
+  "DYS": {
+    "Code": "DYS",
+    "Lat": 32.42,
+    "Lon": -99.85,
+    "Name": "Abilene",
+    "Country": "US",
+    "Region": "US-TX"
+  },
+  "EBB": {
+    "Code": "EBB",
+    "Lat": 0.04,
+    "Lon": 32.44,
+    "Name": "Kampala",
+    "Country": "UG",
+    "Region": "UG-C"
+  },
+  "EDI": {
+    "Code": "EDI",
+    "Lat": 55.95,
+    "Lon": -3.37,
+    "Name": "Edinburgh",
+    "Country": "GB",
+    "Region": "GB-SCT"
+  },
+  "EDW": {
+    "Code": "EDW",
+    "Lat": 34.91,
+    "Lon": -117.88,
+    "Name": "Edwards",
+    "Country": "US",
+    "Region": "US-CA"
+  },
+  "EIN": {
+    "Code": "EIN",
+    "Lat": 51.45,
+    "Lon": 5.37,
+    "Name": "Eindhoven",
+    "Country": "NL",
+    "Region": "NL-NB"
+  },
+  "EIS": {
+    "Code": "EIS",
+    "Lat": 18.44,
+    "Lon": -64.54,
+    "Name": "Road Town",
+    "Country": "VG",
+    "Region": "VG-U-A"
+  },
+  "EMA": {
+    "Code": "EMA",
+    "Lat": 52.83,
+    "Lon": -1.33,
+    "Name": "Nottingham",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "END": {
+    "Code": "END",
+    "Lat": 36.34,
+    "Lon": -97.92,
+    "Name": "Enid",
+    "Country": "US",
+    "Region": "US-OK"
+  },
+  "ERI": {
+    "Code": "ERI",
+    "Lat": 42.08,
+    "Lon": -80.17,
+    "Name": "Erie",
+    "Country": "US",
+    "Region": "US-PA"
+  },
+  "ERZ": {
+    "Code": "ERZ",
+    "Lat": 39.96,
+    "Lon": 41.17,
+    "Name": "Erzurum",
+    "Country": "TR",
+    "Region": "TR-25"
+  },
+  "ESB": {
+    "Code": "ESB",
+    "Lat": 40.13,
+    "Lon": 33,
+    "Name": "Ankara",
+    "Country": "TR",
+    "Region": "TR-06"
+  },
+  "EVN": {
+    "Code": "EVN",
+    "Lat": 40.15,
+    "Lon": 44.4,
+    "Name": "Yerevan",
+    "Country": "AM",
+    "Region": "AM-ER"
+  },
+  "EWR": {
+    "Code": "EWR",
+    "Lat": 40.69,
+    "Lon": -74.17,
+    "Name": "Newark",
+    "Country": "US",
+    "Region": "US-NJ"
+  },
+  "EXT": {
+    "Code": "EXT",
+    "Lat": 50.73,
+    "Lon": -3.41,
+    "Name": "Exeter",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "EZE": {
+    "Code": "EZE",
+    "Lat": -34.82,
+    "Lon": -58.54,
+    "Name": "Buenos Aires",
+    "Country": "AR",
+    "Region": "AR-B"
+  },
+  "FAI": {
+    "Code": "FAI",
+    "Lat": 64.82,
+    "Lon": -147.86,
+    "Name": "Fairbanks",
+    "Country": "US",
+    "Region": "US-AK"
+  },
+  "FAO": {
+    "Code": "FAO",
+    "Lat": 37.01,
+    "Lon": -7.97,
+    "Name": "Faro",
+    "Country": "PT",
+    "Region": "PT-08"
+  },
+  "FCO": {
+    "Code": "FCO",
+    "Lat": 41.8,
+    "Lon": 12.24,
+    "Name": "Rome",
+    "Country": "IT",
+    "Region": "IT-62"
+  },
+  "FFD": {
+    "Code": "FFD",
+    "Lat": 51.68,
+    "Lon": -1.79,
+    "Name": "Fairford",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "FFO": {
+    "Code": "FFO",
+    "Lat": 39.83,
+    "Lon": -84.05,
+    "Name": "Dayton",
+    "Country": "US",
+    "Region": "US-OH"
+  },
+  "FIH": {
+    "Code": "FIH",
+    "Lat": -4.39,
+    "Lon": 15.44,
+    "Name": "Kinshasa",
+    "Country": "CD",
+    "Region": "CD-KN"
+  },
+  "FKB": {
+    "Code": "FKB",
+    "Lat": 48.78,
+    "Lon": 8.08,
+    "Name": "Baden-Baden",
+    "Country": "DE",
+    "Region": "DE-BW"
+  },
+  "FLL": {
+    "Code": "FLL",
+    "Lat": 26.07,
+    "Lon": -80.15,
+    "Name": "Fort Lauderdale",
+    "Country": "US",
+    "Region": "US-FL"
+  },
+  "FLN": {
+    "Code": "FLN",
+    "Lat": -27.67,
+    "Lon": -48.55,
+    "Name": "Florianópolis",
+    "Country": "BR",
+    "Region": "BR-SC"
+  },
+  "FMO": {
+    "Code": "FMO",
+    "Lat": 52.13,
+    "Lon": 7.68,
+    "Name": "Münster",
+    "Country": "DE",
+    "Region": "DE-NW"
+  },
+  "FNA": {
+    "Code": "FNA",
+    "Lat": 8.62,
+    "Lon": -13.2,
+    "Name": "Freetown",
+    "Country": "SL",
+    "Region": "SL-N"
+  },
+  "FOC": {
+    "Code": "FOC",
+    "Lat": 25.94,
+    "Lon": 119.66,
+    "Name": "Fuzhou",
+    "Country": "CN",
+    "Region": "CN-35"
+  },
+  "FRA": {
+    "Code": "FRA",
+    "Lat": 50.03,
+    "Lon": 8.57,
+    "Name": "Frankfurt am Main",
+    "Country": "DE",
+    "Region": "DE-HE"
+  },
+  "FRU": {
+    "Code": "FRU",
+    "Lat": 43.06,
+    "Lon": 74.48,
+    "Name": "Bishkek",
+    "Country": "KG",
+    "Region": "KG-C"
+  },
+  "FSM": {
+    "Code": "FSM",
+    "Lat": 35.34,
+    "Lon": -94.37,
+    "Name": "Fort Smith",
+    "Country": "US",
+    "Region": "US-AR"
+  },
+  "FSZ": {
+    "Code": "FSZ",
+    "Lat": 34.8,
+    "Lon": 138.19,
+    "Name": "Makinohara",
+    "Country": "JP",
+    "Region": "JP-22"
+  },
+  "FTW": {
+    "Code": "FTW",
+    "Lat": 32.82,
+    "Lon": -97.36,
+    "Name": "Fort Worth",
+    "Country": "US",
+    "Region": "US-TX"
+  },
+  "FUK": {
+    "Code": "FUK",
+    "Lat": 33.59,
+    "Lon": 130.45,
+    "Name": "Fukuoka",
+    "Country": "JP",
+    "Region": "JP-40"
+  },
+  "FWA": {
+    "Code": "FWA",
+    "Lat": 40.98,
+    "Lon": -85.2,
+    "Name": "Fort Wayne",
+    "Country": "US",
+    "Region": "US-IN"
+  },
+  "GBE": {
+    "Code": "GBE",
+    "Lat": -24.56,
+    "Lon": 25.92,
+    "Name": "Gaborone",
+    "Country": "BW",
+    "Region": "BW-SE"
+  },
+  "GCM": {
+    "Code": "GCM",
+    "Lat": 19.29,
+    "Lon": -81.36,
+    "Name": "Georgetown",
+    "Country": "KY",
+    "Region": "KY-U-A"
+  },
+  "GDL": {
+    "Code": "GDL",
+    "Lat": 20.52,
+    "Lon": -103.31,
+    "Name": "Guadalajara",
+    "Country": "MX",
+    "Region": "MX-JAL"
+  },
+  "GDN": {
+    "Code": "GDN",
+    "Lat": 54.38,
+    "Lon": 18.47,
+    "Name": "Gdańsk",
+    "Country": "PL",
+    "Region": "PL-PM"
+  },
+  "GEG": {
+    "Code": "GEG",
+    "Lat": 47.62,
+    "Lon": -117.53,
+    "Name": "Spokane",
+    "Country": "US",
+    "Region": "US-WA"
+  },
+  "GIG": {
+    "Code": "GIG",
+    "Lat": -22.81,
+    "Lon": -43.25,
+    "Name": "Rio De Janeiro",
+    "Country": "BR",
+    "Region": "BR-RJ"
+  },
+  "GLA": {
+    "Code": "GLA",
+    "Lat": 55.87,
+    "Lon": -4.43,
+    "Name": "Glasgow",
+    "Country": "GB",
+    "Region": "GB-SCT"
+  },
+  "GMP": {
+    "Code": "GMP",
+    "Lat": 37.56,
+    "Lon": 126.79,
+    "Name": "Seoul",
+    "Country": "KR",
+    "Region": "KR-11"
+  },
+  "GOA": {
+    "Code": "GOA",
+    "Lat": 44.41,
+    "Lon": 8.84,
+    "Name": "Genova",
+    "Country": "IT",
+    "Region": "IT-42"
+  },
+  "GOI": {
+    "Code": "GOI",
+    "Lat": 15.38,
+    "Lon": 73.83,
+    "Name": "Vasco da Gama",
+    "Country": "IN",
+    "Region": "IN-GA"
+  },
+  "GOT": {
+    "Code": "GOT",
+    "Lat": 57.66,
+    "Lon": 12.28,
+    "Name": "Gothenburg",
+    "Country": "SE",
+    "Region": "SE-Q"
+  },
+  "GPT": {
+    "Code": "GPT",
+    "Lat": 30.41,
+    "Lon": -89.07,
+    "Name": "Gulfport",
+    "Country": "US",
+    "Region": "US-MS"
+  },
+  "GRB": {
+    "Code": "GRB",
+    "Lat": 44.49,
+    "Lon": -88.13,
+    "Name": "Green Bay",
+    "Country": "US",
+    "Region": "US-WI"
+  },
+  "GRJ": {
+    "Code": "GRJ",
+    "Lat": -34.01,
+    "Lon": 22.38,
+    "Name": "George",
+    "Country": "ZA",
+    "Region": "ZA-WC"
+  },
+  "GRU": {
+    "Code": "GRU",
+    "Lat": -23.44,
+    "Lon": -46.47,
+    "Name": "São Paulo",
+    "Country": "BR",
+    "Region": "BR-SP"
+  },
+  "GRV": {
+    "Code": "GRV",
+    "Lat": 43.39,
+    "Lon": 45.7,
+    "Name": "Grozny",
+    "Country": "RU",
+    "Region": "RU-CE"
+  },
+  "GSB": {
+    "Code": "GSB",
+    "Lat": 35.34,
+    "Lon": -77.96,
+    "Name": "Goldsboro",
+    "Country": "US",
+    "Region": "US-NC"
+  },
+  "GSO": {
+    "Code": "GSO",
+    "Lat": 36.1,
+    "Lon": -79.94,
+    "Name": "Greensboro",
+    "Country": "US",
+    "Region": "US-NC"
+  },
+  "GSP": {
+    "Code": "GSP",
+    "Lat": 34.9,
+    "Lon": -82.22,
+    "Name": "Greenville",
+    "Country": "US",
+    "Region": "US-SC"
+  },
+  "GUA": {
+    "Code": "GUA",
+    "Lat": 14.58,
+    "Lon": -90.53,
+    "Name": "Guatemala City",
+    "Country": "GT",
+    "Region": "GT-GU"
+  },
+  "GUM": {
+    "Code": "GUM",
+    "Lat": 13.48,
+    "Lon": 144.8,
+    "Name": "Hagåtña, Guam International Airport",
+    "Country": "GU",
+    "Region": "GU-U-A"
+  },
+  "GUS": {
+    "Code": "GUS",
+    "Lat": 40.65,
+    "Lon": -86.15,
+    "Name": "Peru",
+    "Country": "US",
+    "Region": "US-IN"
+  },
+  "GVA": {
+    "Code": "GVA",
+    "Lat": 46.24,
+    "Lon": 6.11,
+    "Name": "Geneva",
+    "Country": "CH",
+    "Region": "CH-GE"
+  },
+  "GYD": {
+    "Code": "GYD",
+    "Lat": 40.47,
+    "Lon": 50.05,
+    "Name": "Baku",
+    "Country": "AZ",
+    "Region": "AZ-BA"
+  },
+  "GZT": {
+    "Code": "GZT",
+    "Lat": 36.95,
+    "Lon": 37.48,
+    "Name": "Gaziantep",
+    "Country": "TR",
+    "Region": "TR-27"
+  },
+  "HAJ": {
+    "Code": "HAJ",
+    "Lat": 52.46,
+    "Lon": 9.69,
+    "Name": "Hannover",
+    "Country": "DE",
+    "Region": "DE-NI"
+  },
+  "HAK": {
+    "Code": "HAK",
+    "Lat": 19.93,
+    "Lon": 110.46,
+    "Name": "Haikou",
+    "Country": "CN",
+    "Region": "CN-46"
+  },
+  "HAM": {
+    "Code": "HAM",
+    "Lat": 53.63,
+    "Lon": 9.99,
+    "Name": "Hamburg",
+    "Country": "DE",
+    "Region": "DE-HH"
+  },
+  "HAN": {
+    "Code": "HAN",
+    "Lat": 21.22,
+    "Lon": 105.81,
+    "Name": "Hanoi",
+    "Country": "VN",
+    "Region": "VN-15"
+  },
+  "HAV": {
+    "Code": "HAV",
+    "Lat": 22.99,
+    "Lon": -82.41,
+    "Name": "Havana",
+    "Country": "CU",
+    "Region": "CU-03"
+  },
+  "HEL": {
+    "Code": "HEL",
+    "Lat": 60.32,
+    "Lon": 24.96,
+    "Name": "Helsinki",
+    "Country": "FI",
+    "Region": "FI-ES"
+  },
+  "HER": {
+    "Code": "HER",
+    "Lat": 35.34,
+    "Lon": 25.18,
+    "Name": "Heraklion",
+    "Country": "GR",
+    "Region": "GR-91"
+  },
+  "HET": {
+    "Code": "HET",
+    "Lat": 40.85,
+    "Lon": 111.82,
+    "Name": "Hohhot",
+    "Country": "CN",
+    "Region": "CN-15"
+  },
+  "HGA": {
+    "Code": "HGA",
+    "Lat": 9.51,
+    "Lon": 44.08,
+    "Name": "Hargeisa",
+    "Country": "SO",
+    "Region": "SO-WO"
+  },
+  "HGH": {
+    "Code": "HGH",
+    "Lat": 30.23,
+    "Lon": 120.43,
+    "Name": "Hangzhou",
+    "Country": "CN",
+    "Region": "CN-33"
+  },
+  "HIB": {
+    "Code": "HIB",
+    "Lat": 47.39,
+    "Lon": -92.84,
+    "Name": "Hibbing",
+    "Country": "US",
+    "Region": "US-MN"
+  },
+  "HKG": {
+    "Code": "HKG",
+    "Lat": 22.31,
+    "Lon": 113.92,
+    "Name": "Hong Kong",
+    "Country": "HK",
+    "Region": "HK-U-A"
+  },
+  "HKT": {
+    "Code": "HKT",
+    "Lat": 8.11,
+    "Lon": 98.32,
+    "Name": "Phuket",
+    "Country": "TH",
+    "Region": "TH-83"
+  },
+  "HMN": {
+    "Code": "HMN",
+    "Lat": 32.85,
+    "Lon": -106.11,
+    "Name": "Alamogordo",
+    "Country": "US",
+    "Region": "US-NM"
+  },
+  "HMO": {
+    "Code": "HMO",
+    "Lat": 29.1,
+    "Lon": -111.05,
+    "Name": "Hermosillo",
+    "Country": "MX",
+    "Region": "MX-SON"
+  },
+  "HND": {
+    "Code": "HND",
+    "Lat": 35.55,
+    "Lon": 139.78,
+    "Name": "Ota, Tokyo",
+    "Country": "JP",
+    "Region": "JP-13"
+  },
+  "HNL": {
+    "Code": "HNL",
+    "Lat": 21.32,
+    "Lon": -157.92,
+    "Name": "Honolulu",
+    "Country": "US",
+    "Region": "US-HI"
+  },
+  "HOU": {
+    "Code": "HOU",
+    "Lat": 29.65,
+    "Lon": -95.28,
+    "Name": "Houston",
+    "Country": "US",
+    "Region": "US-TX"
+  },
+  "HRB": {
+    "Code": "HRB",
+    "Lat": 45.62,
+    "Lon": 126.25,
+    "Name": "Harbin",
+    "Country": "CN",
+    "Region": "CN-23"
+  },
+  "HRE": {
+    "Code": "HRE",
+    "Lat": -17.93,
+    "Lon": 31.09,
+    "Name": "Harare",
+    "Country": "ZW",
+    "Region": "ZW-HA"
+  },
+  "HRG": {
+    "Code": "HRG",
+    "Lat": 27.18,
+    "Lon": 33.8,
+    "Name": "Hurghada",
+    "Country": "EG",
+    "Region": "EG-BA"
+  },
+  "HRI": {
+    "Code": "HRI",
+    "Lat": 6.28,
+    "Lon": 81.12,
+    "Name": "",
+    "Country": "LK",
+    "Region": "LK-3"
+  },
+  "HRK": {
+    "Code": "HRK",
+    "Lat": 49.92,
+    "Lon": 36.29,
+    "Name": "Kharkiv",
+    "Country": "UA",
+    "Region": "UA-63"
+  },
+  "HSV": {
+    "Code": "HSV",
+    "Lat": 34.64,
+    "Lon": -86.78,
+    "Name": "Huntsville",
+    "Country": "US",
+    "Region": "US-AL"
+  },
+  "HTS": {
+    "Code": "HTS",
+    "Lat": 38.37,
+    "Lon": -82.56,
+    "Name": "Huntington",
+    "Country": "US",
+    "Region": "US-WV"
+  },
+  "HYD": {
+    "Code": "HYD",
+    "Lat": 17.23,
+    "Lon": 78.43,
+    "Name": "Hyderabad",
+    "Country": "IN",
+    "Region": "IN-TG"
+  },
+  "IAD": {
+    "Code": "IAD",
+    "Lat": 38.94,
+    "Lon": -77.46,
+    "Name": "Washington",
+    "Country": "US",
+    "Region": "US-DC"
+  },
+  "IAH": {
+    "Code": "IAH",
+    "Lat": 29.98,
+    "Lon": -95.34,
+    "Name": "Houston",
+    "Country": "US",
+    "Region": "US-TX"
+  },
+  "ICN": {
+    "Code": "ICN",
+    "Lat": 37.47,
+    "Lon": 126.45,
+    "Name": "Seoul",
+    "Country": "KR",
+    "Region": "KR-28"
+  },
+  "ICT": {
+    "Code": "ICT",
+    "Lat": 37.65,
+    "Lon": -97.43,
+    "Name": "Wichita",
+    "Country": "US",
+    "Region": "US-KS"
+  },
+  "IKA": {
+    "Code": "IKA",
+    "Lat": 35.42,
+    "Lon": 51.15,
+    "Name": "Tehran",
+    "Country": "IR",
+    "Region": "IR-07"
+  },
+  "IND": {
+    "Code": "IND",
+    "Lat": 39.72,
+    "Lon": -86.29,
+    "Name": "Indianapolis",
+    "Country": "US",
+    "Region": "US-IN"
+  },
+  "ISB": {
+    "Code": "ISB",
+    "Lat": 33.55,
+    "Lon": 72.83,
+    "Name": "Islamabad",
+    "Country": "PK",
+    "Region": "PK-PB"
+  },
+  "ISE": {
+    "Code": "ISE",
+    "Lat": 37.86,
+    "Lon": 30.37,
+    "Name": "Isparta",
+    "Country": "TR",
+    "Region": "TR-32"
+  },
+  "ISL": {
+    "Code": "ISL",
+    "Lat": 40.98,
+    "Lon": 28.81,
+    "Name": "Istanbul",
+    "Country": "TR",
+    "Region": "TR-34"
+  },
+  "IST": {
+    "Code": "IST",
+    "Lat": 41.28,
+    "Lon": 28.75,
+    "Name": "Istanbul",
+    "Country": "TR",
+    "Region": "TR-34"
+  },
+  "ITM": {
+    "Code": "ITM",
+    "Lat": 34.79,
+    "Lon": 135.44,
+    "Name": "Osaka",
+    "Country": "JP",
+    "Region": "JP-27"
+  },
+  "JAN": {
+    "Code": "JAN",
+    "Lat": 32.31,
+    "Lon": -90.08,
+    "Name": "Jackson",
+    "Country": "US",
+    "Region": "US-MS"
+  },
+  "JAX": {
+    "Code": "JAX",
+    "Lat": 30.49,
+    "Lon": -81.69,
+    "Name": "Jacksonville",
+    "Country": "US",
+    "Region": "US-FL"
+  },
+  "JED": {
+    "Code": "JED",
+    "Lat": 21.68,
+    "Lon": 39.16,
+    "Name": "Jeddah",
+    "Country": "SA",
+    "Region": "SA-02"
+  },
+  "JFK": {
+    "Code": "JFK",
+    "Lat": 40.64,
+    "Lon": -73.78,
+    "Name": "New York",
+    "Country": "US",
+    "Region": "US-NY"
+  },
+  "JLN": {
+    "Code": "JLN",
+    "Lat": 37.15,
+    "Lon": -94.5,
+    "Name": "Joplin",
+    "Country": "US",
+    "Region": "US-MO"
+  },
+  "JNB": {
+    "Code": "JNB",
+    "Lat": -26.14,
+    "Lon": 28.25,
+    "Name": "Johannesburg",
+    "Country": "ZA",
+    "Region": "ZA-U-A"
+  },
+  "JUB": {
+    "Code": "JUB",
+    "Lat": 4.87,
+    "Lon": 31.6,
+    "Name": "Juba",
+    "Country": "SS",
+    "Region": "SS-17"
+  },
+  "KAN": {
+    "Code": "KAN",
+    "Lat": 12.05,
+    "Lon": 8.52,
+    "Name": "Kano",
+    "Country": "NG",
+    "Region": "NG-KN"
+  },
+  "KBP": {
+    "Code": "KBP",
+    "Lat": 50.35,
+    "Lon": 30.89,
+    "Name": "Kyiv",
+    "Country": "UA",
+    "Region": "UA-32"
+  },
+  "KEF": {
+    "Code": "KEF",
+    "Lat": 63.99,
+    "Lon": -22.61,
+    "Name": "Reykjavík",
+    "Country": "IS",
+    "Region": "IS-2"
+  },
+  "KGF": {
+    "Code": "KGF",
+    "Lat": 49.67,
+    "Lon": 73.33,
+    "Name": "Karaganda",
+    "Country": "KZ",
+    "Region": "KZ-KAR"
+  },
+  "KGL": {
+    "Code": "KGL",
+    "Lat": -1.97,
+    "Lon": 30.14,
+    "Name": "Kigali",
+    "Country": "RW",
+    "Region": "RW-01"
+  },
+  "KHH": {
+    "Code": "KHH",
+    "Lat": 22.58,
+    "Lon": 120.35,
+    "Name": "Kaohsiung City",
+    "Country": "TW",
+    "Region": "TW-KHH"
+  },
+  "KHV": {
+    "Code": "KHV",
+    "Lat": 48.53,
+    "Lon": 135.19,
+    "Name": "Khabarovsk",
+    "Country": "RU",
+    "Region": "RU-KHA"
+  },
+  "KIN": {
+    "Code": "KIN",
+    "Lat": 17.94,
+    "Lon": -76.79,
+    "Name": "Kingston",
+    "Country": "JM",
+    "Region": "JM-01"
+  },
+  "KIX": {
+    "Code": "KIX",
+    "Lat": 34.43,
+    "Lon": 135.24,
+    "Name": "Osaka",
+    "Country": "JP",
+    "Region": "JP-27"
+  },
+  "KJA": {
+    "Code": "KJA",
+    "Lat": 56.17,
+    "Lon": 92.49,
+    "Name": "Krasnoyarsk",
+    "Country": "RU",
+    "Region": "RU-KYA"
+  },
+  "KMG": {
+    "Code": "KMG",
+    "Lat": 25.1,
+    "Lon": 102.93,
+    "Name": "Kunming",
+    "Country": "CN",
+    "Region": "CN-53"
+  },
+  "KNH": {
+    "Code": "KNH",
+    "Lat": 24.43,
+    "Lon": 118.36,
+    "Name": "Shang-I",
+    "Country": "TW",
+    "Region": "TW-X-KM"
+  },
+  "KNO": {
+    "Code": "KNO",
+    "Lat": 3.64,
+    "Lon": 98.89,
+    "Name": "",
+    "Country": "ID",
+    "Region": "ID-SU"
+  },
+  "KOJ": {
+    "Code": "KOJ",
+    "Lat": 31.8,
+    "Lon": 130.72,
+    "Name": "Kagoshima",
+    "Country": "JP",
+    "Region": "JP-46"
+  },
+  "KRK": {
+    "Code": "KRK",
+    "Lat": 50.08,
+    "Lon": 19.78,
+    "Name": "Kraków",
+    "Country": "PL",
+    "Region": "PL-MA"
+  },
+  "KRT": {
+    "Code": "KRT",
+    "Lat": 15.59,
+    "Lon": 32.55,
+    "Name": "Khartoum",
+    "Country": "SD",
+    "Region": "SD-03"
+  },
+  "KTM": {
+    "Code": "KTM",
+    "Lat": 27.7,
+    "Lon": 85.36,
+    "Name": "Kathmandu",
+    "Country": "NP",
+    "Region": "NP-BA"
+  },
+  "KTW": {
+    "Code": "KTW",
+    "Lat": 50.47,
+    "Lon": 19.08,
+    "Name": "Katowice",
+    "Country": "PL",
+    "Region": "PL-SL"
+  },
+  "KUF": {
+    "Code": "KUF",
+    "Lat": 53.5,
+    "Lon": 50.16,
+    "Name": "Samara",
+    "Country": "RU",
+    "Region": "RU-SAM"
+  },
+  "KUL": {
+    "Code": "KUL",
+    "Lat": 2.75,
+    "Lon": 101.71,
+    "Name": "Kuala Lumpur",
+    "Country": "MY",
+    "Region": "MY-14"
+  },
+  "KUV": {
+    "Code": "KUV",
+    "Lat": 35.9,
+    "Lon": 126.62,
+    "Name": "Kunsan",
+    "Country": "KR",
+    "Region": "KR-45"
+  },
+  "KWE": {
+    "Code": "KWE",
+    "Lat": 26.54,
+    "Lon": 106.8,
+    "Name": "Guiyang",
+    "Country": "CN",
+    "Region": "CN-52"
+  },
+  "KWI": {
+    "Code": "KWI",
+    "Lat": 29.23,
+    "Lon": 47.97,
+    "Name": "Kuwait City",
+    "Country": "KW",
+    "Region": "KW-FA"
+  },
+  "KWL": {
+    "Code": "KWL",
+    "Lat": 25.22,
+    "Lon": 110.04,
+    "Name": "Guilin City",
+    "Country": "CN",
+    "Region": "CN-45"
+  },
+  "KZN": {
+    "Code": "KZN",
+    "Lat": 55.61,
+    "Lon": 49.28,
+    "Name": "Kazan",
+    "Country": "RU",
+    "Region": "RU-TA"
+  },
+  "LAD": {
+    "Code": "LAD",
+    "Lat": -8.86,
+    "Lon": 13.23,
+    "Name": "Luanda",
+    "Country": "AO",
+    "Region": "AO-LUA"
+  },
+  "LAS": {
+    "Code": "LAS",
+    "Lat": 36.08,
+    "Lon": -115.15,
+    "Name": "Las Vegas",
+    "Country": "US",
+    "Region": "US-NV"
+  },
+  "LAX": {
+    "Code": "LAX",
+    "Lat": 33.94,
+    "Lon": -118.41,
+    "Name": "Los Angeles",
+    "Country": "US",
+    "Region": "US-CA"
+  },
+  "LBA": {
+    "Code": "LBA",
+    "Lat": 53.87,
+    "Lon": -1.66,
+    "Name": "Leeds",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "LBB": {
+    "Code": "LBB",
+    "Lat": 33.66,
+    "Lon": -101.82,
+    "Name": "Lubbock",
+    "Country": "US",
+    "Region": "US-TX"
+  },
+  "LCA": {
+    "Code": "LCA",
+    "Lat": 34.88,
+    "Lon": 33.62,
+    "Name": "Larnarca",
+    "Country": "CY",
+    "Region": "CY-04"
+  },
+  "LCK": {
+    "Code": "LCK",
+    "Lat": 39.81,
+    "Lon": -82.93,
+    "Name": "Columbus",
+    "Country": "US",
+    "Region": "US-OH"
+  },
+  "LED": {
+    "Code": "LED",
+    "Lat": 59.8,
+    "Lon": 30.26,
+    "Name": "St. Petersburg",
+    "Country": "RU",
+    "Region": "RU-SPE"
+  },
+  "LEJ": {
+    "Code": "LEJ",
+    "Lat": 51.42,
+    "Lon": 12.24,
+    "Name": "Leipzig",
+    "Country": "DE",
+    "Region": "DE-SN"
+  },
+  "LEX": {
+    "Code": "LEX",
+    "Lat": 38.04,
+    "Lon": -84.61,
+    "Name": "Lexington",
+    "Country": "US",
+    "Region": "US-KY"
+  },
+  "LFI": {
+    "Code": "LFI",
+    "Lat": 37.08,
+    "Lon": -76.36,
+    "Name": "Hampton",
+    "Country": "US",
+    "Region": "US-VA"
+  },
+  "LFT": {
+    "Code": "LFT",
+    "Lat": 30.21,
+    "Lon": -91.99,
+    "Name": "Lafayette",
+    "Country": "US",
+    "Region": "US-LA"
+  },
+  "LGA": {
+    "Code": "LGA",
+    "Lat": 40.78,
+    "Lon": -73.87,
+    "Name": "New York",
+    "Country": "US",
+    "Region": "US-NY"
+  },
+  "LGG": {
+    "Code": "LGG",
+    "Lat": 50.64,
+    "Lon": 5.44,
+    "Name": "Liège",
+    "Country": "BE",
+    "Region": "BE-WLG"
+  },
+  "LGW": {
+    "Code": "LGW",
+    "Lat": 51.15,
+    "Lon": -0.19,
+    "Name": "London",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "LHR": {
+    "Code": "LHR",
+    "Lat": 51.47,
+    "Lon": -0.46,
+    "Name": "London",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "LIM": {
+    "Code": "LIM",
+    "Lat": -12.02,
+    "Lon": -77.11,
+    "Name": "Lima",
+    "Country": "PE",
+    "Region": "PE-LIM"
+  },
+  "LIN": {
+    "Code": "LIN",
+    "Lat": 45.45,
+    "Lon": 9.28,
+    "Name": "Milan",
+    "Country": "IT",
+    "Region": "IT-25"
+  },
+  "LIR": {
+    "Code": "LIR",
+    "Lat": 10.59,
+    "Lon": -85.54,
+    "Name": "Liberia",
+    "Country": "CR",
+    "Region": "CR-G"
+  },
+  "LIS": {
+    "Code": "LIS",
+    "Lat": 38.78,
+    "Lon": -9.14,
+    "Name": "Lisbon",
+    "Country": "PT",
+    "Region": "PT-11"
+  },
+  "LIT": {
+    "Code": "LIT",
+    "Lat": 34.73,
+    "Lon": -92.22,
+    "Name": "Little Rock",
+    "Country": "US",
+    "Region": "US-AR"
+  },
+  "LJU": {
+    "Code": "LJU",
+    "Lat": 46.22,
+    "Lon": 14.46,
+    "Name": "Ljubljana",
+    "Country": "SI",
+    "Region": "SI-061"
+  },
+  "LKZ": {
+    "Code": "LKZ",
+    "Lat": 52.41,
+    "Lon": 0.56,
+    "Name": "Lakenheath",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "LLA": {
+    "Code": "LLA",
+    "Lat": 65.54,
+    "Lon": 22.12,
+    "Name": "Luleå",
+    "Country": "SE",
+    "Region": "SE-BD"
+  },
+  "LOS": {
+    "Code": "LOS",
+    "Lat": 6.58,
+    "Lon": 3.32,
+    "Name": "Lagos",
+    "Country": "NG",
+    "Region": "NG-LA"
+  },
+  "LPA": {
+    "Code": "LPA",
+    "Lat": 27.93,
+    "Lon": -15.39,
+    "Name": "Gran Canaria Island",
+    "Country": "ES",
+    "Region": "ES-CN"
+  },
+  "LPL": {
+    "Code": "LPL",
+    "Lat": 53.33,
+    "Lon": -2.85,
+    "Name": "Liverpool",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "LTK": {
+    "Code": "LTK",
+    "Lat": 35.4,
+    "Lon": 35.95,
+    "Name": "Latakia",
+    "Country": "SY",
+    "Region": "SY-LA"
+  },
+  "LTN": {
+    "Code": "LTN",
+    "Lat": 51.87,
+    "Lon": -0.37,
+    "Name": "London",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "LTS": {
+    "Code": "LTS",
+    "Lat": 34.67,
+    "Lon": -99.27,
+    "Name": "Altus",
+    "Country": "US",
+    "Region": "US-OK"
+  },
+  "LTX": {
+    "Code": "LTX",
+    "Lat": -0.91,
+    "Lon": -78.62,
+    "Name": "Latacunga",
+    "Country": "EC",
+    "Region": "EC-X"
+  },
+  "LUF": {
+    "Code": "LUF",
+    "Lat": 33.53,
+    "Lon": -112.38,
+    "Name": "Glendale",
+    "Country": "US",
+    "Region": "US-AZ"
+  },
+  "LUN": {
+    "Code": "LUN",
+    "Lat": -15.33,
+    "Lon": 28.45,
+    "Name": "Lusaka",
+    "Country": "ZM",
+    "Region": "ZM-09"
+  },
+  "LUX": {
+    "Code": "LUX",
+    "Lat": 49.62,
+    "Lon": 6.2,
+    "Name": "Luxembourg",
+    "Country": "LU",
+    "Region": "LU-L"
+  },
+  "LXR": {
+    "Code": "LXR",
+    "Lat": 25.67,
+    "Lon": 32.71,
+    "Name": "Luxor",
+    "Country": "EG",
+    "Region": "EG-KN"
+  },
+  "LYS": {
+    "Code": "LYS",
+    "Lat": 45.73,
+    "Lon": 5.08,
+    "Name": "Lyon",
+    "Country": "FR",
+    "Region": "FR-ARA"
+  },
+  "MAA": {
+    "Code": "MAA",
+    "Lat": 12.99,
+    "Lon": 80.17,
+    "Name": "Chennai",
+    "Country": "IN",
+    "Region": "IN-TN"
+  },
+  "MAD": {
+    "Code": "MAD",
+    "Lat": 40.47,
+    "Lon": -3.56,
+    "Name": "Madrid",
+    "Country": "ES",
+    "Region": "ES-M"
+  },
+  "MAN": {
+    "Code": "MAN",
+    "Lat": 53.35,
+    "Lon": -2.27,
+    "Name": "Manchester",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "MAO": {
+    "Code": "MAO",
+    "Lat": -3.04,
+    "Lon": -60.05,
+    "Name": "Manaus",
+    "Country": "BR",
+    "Region": "BR-AM"
+  },
+  "MBA": {
+    "Code": "MBA",
+    "Lat": -4.03,
+    "Lon": 39.59,
+    "Name": "Mombasa",
+    "Country": "KE",
+    "Region": "KE-300"
+  },
+  "MBS": {
+    "Code": "MBS",
+    "Lat": 43.53,
+    "Lon": -84.08,
+    "Name": "Saginaw",
+    "Country": "US",
+    "Region": "US-MI"
+  },
+  "MCF": {
+    "Code": "MCF",
+    "Lat": 27.85,
+    "Lon": -82.52,
+    "Name": "Tampa",
+    "Country": "US",
+    "Region": "US-FL"
+  },
+  "MCI": {
+    "Code": "MCI",
+    "Lat": 39.3,
+    "Lon": -94.71,
+    "Name": "Kansas City",
+    "Country": "US",
+    "Region": "US-MO"
+  },
+  "MCO": {
+    "Code": "MCO",
+    "Lat": 28.43,
+    "Lon": -81.31,
+    "Name": "Orlando",
+    "Country": "US",
+    "Region": "US-FL"
+  },
+  "MCT": {
+    "Code": "MCT",
+    "Lat": 23.59,
+    "Lon": 58.28,
+    "Name": "Muscat",
+    "Country": "OM",
+    "Region": "OM-MA"
+  },
+  "MDL": {
+    "Code": "MDL",
+    "Lat": 21.7,
+    "Lon": 95.98,
+    "Name": "Mandalay",
+    "Country": "MM",
+    "Region": "MM-04"
+  },
+  "MDW": {
+    "Code": "MDW",
+    "Lat": 41.79,
+    "Lon": -87.75,
+    "Name": "Chicago",
+    "Country": "US",
+    "Region": "US-IL"
+  },
+  "MED": {
+    "Code": "MED",
+    "Lat": 24.55,
+    "Lon": 39.71,
+    "Name": "Medina",
+    "Country": "SA",
+    "Region": "SA-03"
+  },
+  "MEL": {
+    "Code": "MEL",
+    "Lat": -37.67,
+    "Lon": 144.84,
+    "Name": "Melbourne",
+    "Country": "AU",
+    "Region": "AU-VIC"
+  },
+  "MEM": {
+    "Code": "MEM",
+    "Lat": 35.04,
+    "Lon": -89.98,
+    "Name": "Memphis",
+    "Country": "US",
+    "Region": "US-TN"
+  },
+  "MEX": {
+    "Code": "MEX",
+    "Lat": 19.44,
+    "Lon": -99.07,
+    "Name": "Mexico City",
+    "Country": "MX",
+    "Region": "MX-DIF"
+  },
+  "MFM": {
+    "Code": "MFM",
+    "Lat": 22.15,
+    "Lon": 113.59,
+    "Name": "Macau",
+    "Country": "MO",
+    "Region": "MO-U-A"
+  },
+  "MGE": {
+    "Code": "MGE",
+    "Lat": 33.92,
+    "Lon": -84.52,
+    "Name": "Marietta",
+    "Country": "US",
+    "Region": "US-GA"
+  },
+  "MGM": {
+    "Code": "MGM",
+    "Lat": 32.3,
+    "Lon": -86.39,
+    "Name": "Montgomery",
+    "Country": "US",
+    "Region": "US-AL"
+  },
+  "MHD": {
+    "Code": "MHD",
+    "Lat": 36.24,
+    "Lon": 59.64,
+    "Name": "Mashhad",
+    "Country": "IR",
+    "Region": "IR-30"
+  },
+  "MHT": {
+    "Code": "MHT",
+    "Lat": 42.93,
+    "Lon": -71.44,
+    "Name": "Manchester",
+    "Country": "US",
+    "Region": "US-NH"
+  },
+  "MHZ": {
+    "Code": "MHZ",
+    "Lat": 52.36,
+    "Lon": 0.49,
+    "Name": "Mildenhall",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "MIA": {
+    "Code": "MIA",
+    "Lat": 25.79,
+    "Lon": -80.29,
+    "Name": "Miami",
+    "Country": "US",
+    "Region": "US-FL"
+  },
+  "MKE": {
+    "Code": "MKE",
+    "Lat": 42.95,
+    "Lon": -87.9,
+    "Name": "Milwaukee",
+    "Country": "US",
+    "Region": "US-WI"
+  },
+  "MLA": {
+    "Code": "MLA",
+    "Lat": 35.86,
+    "Lon": 14.48,
+    "Name": "Valletta",
+    "Country": "MT",
+    "Region": "MT-25"
+  },
+  "MLE": {
+    "Code": "MLE",
+    "Lat": 4.19,
+    "Lon": 73.53,
+    "Name": "Malé",
+    "Country": "MV",
+    "Region": "MV-MLE"
+  },
+  "MLI": {
+    "Code": "MLI",
+    "Lat": 41.45,
+    "Lon": -90.51,
+    "Name": "Moline",
+    "Country": "US",
+    "Region": "US-IL"
+  },
+  "MLU": {
+    "Code": "MLU",
+    "Lat": 32.51,
+    "Lon": -92.04,
+    "Name": "Monroe",
+    "Country": "US",
+    "Region": "US-LA"
+  },
+  "MMX": {
+    "Code": "MMX",
+    "Lat": 55.54,
+    "Lon": 13.38,
+    "Name": "Malmö",
+    "Country": "SE",
+    "Region": "SE-M"
+  },
+  "MNH": {
+    "Code": "MNH",
+    "Lat": 23.64,
+    "Lon": 57.49,
+    "Name": "Al Masna'ah",
+    "Country": "OM",
+    "Region": "OM-BA"
+  },
+  "MNL": {
+    "Code": "MNL",
+    "Lat": 14.51,
+    "Lon": 121.02,
+    "Name": "Pasay",
+    "Country": "PH",
+    "Region": "PH-U-A"
+  },
+  "MOB": {
+    "Code": "MOB",
+    "Lat": 30.69,
+    "Lon": -88.24,
+    "Name": "Mobile",
+    "Country": "US",
+    "Region": "US-AL"
+  },
+  "MPM": {
+    "Code": "MPM",
+    "Lat": -25.92,
+    "Lon": 32.57,
+    "Name": "Maputo",
+    "Country": "MZ",
+    "Region": "MZ-MPM"
+  },
+  "MRS": {
+    "Code": "MRS",
+    "Lat": 43.44,
+    "Lon": 5.22,
+    "Name": "Marseille",
+    "Country": "FR",
+    "Region": "FR-PAC"
+  },
+  "MRU": {
+    "Code": "MRU",
+    "Lat": -20.43,
+    "Lon": 57.68,
+    "Name": "Port Louis",
+    "Country": "MU",
+    "Region": "MU-GP"
+  },
+  "MSN": {
+    "Code": "MSN",
+    "Lat": 43.14,
+    "Lon": -89.34,
+    "Name": "Madison",
+    "Country": "US",
+    "Region": "US-WI"
+  },
+  "MSP": {
+    "Code": "MSP",
+    "Lat": 44.88,
+    "Lon": -93.22,
+    "Name": "Minneapolis",
+    "Country": "US",
+    "Region": "US-MN"
+  },
+  "MSQ": {
+    "Code": "MSQ",
+    "Lat": 53.88,
+    "Lon": 28.03,
+    "Name": "Minsk",
+    "Country": "BY",
+    "Region": "BY-MI"
+  },
+  "MSY": {
+    "Code": "MSY",
+    "Lat": 29.99,
+    "Lon": -90.26,
+    "Name": "New Orleans",
+    "Country": "US",
+    "Region": "US-LA"
+  },
+  "MTY": {
+    "Code": "MTY",
+    "Lat": 25.78,
+    "Lon": -100.11,
+    "Name": "Monterrey",
+    "Country": "MX",
+    "Region": "MX-NLE"
+  },
+  "MUC": {
+    "Code": "MUC",
+    "Lat": 48.35,
+    "Lon": 11.79,
+    "Name": "Munich",
+    "Country": "DE",
+    "Region": "DE-BY"
+  },
+  "MUO": {
+    "Code": "MUO",
+    "Lat": 43.04,
+    "Lon": -115.87,
+    "Name": "Mountain Home",
+    "Country": "US",
+    "Region": "US-ID"
+  },
+  "MVD": {
+    "Code": "MVD",
+    "Lat": -34.84,
+    "Lon": -56.03,
+    "Name": "Montevideo",
+    "Country": "UY",
+    "Region": "UY-CA"
+  },
+  "MWX": {
+    "Code": "MWX",
+    "Lat": 34.99,
+    "Lon": 126.38,
+    "Name": "Piseo-ri (Muan)",
+    "Country": "KR",
+    "Region": "KR-46"
+  },
+  "MXP": {
+    "Code": "MXP",
+    "Lat": 45.63,
+    "Lon": 8.73,
+    "Name": "Milan",
+    "Country": "IT",
+    "Region": "IT-25"
+  },
+  "NAP": {
+    "Code": "NAP",
+    "Lat": 40.89,
+    "Lon": 14.29,
+    "Name": "Nápoli",
+    "Country": "IT",
+    "Region": "IT-72"
+  },
+  "NAS": {
+    "Code": "NAS",
+    "Lat": 25.04,
+    "Lon": -77.47,
+    "Name": "Nassau",
+    "Country": "BS",
+    "Region": "BS-NP"
+  },
+  "NAT": {
+    "Code": "NAT",
+    "Lat": -5.77,
+    "Lon": -35.38,
+    "Name": "Natal",
+    "Country": "BR",
+    "Region": "BR-RN"
+  },
+  "NAY": {
+    "Code": "NAY",
+    "Lat": 39.78,
+    "Lon": 116.39,
+    "Name": "Beijing",
+    "Country": "CN",
+    "Region": "CN-11"
+  },
+  "NBE": {
+    "Code": "NBE",
+    "Lat": 36.08,
+    "Lon": 10.44,
+    "Name": "Enfidha",
+    "Country": "TN",
+    "Region": "TN-51"
+  },
+  "NBO": {
+    "Code": "NBO",
+    "Lat": -1.32,
+    "Lon": 36.93,
+    "Name": "Nairobi",
+    "Country": "KE",
+    "Region": "KE-110"
+  },
+  "NCE": {
+    "Code": "NCE",
+    "Lat": 43.66,
+    "Lon": 7.22,
+    "Name": "Nice",
+    "Country": "FR",
+    "Region": "FR-PAC"
+  },
+  "NCL": {
+    "Code": "NCL",
+    "Lat": 55.04,
+    "Lon": -1.69,
+    "Name": "Newcastle",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "NDJ": {
+    "Code": "NDJ",
+    "Lat": 12.13,
+    "Lon": 15.03,
+    "Name": "N'Djamena",
+    "Country": "TD",
+    "Region": "TD-CB"
+  },
+  "NGB": {
+    "Code": "NGB",
+    "Lat": 29.83,
+    "Lon": 121.46,
+    "Name": "Ningbo",
+    "Country": "CN",
+    "Region": "CN-33"
+  },
+  "NGO": {
+    "Code": "NGO",
+    "Lat": 34.86,
+    "Lon": 136.8,
+    "Name": "Tokoname",
+    "Country": "JP",
+    "Region": "JP-23"
+  },
+  "NIM": {
+    "Code": "NIM",
+    "Lat": 13.48,
+    "Lon": 2.18,
+    "Name": "Niamey",
+    "Country": "NE",
+    "Region": "NE-8"
+  },
+  "NKC": {
+    "Code": "NKC",
+    "Lat": 18.31,
+    "Lon": -15.97,
+    "Name": "Nouakchott",
+    "Country": "MR",
+    "Region": "MR-NKC"
+  },
+  "NKG": {
+    "Code": "NKG",
+    "Lat": 31.74,
+    "Lon": 118.86,
+    "Name": "Nanjing",
+    "Country": "CN",
+    "Region": "CN-32"
+  },
+  "NNG": {
+    "Code": "NNG",
+    "Lat": 22.61,
+    "Lon": 108.17,
+    "Name": "Nanning",
+    "Country": "CN",
+    "Region": "CN-45"
+  },
+  "NRT": {
+    "Code": "NRT",
+    "Lat": 35.76,
+    "Lon": 140.39,
+    "Name": "Tokyo",
+    "Country": "JP",
+    "Region": "JP-12"
+  },
+  "NUE": {
+    "Code": "NUE",
+    "Lat": 49.5,
+    "Lon": 11.08,
+    "Name": "Nuremberg",
+    "Country": "DE",
+    "Region": "DE-BY"
+  },
+  "NWI": {
+    "Code": "NWI",
+    "Lat": 52.68,
+    "Lon": 1.28,
+    "Name": "Norwich",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "OAK": {
+    "Code": "OAK",
+    "Lat": 37.72,
+    "Lon": -122.22,
+    "Name": "Oakland",
+    "Country": "US",
+    "Region": "US-CA"
+  },
+  "ODS": {
+    "Code": "ODS",
+    "Lat": 46.43,
+    "Lon": 30.68,
+    "Name": "Odessa",
+    "Country": "UA",
+    "Region": "UA-51"
+  },
+  "OKA": {
+    "Code": "OKA",
+    "Lat": 26.2,
+    "Lon": 127.65,
+    "Name": "Naha",
+    "Country": "JP",
+    "Region": "JP-47"
+  },
+  "OKC": {
+    "Code": "OKC",
+    "Lat": 35.39,
+    "Lon": -97.6,
+    "Name": "Oklahoma City",
+    "Country": "US",
+    "Region": "US-OK"
+  },
+  "OKO": {
+    "Code": "OKO",
+    "Lat": 35.75,
+    "Lon": 139.35,
+    "Name": "Fussa",
+    "Country": "JP",
+    "Region": "JP-13"
+  },
+  "OMA": {
+    "Code": "OMA",
+    "Lat": 41.3,
+    "Lon": -95.89,
+    "Name": "Omaha",
+    "Country": "US",
+    "Region": "US-NE"
+  },
+  "ONT": {
+    "Code": "ONT",
+    "Lat": 34.06,
+    "Lon": -117.6,
+    "Name": "Ontario",
+    "Country": "US",
+    "Region": "US-CA"
+  },
+  "OPO": {
+    "Code": "OPO",
+    "Lat": 41.25,
+    "Lon": -8.68,
+    "Name": "Porto",
+    "Country": "PT",
+    "Region": "PT-13"
+  },
+  "ORD": {
+    "Code": "ORD",
+    "Lat": 41.98,
+    "Lon": -87.9,
+    "Name": "Chicago",
+    "Country": "US",
+    "Region": "US-IL"
+  },
+  "ORF": {
+    "Code": "ORF",
+    "Lat": 36.89,
+    "Lon": -76.2,
+    "Name": "Norfolk",
+    "Country": "US",
+    "Region": "US-VA"
+  },
+  "ORK": {
+    "Code": "ORK",
+    "Lat": 51.84,
+    "Lon": -8.49,
+    "Name": "Cork",
+    "Country": "IE",
+    "Region": "IE-C"
+  },
+  "ORY": {
+    "Code": "ORY",
+    "Lat": 48.72,
+    "Lon": 2.38,
+    "Name": "Paris",
+    "Country": "FR",
+    "Region": "FR-IDF"
+  },
+  "OSL": {
+    "Code": "OSL",
+    "Lat": 60.19,
+    "Lon": 11.1,
+    "Name": "Oslo",
+    "Country": "NO",
+    "Region": "NO-02"
+  },
+  "OSN": {
+    "Code": "OSN",
+    "Lat": 37.09,
+    "Lon": 127.03,
+    "Name": "",
+    "Country": "KR",
+    "Region": "KR-41"
+  },
+  "OTP": {
+    "Code": "OTP",
+    "Lat": 44.57,
+    "Lon": 26.09,
+    "Name": "Bucharest",
+    "Country": "RO",
+    "Region": "RO-B"
+  },
+  "OUA": {
+    "Code": "OUA",
+    "Lat": 12.35,
+    "Lon": -1.51,
+    "Name": "Ouagadougou",
+    "Country": "BF",
+    "Region": "BF-KAD"
+  },
+  "OVB": {
+    "Code": "OVB",
+    "Lat": 55.01,
+    "Lon": 82.65,
+    "Name": "Novosibirsk",
+    "Country": "RU",
+    "Region": "RU-NVS"
+  },
+  "PAM": {
+    "Code": "PAM",
+    "Lat": 30.07,
+    "Lon": -85.58,
+    "Name": "Panama City",
+    "Country": "US",
+    "Region": "US-FL"
+  },
+  "PBI": {
+    "Code": "PBI",
+    "Lat": 26.68,
+    "Lon": -80.1,
+    "Name": "West Palm Beach",
+    "Country": "US",
+    "Region": "US-FL"
+  },
+  "PDL": {
+    "Code": "PDL",
+    "Lat": 37.74,
+    "Lon": -25.7,
+    "Name": "Ponta Delgada",
+    "Country": "PT",
+    "Region": "PT-20"
+  },
+  "PDX": {
+    "Code": "PDX",
+    "Lat": 45.59,
+    "Lon": -122.6,
+    "Name": "Portland",
+    "Country": "US",
+    "Region": "US-OR"
+  },
+  "PEK": {
+    "Code": "PEK",
+    "Lat": 40.08,
+    "Lon": 116.58,
+    "Name": "Beijing",
+    "Country": "CN",
+    "Region": "CN-11"
+  },
+  "PER": {
+    "Code": "PER",
+    "Lat": -31.94,
+    "Lon": 115.97,
+    "Name": "Perth",
+    "Country": "AU",
+    "Region": "AU-WA"
+  },
+  "PFO": {
+    "Code": "PFO",
+    "Lat": 34.72,
+    "Lon": 32.49,
+    "Name": "Paphos",
+    "Country": "CY",
+    "Region": "CY-06"
+  },
+  "PHF": {
+    "Code": "PHF",
+    "Lat": 37.13,
+    "Lon": -76.49,
+    "Name": "Newport News",
+    "Country": "US",
+    "Region": "US-VA"
+  },
+  "PHL": {
+    "Code": "PHL",
+    "Lat": 39.87,
+    "Lon": -75.24,
+    "Name": "Philadelphia",
+    "Country": "US",
+    "Region": "US-PA"
+  },
+  "PHX": {
+    "Code": "PHX",
+    "Lat": 33.43,
+    "Lon": -112.01,
+    "Name": "Phoenix",
+    "Country": "US",
+    "Region": "US-AZ"
+  },
+  "PIA": {
+    "Code": "PIA",
+    "Lat": 40.66,
+    "Lon": -89.69,
+    "Name": "Peoria",
+    "Country": "US",
+    "Region": "US-IL"
+  },
+  "PIT": {
+    "Code": "PIT",
+    "Lat": 40.49,
+    "Lon": -80.23,
+    "Name": "Pittsburgh",
+    "Country": "US",
+    "Region": "US-PA"
+  },
+  "PKX": {
+    "Code": "PKX",
+    "Lat": 39.51,
+    "Lon": 116.41,
+    "Name": "Beijing",
+    "Country": "CN",
+    "Region": "CN-13"
+  },
+  "PMI": {
+    "Code": "PMI",
+    "Lat": 39.55,
+    "Lon": 2.74,
+    "Name": "Palma De Mallorca",
+    "Country": "ES",
+    "Region": "ES-PM"
+  },
+  "PMO": {
+    "Code": "PMO",
+    "Lat": 38.18,
+    "Lon": 13.09,
+    "Name": "Palermo",
+    "Country": "IT",
+    "Region": "IT-82"
+  },
+  "PNH": {
+    "Code": "PNH",
+    "Lat": 11.55,
+    "Lon": 104.84,
+    "Name": "Phnom Penh",
+    "Country": "KH",
+    "Region": "KH-8"
+  },
+  "POM": {
+    "Code": "POM",
+    "Lat": -9.44,
+    "Lon": 147.22,
+    "Name": "Port Moresby",
+    "Country": "PG",
+    "Region": "PG-NCD"
+  },
+  "POZ": {
+    "Code": "POZ",
+    "Lat": 52.42,
+    "Lon": 16.83,
+    "Name": "Poznań",
+    "Country": "PL",
+    "Region": "PL-WP"
+  },
+  "PPT": {
+    "Code": "PPT",
+    "Lat": -17.55,
+    "Lon": -149.61,
+    "Name": "Papeete",
+    "Country": "PF",
+    "Region": "PF-U-A"
+  },
+  "PRG": {
+    "Code": "PRG",
+    "Lat": 50.1,
+    "Lon": 14.26,
+    "Name": "Prague",
+    "Country": "CZ",
+    "Region": "CZ-PR"
+  },
+  "PRN": {
+    "Code": "PRN",
+    "Lat": 42.57,
+    "Lon": 21.04,
+    "Name": "Prishtina",
+    "Country": "XK",
+    "Region": "XK-01"
+  },
+  "PSA": {
+    "Code": "PSA",
+    "Lat": 43.68,
+    "Lon": 10.39,
+    "Name": "Pisa",
+    "Country": "IT",
+    "Region": "IT-52"
+  },
+  "PTP": {
+    "Code": "PTP",
+    "Lat": 16.27,
+    "Lon": -61.53,
+    "Name": "Pointe-à-Pitre",
+    "Country": "GP",
+    "Region": "GP-U-A"
+  },
+  "PTY": {
+    "Code": "PTY",
+    "Lat": 9.07,
+    "Lon": -79.38,
+    "Name": "Tocumen",
+    "Country": "PA",
+    "Region": "PA-8"
+  },
+  "PUJ": {
+    "Code": "PUJ",
+    "Lat": 18.57,
+    "Lon": -68.36,
+    "Name": "Punta Cana",
+    "Country": "DO",
+    "Region": "DO-11"
+  },
+  "PUS": {
+    "Code": "PUS",
+    "Lat": 35.18,
+    "Lon": 128.94,
+    "Name": "Busan",
+    "Country": "KR",
+    "Region": "KR-26"
+  },
+  "PVD": {
+    "Code": "PVD",
+    "Lat": 41.73,
+    "Lon": -71.42,
+    "Name": "Providence",
+    "Country": "US",
+    "Region": "US-RI"
+  },
+  "PVG": {
+    "Code": "PVG",
+    "Lat": 31.14,
+    "Lon": 121.81,
+    "Name": "Shanghai",
+    "Country": "CN",
+    "Region": "CN-31"
+  },
+  "PVR": {
+    "Code": "PVR",
+    "Lat": 20.68,
+    "Lon": -105.25,
+    "Name": "Puerto Vallarta",
+    "Country": "MX",
+    "Region": "MX-JAL"
+  },
+  "PWM": {
+    "Code": "PWM",
+    "Lat": 43.65,
+    "Lon": -70.31,
+    "Name": "Portland",
+    "Country": "US",
+    "Region": "US-ME"
+  },
+  "QUO": {
+    "Code": "QUO",
+    "Lat": 4.87,
+    "Lon": 8.09,
+    "Name": "Uyo",
+    "Country": "NG",
+    "Region": "NG-AK"
+  },
+  "RAR": {
+    "Code": "RAR",
+    "Lat": -21.2,
+    "Lon": -159.81,
+    "Name": "Avarua",
+    "Country": "CK",
+    "Region": "CK-U-A"
+  },
+  "RDU": {
+    "Code": "RDU",
+    "Lat": 35.88,
+    "Lon": -78.79,
+    "Name": "Raleigh",
+    "Country": "US",
+    "Region": "US-NC"
+  },
+  "REP": {
+    "Code": "REP",
+    "Lat": 13.41,
+    "Lon": 103.81,
+    "Name": "Siem Reap",
+    "Country": "KH",
+    "Region": "KH-17"
+  },
+  "RFD": {
+    "Code": "RFD",
+    "Lat": 42.2,
+    "Lon": -89.1,
+    "Name": "Chicago",
+    "Country": "US",
+    "Region": "US-IL"
+  },
+  "RGN": {
+    "Code": "RGN",
+    "Lat": 16.91,
+    "Lon": 96.13,
+    "Name": "Yangon",
+    "Country": "MM",
+    "Region": "MM-06"
+  },
+  "RIC": {
+    "Code": "RIC",
+    "Lat": 37.51,
+    "Lon": -77.32,
+    "Name": "Richmond",
+    "Country": "US",
+    "Region": "US-VA"
+  },
+  "RIX": {
+    "Code": "RIX",
+    "Lat": 56.92,
+    "Lon": 23.97,
+    "Name": "Riga",
+    "Country": "LV",
+    "Region": "LV-RIX"
+  },
+  "RMS": {
+    "Code": "RMS",
+    "Lat": 49.44,
+    "Lon": 7.6,
+    "Name": "Ramstein",
+    "Country": "DE",
+    "Region": "DE-RP"
+  },
+  "RND": {
+    "Code": "RND",
+    "Lat": 29.53,
+    "Lon": -98.28,
+    "Name": "Universal City",
+    "Country": "US",
+    "Region": "US-TX"
+  },
+  "RNO": {
+    "Code": "RNO",
+    "Lat": 39.5,
+    "Lon": -119.77,
+    "Name": "Reno",
+    "Country": "US",
+    "Region": "US-NV"
+  },
+  "ROA": {
+    "Code": "ROA",
+    "Lat": 37.33,
+    "Lon": -79.98,
+    "Name": "Roanoke",
+    "Country": "US",
+    "Region": "US-VA"
+  },
+  "ROB": {
+    "Code": "ROB",
+    "Lat": 6.23,
+    "Lon": -10.36,
+    "Name": "Monrovia",
+    "Country": "LR",
+    "Region": "LR-MG"
+  },
+  "ROC": {
+    "Code": "ROC",
+    "Lat": 43.12,
+    "Lon": -77.67,
+    "Name": "Rochester",
+    "Country": "US",
+    "Region": "US-NY"
+  },
+  "ROV": {
+    "Code": "ROV",
+    "Lat": 47.49,
+    "Lon": 39.92,
+    "Name": "Rostov-on-Don",
+    "Country": "RU",
+    "Region": "RU-ROS"
+  },
+  "RST": {
+    "Code": "RST",
+    "Lat": 43.91,
+    "Lon": -92.5,
+    "Name": "Rochester",
+    "Country": "US",
+    "Region": "US-MN"
+  },
+  "RSW": {
+    "Code": "RSW",
+    "Lat": 26.54,
+    "Lon": -81.76,
+    "Name": "Fort Myers",
+    "Country": "US",
+    "Region": "US-FL"
+  },
+  "RUH": {
+    "Code": "RUH",
+    "Lat": 24.96,
+    "Lon": 46.7,
+    "Name": "Riyadh",
+    "Country": "SA",
+    "Region": "SA-01"
+  },
+  "RUN": {
+    "Code": "RUN",
+    "Lat": -20.88,
+    "Lon": 55.51,
+    "Name": "St Denis",
+    "Country": "RE",
+    "Region": "RE-U-A"
+  },
+  "SAL": {
+    "Code": "SAL",
+    "Lat": 13.44,
+    "Lon": -89.06,
+    "Name": "San Salvador (San Luis Talpa)",
+    "Country": "SV",
+    "Region": "SV-PA"
+  },
+  "SAN": {
+    "Code": "SAN",
+    "Lat": 32.73,
+    "Lon": -117.19,
+    "Name": "San Diego",
+    "Country": "US",
+    "Region": "US-CA"
+  },
+  "SAT": {
+    "Code": "SAT",
+    "Lat": 29.53,
+    "Lon": -98.47,
+    "Name": "San Antonio",
+    "Country": "US",
+    "Region": "US-TX"
+  },
+  "SAV": {
+    "Code": "SAV",
+    "Lat": 32.13,
+    "Lon": -81.2,
+    "Name": "Savannah",
+    "Country": "US",
+    "Region": "US-GA"
+  },
+  "SAW": {
+    "Code": "SAW",
+    "Lat": 40.9,
+    "Lon": 29.31,
+    "Name": "Istanbul",
+    "Country": "TR",
+    "Region": "TR-34"
+  },
+  "SBN": {
+    "Code": "SBN",
+    "Lat": 41.71,
+    "Lon": -86.32,
+    "Name": "South Bend",
+    "Country": "US",
+    "Region": "US-IN"
+  },
+  "SCL": {
+    "Code": "SCL",
+    "Lat": -33.39,
+    "Lon": -70.79,
+    "Name": "Santiago",
+    "Country": "CL",
+    "Region": "CL-RM"
+  },
+  "SCQ": {
+    "Code": "SCQ",
+    "Lat": 42.9,
+    "Lon": -8.42,
+    "Name": "Santiago de Compostela",
+    "Country": "ES",
+    "Region": "ES-GA"
+  },
+  "SDF": {
+    "Code": "SDF",
+    "Lat": 38.17,
+    "Lon": -85.74,
+    "Name": "Louisville",
+    "Country": "US",
+    "Region": "US-KY"
+  },
+  "SDQ": {
+    "Code": "SDQ",
+    "Lat": 18.43,
+    "Lon": -69.67,
+    "Name": "Santo Domingo",
+    "Country": "DO",
+    "Region": "DO-01"
+  },
+  "SEA": {
+    "Code": "SEA",
+    "Lat": 47.45,
+    "Lon": -122.31,
+    "Name": "Seattle",
+    "Country": "US",
+    "Region": "US-WA"
+  },
+  "SEZ": {
+    "Code": "SEZ",
+    "Lat": -4.67,
+    "Lon": 55.52,
+    "Name": "Mahe Island",
+    "Country": "SC",
+    "Region": "SC-20"
+  },
+  "SFB": {
+    "Code": "SFB",
+    "Lat": 28.78,
+    "Lon": -81.24,
+    "Name": "Orlando",
+    "Country": "US",
+    "Region": "US-FL"
+  },
+  "SFO": {
+    "Code": "SFO",
+    "Lat": 37.62,
+    "Lon": -122.38,
+    "Name": "San Francisco",
+    "Country": "US",
+    "Region": "US-CA"
+  },
+  "SGF": {
+    "Code": "SGF",
+    "Lat": 37.25,
+    "Lon": -93.39,
+    "Name": "Springfield",
+    "Country": "US",
+    "Region": "US-MO"
+  },
+  "SGN": {
+    "Code": "SGN",
+    "Lat": 10.82,
+    "Lon": 106.65,
+    "Name": "Ho Chi Minh City",
+    "Country": "VN",
+    "Region": "VN-23"
+  },
+  "SHA": {
+    "Code": "SHA",
+    "Lat": 31.2,
+    "Lon": 121.34,
+    "Name": "Shanghai",
+    "Country": "CN",
+    "Region": "CN-31"
+  },
+  "SHE": {
+    "Code": "SHE",
+    "Lat": 41.64,
+    "Lon": 123.48,
+    "Name": "Shenyang",
+    "Country": "CN",
+    "Region": "CN-21"
+  },
+  "SHJ": {
+    "Code": "SHJ",
+    "Lat": 25.33,
+    "Lon": 55.52,
+    "Name": "Sharjah",
+    "Country": "AE",
+    "Region": "AE-SH"
+  },
+  "SHO": {
+    "Code": "SHO",
+    "Lat": -26.36,
+    "Lon": 31.72,
+    "Name": "",
+    "Country": "SZ",
+    "Region": "SZ-LU"
+  },
+  "SID": {
+    "Code": "SID",
+    "Lat": 16.74,
+    "Lon": -22.95,
+    "Name": "Espargos",
+    "Country": "CV",
+    "Region": "CV-B"
+  },
+  "SIN": {
+    "Code": "SIN",
+    "Lat": 1.35,
+    "Lon": 103.99,
+    "Name": "Singapore",
+    "Country": "SG",
+    "Region": "SG-04"
+  },
+  "SIP": {
+    "Code": "SIP",
+    "Lat": 45.05,
+    "Lon": 33.98,
+    "Name": "Simferopol",
+    "Country": "UA",
+    "Region": "UA-43"
+  },
+  "SJC": {
+    "Code": "SJC",
+    "Lat": 37.36,
+    "Lon": -121.93,
+    "Name": "San Jose",
+    "Country": "US",
+    "Region": "US-CA"
+  },
+  "SJD": {
+    "Code": "SJD",
+    "Lat": 23.15,
+    "Lon": -109.72,
+    "Name": "San José del Cabo",
+    "Country": "MX",
+    "Region": "MX-BCS"
+  },
+  "SJJ": {
+    "Code": "SJJ",
+    "Lat": 43.82,
+    "Lon": 18.33,
+    "Name": "Sarajevo",
+    "Country": "BA",
+    "Region": "BA-BIH"
+  },
+  "SJU": {
+    "Code": "SJU",
+    "Lat": 18.44,
+    "Lon": -66,
+    "Name": "San Juan",
+    "Country": "PR",
+    "Region": "PR-U-A"
+  },
+  "SKA": {
+    "Code": "SKA",
+    "Lat": 47.62,
+    "Lon": -117.66,
+    "Name": "Spokane",
+    "Country": "US",
+    "Region": "US-WA"
+  },
+  "SKG": {
+    "Code": "SKG",
+    "Lat": 40.52,
+    "Lon": 22.97,
+    "Name": "Thessaloniki",
+    "Country": "GR",
+    "Region": "GR-54"
+  },
+  "SKP": {
+    "Code": "SKP",
+    "Lat": 41.96,
+    "Lon": 21.62,
+    "Name": "Skopje",
+    "Country": "MK",
+    "Region": "MK-004"
+  },
+  "SKT": {
+    "Code": "SKT",
+    "Lat": 32.54,
+    "Lon": 74.36,
+    "Name": "Sialkot",
+    "Country": "PK",
+    "Region": "PK-PB"
+  },
+  "SLC": {
+    "Code": "SLC",
+    "Lat": 40.79,
+    "Lon": -111.98,
+    "Name": "Salt Lake City",
+    "Country": "US",
+    "Region": "US-UT"
+  },
+  "SMF": {
+    "Code": "SMF",
+    "Lat": 38.7,
+    "Lon": -121.59,
+    "Name": "Sacramento",
+    "Country": "US",
+    "Region": "US-CA"
+  },
+  "SNA": {
+    "Code": "SNA",
+    "Lat": 33.68,
+    "Lon": -117.87,
+    "Name": "Santa Ana",
+    "Country": "US",
+    "Region": "US-CA"
+  },
+  "SNN": {
+    "Code": "SNN",
+    "Lat": 52.7,
+    "Lon": -8.92,
+    "Name": "Shannon",
+    "Country": "IE",
+    "Region": "IE-CE"
+  },
+  "SOF": {
+    "Code": "SOF",
+    "Lat": 42.7,
+    "Lon": 23.41,
+    "Name": "Sofia",
+    "Country": "BG",
+    "Region": "BG-23"
+  },
+  "SOQ": {
+    "Code": "SOQ",
+    "Lat": -0.89,
+    "Lon": 131.29,
+    "Name": "Sorong-Papua Island",
+    "Country": "ID",
+    "Region": "ID-PB"
+  },
+  "SOU": {
+    "Code": "SOU",
+    "Lat": 50.95,
+    "Lon": -1.36,
+    "Name": "Southampton",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "SPC": {
+    "Code": "SPC",
+    "Lat": 28.63,
+    "Lon": -17.76,
+    "Name": "Santa Cruz de la Palma",
+    "Country": "ES",
+    "Region": "ES-CN"
+  },
+  "SPI": {
+    "Code": "SPI",
+    "Lat": 39.84,
+    "Lon": -89.68,
+    "Name": "Springfield",
+    "Country": "US",
+    "Region": "US-IL"
+  },
+  "SPS": {
+    "Code": "SPS",
+    "Lat": 33.99,
+    "Lon": -98.49,
+    "Name": "Wichita Falls",
+    "Country": "US",
+    "Region": "US-TX"
+  },
+  "SRQ": {
+    "Code": "SRQ",
+    "Lat": 27.4,
+    "Lon": -82.55,
+    "Name": "Sarasota",
+    "Country": "US",
+    "Region": "US-FL"
+  },
+  "SSA": {
+    "Code": "SSA",
+    "Lat": -12.91,
+    "Lon": -38.32,
+    "Name": "Salvador",
+    "Country": "BR",
+    "Region": "BR-BA"
+  },
+  "SSC": {
+    "Code": "SSC",
+    "Lat": 33.97,
+    "Lon": -80.47,
+    "Name": "Sumter",
+    "Country": "US",
+    "Region": "US-SC"
+  },
+  "STL": {
+    "Code": "STL",
+    "Lat": 38.75,
+    "Lon": -90.37,
+    "Name": "St Louis",
+    "Country": "US",
+    "Region": "US-MO"
+  },
+  "STN": {
+    "Code": "STN",
+    "Lat": 51.88,
+    "Lon": 0.23,
+    "Name": "London",
+    "Country": "GB",
+    "Region": "GB-ENG"
+  },
+  "STR": {
+    "Code": "STR",
+    "Lat": 48.69,
+    "Lon": 9.22,
+    "Name": "Stuttgart",
+    "Country": "DE",
+    "Region": "DE-BW"
+  },
+  "SUB": {
+    "Code": "SUB",
+    "Lat": -7.38,
+    "Lon": 112.79,
+    "Name": "Surabaya",
+    "Country": "ID",
+    "Region": "ID-JI"
+  },
+  "SUS": {
+    "Code": "SUS",
+    "Lat": 38.66,
+    "Lon": -90.65,
+    "Name": "St Louis",
+    "Country": "US",
+    "Region": "US-MO"
+  },
+  "SUU": {
+    "Code": "SUU",
+    "Lat": 38.26,
+    "Lon": -121.93,
+    "Name": "Fairfield",
+    "Country": "US",
+    "Region": "US-CA"
+  },
+  "SUX": {
+    "Code": "SUX",
+    "Lat": 42.4,
+    "Lon": -96.38,
+    "Name": "Sioux City",
+    "Country": "US",
+    "Region": "US-IA"
+  },
+  "SVG": {
+    "Code": "SVG",
+    "Lat": 58.88,
+    "Lon": 5.64,
+    "Name": "Stavanger",
+    "Country": "NO",
+    "Region": "NO-11"
+  },
+  "SVO": {
+    "Code": "SVO",
+    "Lat": 55.97,
+    "Lon": 37.41,
+    "Name": "Moscow",
+    "Country": "RU",
+    "Region": "RU-MOS"
+  },
+  "SVX": {
+    "Code": "SVX",
+    "Lat": 56.74,
+    "Lon": 60.8,
+    "Name": "Yekaterinburg",
+    "Country": "RU",
+    "Region": "RU-SVE"
+  },
+  "SXF": {
+    "Code": "SXF",
+    "Lat": 52.38,
+    "Lon": 13.52,
+    "Name": "Berlin",
+    "Country": "DE",
+    "Region": "DE-BR"
+  },
+  "SXM": {
+    "Code": "SXM",
+    "Lat": 18.04,
+    "Lon": -63.11,
+    "Name": "Saint Martin",
+    "Country": "SX",
+    "Region": "SX-U-A"
+  },
+  "SYD": {
+    "Code": "SYD",
+    "Lat": -33.95,
+    "Lon": 151.18,
+    "Name": "Sydney",
+    "Country": "AU",
+    "Region": "AU-NSW"
+  },
+  "SYR": {
+    "Code": "SYR",
+    "Lat": 43.11,
+    "Lon": -76.11,
+    "Name": "Syracuse",
+    "Country": "US",
+    "Region": "US-NY"
+  },
+  "SYX": {
+    "Code": "SYX",
+    "Lat": 18.3,
+    "Lon": 109.41,
+    "Name": "Sanya",
+    "Country": "CN",
+    "Region": "CN-46"
+  },
+  "SYZ": {
+    "Code": "SYZ",
+    "Lat": 29.54,
+    "Lon": 52.59,
+    "Name": "Shiraz",
+    "Country": "IR",
+    "Region": "IR-14"
+  },
+  "SZL": {
+    "Code": "SZL",
+    "Lat": 38.73,
+    "Lon": -93.55,
+    "Name": "Knob Noster",
+    "Country": "US",
+    "Region": "US-MO"
+  },
+  "SZX": {
+    "Code": "SZX",
+    "Lat": 22.64,
+    "Lon": 113.81,
+    "Name": "Shenzhen",
+    "Country": "CN",
+    "Region": "CN-44"
+  },
+  "TAS": {
+    "Code": "TAS",
+    "Lat": 41.26,
+    "Lon": 69.28,
+    "Name": "Tashkent",
+    "Country": "UZ",
+    "Region": "UZ-TO"
+  },
+  "TBS": {
+    "Code": "TBS",
+    "Lat": 41.67,
+    "Lon": 44.95,
+    "Name": "Tbilisi",
+    "Country": "GE",
+    "Region": "GE-TB"
+  },
+  "TBZ": {
+    "Code": "TBZ",
+    "Lat": 38.13,
+    "Lon": 46.24,
+    "Name": "Tabriz",
+    "Country": "IR",
+    "Region": "IR-01"
+  },
+  "TCM": {
+    "Code": "TCM",
+    "Lat": 47.14,
+    "Lon": -122.48,
+    "Name": "Tacoma",
+    "Country": "US",
+    "Region": "US-WA"
+  },
+  "TER": {
+    "Code": "TER",
+    "Lat": 38.76,
+    "Lon": -27.09,
+    "Name": "Praia da Vitória",
+    "Country": "PT",
+    "Region": "PT-20"
+  },
+  "TFN": {
+    "Code": "TFN",
+    "Lat": 28.48,
+    "Lon": -16.34,
+    "Name": "Tenerife Island",
+    "Country": "ES",
+    "Region": "ES-CN"
+  },
+  "TFS": {
+    "Code": "TFS",
+    "Lat": 28.04,
+    "Lon": -16.57,
+    "Name": "Tenerife Island",
+    "Country": "ES",
+    "Region": "ES-CN"
+  },
+  "TGD": {
+    "Code": "TGD",
+    "Lat": 42.36,
+    "Lon": 19.25,
+    "Name": "Podgorica",
+    "Country": "ME",
+    "Region": "ME-16"
+  },
+  "THR": {
+    "Code": "THR",
+    "Lat": 35.69,
+    "Lon": 51.31,
+    "Name": "Tehran",
+    "Country": "IR",
+    "Region": "IR-07"
+  },
+  "TIA": {
+    "Code": "TIA",
+    "Lat": 41.41,
+    "Lon": 19.72,
+    "Name": "Tirana",
+    "Country": "AL",
+    "Region": "AL-11"
+  },
+  "TIJ": {
+    "Code": "TIJ",
+    "Lat": 32.54,
+    "Lon": -116.97,
+    "Name": "Tijuana",
+    "Country": "MX",
+    "Region": "MX-BCN"
+  },
+  "TIK": {
+    "Code": "TIK",
+    "Lat": 35.41,
+    "Lon": -97.39,
+    "Name": "Oklahoma City",
+    "Country": "US",
+    "Region": "US-OK"
+  },
+  "TIP": {
+    "Code": "TIP",
+    "Lat": 32.66,
+    "Lon": 13.16,
+    "Name": "Tripoli",
+    "Country": "LY",
+    "Region": "LY-TB"
+  },
+  "TLH": {
+    "Code": "TLH",
+    "Lat": 30.4,
+    "Lon": -84.35,
+    "Name": "Tallahassee",
+    "Country": "US",
+    "Region": "US-FL"
+  },
+  "TLL": {
+    "Code": "TLL",
+    "Lat": 59.41,
+    "Lon": 24.83,
+    "Name": "Tallinn",
+    "Country": "EE",
+    "Region": "EE-37"
+  },
+  "TLS": {
+    "Code": "TLS",
+    "Lat": 43.63,
+    "Lon": 1.36,
+    "Name": "Toulouse",
+    "Country": "FR",
+    "Region": "FR-OCC"
+  },
+  "TLV": {
+    "Code": "TLV",
+    "Lat": 32.01,
+    "Lon": 34.89,
+    "Name": "Tel Aviv",
+    "Country": "IL",
+    "Region": "IL-M"
+  },
+  "TNA": {
+    "Code": "TNA",
+    "Lat": 36.86,
+    "Lon": 117.22,
+    "Name": "Jinan",
+    "Country": "CN",
+    "Region": "CN-37"
+  },
+  "TNR": {
+    "Code": "TNR",
+    "Lat": -18.8,
+    "Lon": 47.48,
+    "Name": "Antananarivo",
+    "Country": "MG",
+    "Region": "MG-T"
+  },
+  "TOL": {
+    "Code": "TOL",
+    "Lat": 41.59,
+    "Lon": -83.81,
+    "Name": "Toledo",
+    "Country": "US",
+    "Region": "US-OH"
+  },
+  "TOS": {
+    "Code": "TOS",
+    "Lat": 69.68,
+    "Lon": 18.92,
+    "Name": "Tromsø",
+    "Country": "NO",
+    "Region": "NO-19"
+  },
+  "TPA": {
+    "Code": "TPA",
+    "Lat": 27.98,
+    "Lon": -82.53,
+    "Name": "Tampa",
+    "Country": "US",
+    "Region": "US-FL"
+  },
+  "TPE": {
+    "Code": "TPE",
+    "Lat": 25.08,
+    "Lon": 121.23,
+    "Name": "Taipei",
+    "Country": "TW",
+    "Region": "TW-TAO"
+  },
+  "TRD": {
+    "Code": "TRD",
+    "Lat": 63.46,
+    "Lon": 10.92,
+    "Name": "Trondheim",
+    "Country": "NO",
+    "Region": "NO-17"
+  },
+  "TRI": {
+    "Code": "TRI",
+    "Lat": 36.48,
+    "Lon": -82.41,
+    "Name": "Bristol",
+    "Country": "US",
+    "Region": "US-TN"
+  },
+  "TRN": {
+    "Code": "TRN",
+    "Lat": 45.2,
+    "Lon": 7.65,
+    "Name": "Torino",
+    "Country": "IT",
+    "Region": "IT-21"
+  },
+  "TRV": {
+    "Code": "TRV",
+    "Lat": 8.48,
+    "Lon": 76.92,
+    "Name": "Thiruvananthapuram",
+    "Country": "IN",
+    "Region": "IN-KL"
+  },
+  "TSE": {
+    "Code": "TSE",
+    "Lat": 51.02,
+    "Lon": 71.47,
+    "Name": "Astana",
+    "Country": "KZ",
+    "Region": "KZ-AKM"
+  },
+  "TSF": {
+    "Code": "TSF",
+    "Lat": 45.65,
+    "Lon": 12.19,
+    "Name": "Treviso",
+    "Country": "IT",
+    "Region": "IT-34"
+  },
+  "TSN": {
+    "Code": "TSN",
+    "Lat": 39.12,
+    "Lon": 117.35,
+    "Name": "Tianjin",
+    "Country": "CN",
+    "Region": "CN-12"
+  },
+  "TUL": {
+    "Code": "TUL",
+    "Lat": 36.2,
+    "Lon": -95.89,
+    "Name": "Tulsa",
+    "Country": "US",
+    "Region": "US-OK"
+  },
+  "TUN": {
+    "Code": "TUN",
+    "Lat": 36.85,
+    "Lon": 10.23,
+    "Name": "Tunis",
+    "Country": "TN",
+    "Region": "TN-11"
+  },
+  "TUS": {
+    "Code": "TUS",
+    "Lat": 32.12,
+    "Lon": -110.94,
+    "Name": "Tucson",
+    "Country": "US",
+    "Region": "US-AZ"
+  },
+  "TXL": {
+    "Code": "TXL",
+    "Lat": 52.56,
+    "Lon": 13.29,
+    "Name": "Berlin",
+    "Country": "DE",
+    "Region": "DE-BE"
+  },
+  "TYN": {
+    "Code": "TYN",
+    "Lat": 37.75,
+    "Lon": 112.63,
+    "Name": "Taiyuan",
+    "Country": "CN",
+    "Region": "CN-14"
+  },
+  "TYS": {
+    "Code": "TYS",
+    "Lat": 35.81,
+    "Lon": -83.99,
+    "Name": "Knoxville",
+    "Country": "US",
+    "Region": "US-TN"
+  },
+  "TZX": {
+    "Code": "TZX",
+    "Lat": 41,
+    "Lon": 39.79,
+    "Name": "Trabzon",
+    "Country": "TR",
+    "Region": "TR-61"
+  },
+  "UFA": {
+    "Code": "UFA",
+    "Lat": 54.56,
+    "Lon": 55.87,
+    "Name": "Ufa",
+    "Country": "RU",
+    "Region": "RU-BA"
+  },
+  "UIO": {
+    "Code": "UIO",
+    "Lat": -0.13,
+    "Lon": -78.36,
+    "Name": "Quito",
+    "Country": "EC",
+    "Region": "EC-P"
+  },
+  "ULN": {
+    "Code": "ULN",
+    "Lat": 47.84,
+    "Lon": 106.77,
+    "Name": "Ulan Bator",
+    "Country": "MN",
+    "Region": "MN-1"
+  },
+  "UPG": {
+    "Code": "UPG",
+    "Lat": -5.06,
+    "Lon": 119.55,
+    "Name": "Ujung Pandang-Celebes Island",
+    "Country": "ID",
+    "Region": "ID-SN"
+  },
+  "URC": {
+    "Code": "URC",
+    "Lat": 43.91,
+    "Lon": 87.47,
+    "Name": "Ürümqi",
+    "Country": "CN",
+    "Region": "CN-65"
+  },
+  "VAR": {
+    "Code": "VAR",
+    "Lat": 43.23,
+    "Lon": 27.83,
+    "Name": "Varna",
+    "Country": "BG",
+    "Region": "BG-03"
+  },
+  "VBG": {
+    "Code": "VBG",
+    "Lat": 34.74,
+    "Lon": -120.58,
+    "Name": "Lompoc",
+    "Country": "US",
+    "Region": "US-CA"
+  },
+  "VCE": {
+    "Code": "VCE",
+    "Lat": 45.51,
+    "Lon": 12.35,
+    "Name": "Venice",
+    "Country": "IT",
+    "Region": "IT-34"
+  },
+  "VDA": {
+    "Code": "VDA",
+    "Lat": 29.94,
+    "Lon": 34.94,
+    "Name": "Eilat",
+    "Country": "IL",
+    "Region": "IL-D"
+  },
+  "VIE": {
+    "Code": "VIE",
+    "Lat": 48.11,
+    "Lon": 16.57,
+    "Name": "Vienna",
+    "Country": "AT",
+    "Region": "AT-9"
+  },
+  "VKO": {
+    "Code": "VKO",
+    "Lat": 55.59,
+    "Lon": 37.26,
+    "Name": "Moscow",
+    "Country": "RU",
+    "Region": "RU-MOS"
+  },
+  "VNO": {
+    "Code": "VNO",
+    "Lat": 54.63,
+    "Lon": 25.29,
+    "Name": "Vilnius",
+    "Country": "LT",
+    "Region": "LT-VL"
+  },
+  "VPS": {
+    "Code": "VPS",
+    "Lat": 30.48,
+    "Lon": -86.53,
+    "Name": "Valparaiso",
+    "Country": "US",
+    "Region": "US-FL"
+  },
+  "VRA": {
+    "Code": "VRA",
+    "Lat": 23.03,
+    "Lon": -81.44,
+    "Name": "Varadero",
+    "Country": "CU",
+    "Region": "CU-04"
+  },
+  "VRN": {
+    "Code": "VRN",
+    "Lat": 45.4,
+    "Lon": 10.89,
+    "Name": "Verona",
+    "Country": "IT",
+    "Region": "IT-34"
+  },
+  "VVI": {
+    "Code": "VVI",
+    "Lat": -17.64,
+    "Lon": -63.14,
+    "Name": "Santa Cruz",
+    "Country": "BO",
+    "Region": "BO-S"
+  },
+  "WAW": {
+    "Code": "WAW",
+    "Lat": 52.17,
+    "Lon": 20.97,
+    "Name": "Warsaw",
+    "Country": "PL",
+    "Region": "PL-MZ"
+  },
+  "WDH": {
+    "Code": "WDH",
+    "Lat": -22.48,
+    "Lon": 17.47,
+    "Name": "Windhoek",
+    "Country": "NA",
+    "Region": "NA-KH"
+  },
+  "WLG": {
+    "Code": "WLG",
+    "Lat": -41.33,
+    "Lon": 174.8,
+    "Name": "Wellington",
+    "Country": "NZ",
+    "Region": "NZ-WGN"
+  },
+  "WMI": {
+    "Code": "WMI",
+    "Lat": 52.45,
+    "Lon": 20.65,
+    "Name": "Warsaw",
+    "Country": "PL",
+    "Region": "PL-MZ"
+  },
+  "WNZ": {
+    "Code": "WNZ",
+    "Lat": 27.91,
+    "Lon": 120.85,
+    "Name": "Wenzhou",
+    "Country": "CN",
+    "Region": "CN-33"
+  },
+  "WRB": {
+    "Code": "WRB",
+    "Lat": 32.64,
+    "Lon": -83.59,
+    "Name": "Warner Robins",
+    "Country": "US",
+    "Region": "US-GA"
+  },
+  "WRO": {
+    "Code": "WRO",
+    "Lat": 51.1,
+    "Lon": 16.89,
+    "Name": "Wrocław",
+    "Country": "PL",
+    "Region": "PL-DS"
+  },
+  "WUH": {
+    "Code": "WUH",
+    "Lat": 30.78,
+    "Lon": 114.21,
+    "Name": "Wuhan",
+    "Country": "CN",
+    "Region": "CN-42"
+  },
+  "XIY": {
+    "Code": "XIY",
+    "Lat": 34.45,
+    "Lon": 108.75,
+    "Name": "Xi'an",
+    "Country": "CN",
+    "Region": "CN-61"
+  },
+  "XMN": {
+    "Code": "XMN",
+    "Lat": 24.54,
+    "Lon": 118.13,
+    "Name": "Xiamen",
+    "Country": "CN",
+    "Region": "CN-35"
+  },
+  "YEG": {
+    "Code": "YEG",
+    "Lat": 53.31,
+    "Lon": -113.58,
+    "Name": "Edmonton",
+    "Country": "CA",
+    "Region": "CA-AB"
+  },
+  "YHZ": {
+    "Code": "YHZ",
+    "Lat": 44.88,
+    "Lon": -63.51,
+    "Name": "Halifax",
+    "Country": "CA",
+    "Region": "CA-NS"
+  },
+  "YNT": {
+    "Code": "YNT",
+    "Lat": 37.66,
+    "Lon": 120.99,
+    "Name": "Yantai",
+    "Country": "CN",
+    "Region": "CN-37"
+  },
+  "YOW": {
+    "Code": "YOW",
+    "Lat": 45.32,
+    "Lon": -75.67,
+    "Name": "Ottawa",
+    "Country": "CA",
+    "Region": "CA-ON"
+  },
+  "YUL": {
+    "Code": "YUL",
+    "Lat": 45.47,
+    "Lon": -73.74,
+    "Name": "Montréal",
+    "Country": "CA",
+    "Region": "CA-QC"
+  },
+  "YVR": {
+    "Code": "YVR",
+    "Lat": 49.19,
+    "Lon": -123.18,
+    "Name": "Vancouver",
+    "Country": "CA",
+    "Region": "CA-BC"
+  },
+  "YWG": {
+    "Code": "YWG",
+    "Lat": 49.91,
+    "Lon": -97.24,
+    "Name": "Winnipeg",
+    "Country": "CA",
+    "Region": "CA-MB"
+  },
+  "YYC": {
+    "Code": "YYC",
+    "Lat": 51.11,
+    "Lon": -114.02,
+    "Name": "Calgary",
+    "Country": "CA",
+    "Region": "CA-AB"
+  },
+  "YYJ": {
+    "Code": "YYJ",
+    "Lat": 48.65,
+    "Lon": -123.43,
+    "Name": "Victoria",
+    "Country": "CA",
+    "Region": "CA-BC"
+  },
+  "YYT": {
+    "Code": "YYT",
+    "Lat": 47.62,
+    "Lon": -52.75,
+    "Name": "St. John's",
+    "Country": "CA",
+    "Region": "CA-NL"
+  },
+  "YYZ": {
+    "Code": "YYZ",
+    "Lat": 43.68,
+    "Lon": -79.63,
+    "Name": "Toronto",
+    "Country": "CA",
+    "Region": "CA-ON"
+  },
+  "ZAG": {
+    "Code": "ZAG",
+    "Lat": 45.74,
+    "Lon": 16.07,
+    "Name": "Zagreb",
+    "Country": "HR",
+    "Region": "HR-21"
+  },
+  "ZIA": {
+    "Code": "ZIA",
+    "Lat": 55.55,
+    "Lon": 38.15,
+    "Name": "Moscow",
+    "Country": "RU",
+    "Region": "RU-MOS"
+  },
+  "ZNZ": {
+    "Code": "ZNZ",
+    "Lat": -6.22,
+    "Lon": 39.22,
+    "Name": "Zanzibar",
+    "Country": "TZ",
+    "Region": "TZ-07"
+  },
+  "ZRH": {
+    "Code": "ZRH",
+    "Lat": 47.46,
+    "Lon": 8.55,
+    "Name": "Zurich",
+    "Country": "CH",
+    "Region": "CH-ZH"
+  }
+}
