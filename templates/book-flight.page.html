@@ -95,7 +95,7 @@
 
   {{$book := index .Data "bookingDetails"}}
 
-  <form action="/book-flight" method="post" class="needs-validation" enctype="multipart/form-data">
+  <form action="/book-flight" method="post" class="needs-validation" enctype="multipart/form-data" autocomplete="on">
     <input type="hidden" name="csrf_token" value="{{.CSRFToken}}">
     <div class="form-page booking">
 
@@ -236,6 +236,7 @@
 {{end}}
 {{define "js"}}
 <script>
+  const AirportNameMap = new Map();
   const radioButtons = document.querySelectorAll('.rdbtn');
   const returning = document.querySelector(".returning");
   const primarybutton = document.querySelector(".primarybtn");
@@ -259,5 +260,28 @@
   function myFunction() {
     document.getElementById("myForm").reset();
   }
+
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', '/static/airport.json', true);
+
+  // Set the callback for when the request is complete
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      // Parse the JSON data
+      var jsondata = JSON.parse(xhr.responseText);
+
+      // Handle the JSON data here
+      // console.log(data);
+      for (const key in jsondata) {
+        if (jsondata.hasOwnProperty(key)) {
+          AirportNameMap.set(jsondata[key].Code,jsondata[key].Name);
+        }
+      }
+      console.log(AirportNameMap)
+    }
+  };
+
+  // Send the request
+  xhr.send();
 </script>
 {{end}}

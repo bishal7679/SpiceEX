@@ -94,6 +94,8 @@ func run() (*driver.DB, error) {
 	render.NewRenderer(&app)
 	helpers.NewHelpers(&app)
 	email.NewMail(&app)
+	// val := iata.IATA_LARGE_AIRPORTS
+	// helpers.CreateJSON(val)
 
 	return db, nil
 }
