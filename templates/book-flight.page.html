@@ -1,6 +1,8 @@
 {{template "base" .}}
 {{define "bslink"}}
 <link rel="stylesheet" href="/static/css/index.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 {{end}}
 {{define "css"}}
 <style>
@@ -49,6 +51,10 @@
   .primarybutton-transform {
     transform: translateY(10px);
   }
+
+  .display-none {
+    transform: scale(0);
+  }
 </style>
 {{end}}
 {{define "navigbar"}}
@@ -95,7 +101,7 @@
 
   {{$book := index .Data "bookingDetails"}}
 
-  <form action="/book-flight" method="post" class="needs-validation" enctype="multipart/form-data" autocomplete="on">
+  <form action="/book-flight" method="post" class="needs-validation" enctype="multipart/form-data" autocomplete="off">
     <input type="hidden" name="csrf_token" value="{{.CSRFToken}}">
     <div class="form-page booking">
 
@@ -108,15 +114,16 @@
         {{with .Form.Errors.Get "flying_from"}}
         <label class="text-danger">{{.}}</label>
         {{end}}
-        <input type="text" name="flying_from" class="form-control {{with .Form.Errors.Get " flying_from"}} is-invalid
-          {{end}}" value="{{$book.Flying_From}}" placeholder="City or Airport">
+        <input type="text" name="flying_from" id="flyselect1" class="form-control" value="{{$book.Flying_From}}"
+          placeholder="City or Airport">
+        <ul class="form-control list-group display-none" id="list1"></ul>
         <label for="flying_to">Flying To</label>
         {{with .Form.Errors.Get "flying_to"}}
         <label class="text-danger">{{.}}</label>
         {{end}}
-        <input type="text" name="flying_to" class="form-control {{with .Form.Errors.Get " flying_to"}} is-invalid
-          {{end}}" value="{{$book.Flying_To}}" placeholder="City or Airport">
-
+        <input type="text" name="flying_to" id="flyselect2" class="form-control" value="{{$book.Flying_To}}"
+          placeholder="City or Airport">
+        <ul class="form-control list-group display-none" id="list2"></ul>
         <div class="input-grp">
           <label>Departing</label>
           {{with .Form.Errors.Get "depart"}}
@@ -262,7 +269,7 @@
   }
 
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', '/static/airport.json', true);
+  xhr.open("GET", "/static/airport.json", true);
 
   // Set the callback for when the request is complete
   xhr.onreadystatechange = function () {
@@ -274,14 +281,88 @@
       // console.log(data);
       for (const key in jsondata) {
         if (jsondata.hasOwnProperty(key)) {
-          AirportNameMap.set(jsondata[key].Code,jsondata[key].Name);
+          AirportNameMap.set(jsondata[key].Code, jsondata[key].Name);
         }
       }
-      console.log(AirportNameMap)
+      // console.log(AirportNameMap)
+      let input1 = document.querySelector("#flyselect1");
+      let input2 = document.querySelector("#flyselect2");
+      let ulItem1 = document.querySelector("#list1")
+      let ulItem2 = document.querySelector("#list2")
+      // function displayNames(inp,value) {
+      //   console.log(value)
+      //   inp.value = value
+      // }
+      input1.addEventListener("keyup", (e) => {
+        removeElements();
+        for (let [key, val] of AirportNameMap) {
+          if (val.toLowerCase().startsWith(input1.value.toLowerCase()) &&
+            input1.value != ""
+          ) {
+            ulItem1.classList.remove("display-none");
+            let listItem = document.createElement("li");
+            listItem.classList.add("list-group-item");
+            listItem.style.cursor = "pointer";
+            // listItem.setAttribute("onclick", input.value = val);
+            listItem.addEventListener("click", (e) => {
+              input1.value = val + ", " + key
+              removeElements();
+              ulItem1.classList.add("display-none");
+
+            })
+            // Display matched part in bold
+            let airport = "<b>" + val.substr(0, input1.value.length) + "</b>";
+            airport += val.substr(input1.value.length) + ", " + key;
+            // console.log(airport);
+            listItem.innerHTML = airport;
+            ulItem1.appendChild(listItem);
+
+          }
+
+        }
+      });
+      input2.addEventListener("keyup", (e) => {
+        removeElements();
+        for (let [key, val] of AirportNameMap) {
+          if (val.toLowerCase().startsWith(input2.value.toLowerCase()) &&
+            input2.value != ""
+          ) {
+            ulItem2.classList.remove("display-none");
+            let listItem = document.createElement("li");
+            listItem.classList.add("list-group-item");
+            listItem.style.cursor = "pointer";
+            // listItem.setAttribute("onclick", input.value = val);
+            listItem.addEventListener("click", (e) => {
+              input2.value = val + ", " + key
+              removeElements();
+              ulItem2.classList.add("display-none");
+
+            })
+            // Display matched part in bold
+            let airport = "<b>" + val.substr(0, input2.value.length) + "</b>";
+            airport += val.substr(input2.value.length) + ", " + key;
+            // console.log(airport);
+            listItem.innerHTML = airport;
+            ulItem2.appendChild(listItem);
+
+          }
+
+        }
+      });
+
     }
+
+
   };
 
   // Send the request
   xhr.send();
+
+  function removeElements() {
+    let items = document.querySelectorAll(".list-group-item");
+    items.forEach((item) => {
+      item.remove();
+    });
+  }
 </script>
 {{end}}

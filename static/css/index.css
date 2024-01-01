@@ -380,6 +380,23 @@ header {
   padding: 0 20px 20px;
 }
 
+.booking-form ul {
+  /* position: absolute; */
+
+  /* z-index: 1000000; */
+  overflow: hidden;
+  list-style: none;
+  border: none;
+}
+
+.booking-form ul li {
+  padding: 6px;
+  margin: 0;
+  height: max-content;
+  width: 53%;
+  transform: translateY(-6px);
+}
+
 .booking-form label {
   margin-bottom: 5px;
   margin-top: 10px;
