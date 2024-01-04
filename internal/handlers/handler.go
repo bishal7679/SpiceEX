@@ -18,6 +18,9 @@ import (
 )
 
 var Repo *Repository
+var booking models.BookingDetails
+var bookingRestriction models.BookingRestriction
+var user_id int
 
 // Repository is the repository type
 type Repository struct {
@@ -185,7 +188,7 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 			Form: form,
 			Data: data,
 		})
-		
+
 		return
 
 	}
@@ -204,17 +207,18 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 		http.Redirect(w, r, "/flight-full", http.StatusSeeOther)
 		return
 	}
+	booking = bookingDetails
 	// inserting booking details to the database
-	newBookingID, err := m.DB.InsertBooking(bookingDetails)
-	if err != nil {
-		helpers.ServerError(w, err)
-		return
-	}
+	// newBookingID, err := m.DB.InsertBooking(booking)
+	// if err != nil {
+	// 	helpers.ServerError(w, err)
+	// 	return
+	// }
 
 	restriction := models.BookingRestriction{
-		Travelway:     r.Form.Get("check"),
-		UserID:        userID,
-		BookingID:     newBookingID,
+		Travelway: r.Form.Get("check"),
+		UserID:    userID,
+		// BookingID:     newBookingID,
 		RestrictionID: 1,
 		FlyingFrom:    r.Form.Get("flying_from"),
 		FlyingTo:      r.Form.Get("flying_to"),
@@ -224,11 +228,12 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 		MobileNo:      r.Form.Get("mobile_no"),
 	}
 
-	err = m.DB.InsertBookingRestriction(restriction)
-	if err != nil {
-		helpers.ServerError(w, err)
-		return
-	}
+	bookingRestriction = restriction
+	// err = m.DB.InsertBookingRestriction(restriction)
+	// if err != nil {
+	// 	helpers.ServerError(w, err)
+	// 	return
+	// }
 
 	// send booking notifications!
 	// htmlMessage := fmt.Sprintf(`
@@ -253,26 +258,25 @@ func (m *Repository) PostBookflight(w http.ResponseWriter, r *http.Request) {
 
 	// `,bookingDetails.Flying_From,bookingDetails.Flying_To,bookingDetails.Departing_Date,bookingDetails.Departing_Date,bookingDetails.Returning_Date,bookingDetails.Full_Name)
 
-	data2 := make(map[string]interface{})
-	data2["bookingDetails"] = bookingDetails
-	temp, err := render.EmailTemplate(w, r, "email.page.html", &models.TemplateData{
-			Form: form,
-			Data: data2,
-		})
-	if err != nil {
-		fmt.Println(err)
-	}
-	// fmt.Println(temp)
-	msg := models.MailData{
-		To:      bookingDetails.Email,
-		From:    "bishalhnj127@gmail.com",
-		Subject: "Your SpiceEx Itinerary - ANBYKY",
-		Content: temp,
+	// data2 := make(map[string]interface{})
+	// data2["bookingDetails"] = bookingDetails
+	// temp, err := render.EmailTemplate(w, r, "email.page.html", &models.TemplateData{
+	// 		Form: form,
+	// 		Data: data2,
+	// 	})
+	// if err != nil {
+	// 	fmt.Println(err)
+	// }
+	// // fmt.Println(temp)
+	// msg := models.MailData{
+	// 	To:      bookingDetails.Email,
+	// 	From:    "bishalhnj127@gmail.com",
+	// 	Subject: "Your SpiceEx Itinerary - ANBYKY",
+	// 	Content: temp,
 
-	}
+	// }
 
-	
-	m.App.MailChan <- msg
+	// m.App.MailChan <- msg
 
 	// ---------------------------------------------------------------
 	m.App.Session.Put(r.Context(), "bookingDetails", bookingDetails)
@@ -295,12 +299,84 @@ func (m *Repository) Southkorea(w http.ResponseWriter, r *http.Request) {
 	render.Template(w, r, "email.page.html", &models.TemplateData{})
 }
 
-// Majors renders the room page
 func (m *Repository) Payment(w http.ResponseWriter, r *http.Request) {
-	render.Template(w, r, "payment.page.html", &models.TemplateData{})
+	// This is the emptydata when the page render for the very first time
+	var emptyPaymentDetails models.Payment
+	data := make(map[string]interface{})
+	data["paymentDetails"] = emptyPaymentDetails
+	render.Template(w, r, "payment.page.html", &models.TemplateData{
+		Form: forms.New(nil),
+		Data: data,
+	})
 }
 
-// Availability renders the search availability page
+func (m *Repository) PostPayment(w http.ResponseWriter, r *http.Request) {
+	err := r.ParseForm()
+	if err != nil {
+		helpers.ServerError(w, err)
+		return
+	}
+	cvv, err := strconv.Atoi(r.Form.Get("cvv"))
+	if err != nil {
+		helpers.ServerError(w, err)
+		return
+	}
+	paymentDetails := models.Payment{
+		Email:      r.Form.Get("email"),
+		CardNumber: r.Form.Get("card"),
+		Validity:   r.Form.Get("validity"),
+		CVV:        cvv,
+	}
+	form := forms.New(r.PostForm)
+
+	form.MinLength("name", 6)
+
+	form.IsEmail("email")
+	if !form.Valid() {
+		data := make(map[string]interface{})
+		data["paymentDetails"] = paymentDetails
+
+		render.Template(w, r, "payment.page.html", &models.TemplateData{
+			Form: form,
+			Data: data,
+		})
+
+		return
+
+	}
+	newBookingID, err := m.DB.InsertBooking(booking)
+	if err != nil {
+		http.Redirect(w, r, "/book-flight", http.StatusSeeOther)
+		return
+	}
+	bookingRestriction.BookingID = newBookingID
+	err = m.DB.InsertBookingRestriction(bookingRestriction)
+	if err != nil {
+		helpers.ServerError(w, err)
+		return
+	}
+	data2 := make(map[string]interface{})
+	data2["bookingDetails"] = booking
+	temp, err := render.EmailTemplate(w, r, "email.page.html", &models.TemplateData{
+		Form: form,
+		Data: data2,
+	})
+	if err != nil {
+		fmt.Println(err)
+	}
+	// fmt.Println(temp)
+	msg := models.MailData{
+		To:      booking.Email,
+		From:    "bishalhnj127@gmail.com",
+		Subject: "Your SpiceEx Itinerary - ANBYKY",
+		Content: temp,
+	}
+
+	m.App.MailChan <- msg
+	m.App.Session.Put(r.Context(), "paymentDetails", paymentDetails)
+	// http.Redirect(w, r, "/book-flight", http.StatusSeeOther)
+}
+
 func (m *Repository) Chooseplan(w http.ResponseWriter, r *http.Request) {
 	render.Template(w, r, "chooseplan.page.html", &models.TemplateData{})
 }

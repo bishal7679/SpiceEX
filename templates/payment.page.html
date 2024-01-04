@@ -267,18 +267,71 @@
       font-size: 9px;
     }
   }
+
+  .tick-popup {
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+  }
+
+  .open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .tick-popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .tick-popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+
+  }
+
+  .tick-popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .display-none {
+    display: none;
+  }
 </style>
 {{end}}
 
 {{define "content"}}
 <div class="container d-lg-flex">
   <div class="box-2">
-    <div class="box-inner-2">
+    <div class="box-inner-2" id="boxx-2">
       <div>
         <p class="fw-bold">Payment Details</p>
         <p class="dis mb-3">Complete your booking by providing your payment details</p>
       </div>
-      <form action="/" method="post">
+      <form action="/payment" method="post" class="needs-validation">
         <input type="hidden" name="csrf_token" value="{{.CSRFToken}}">
         <div class="mb-3">
           <p class="dis fw-bold mb-2">Email address</p>
@@ -288,7 +341,7 @@
           <p class="dis fw-bold mb-2">Card details</p>
           <div class="d-flex align-items-center justify-content-between card-atm border rounded">
             <div class="fab fa-cc-visa ps-3"></div>
-            <input type="text" class="form-control" placeholder="Card Number" required size="16">
+            <input type="text" class="form-control" name="card" placeholder="Card Number" required size="16">
             <div class="d-flex w-50">
               <input type="text" class="form-control px-0" name="validity" placeholder="MM/YY" required>
               <input type="password" maxlength=3 class="form-control px-0" name="cvv" placeholder="CVV" required>
@@ -296,7 +349,7 @@
           </div>
           <div class="my-3 cardname">
             <p class="dis fw-bold mb-2">Cardholder name</p>
-            <input class="form-control" type="text" required>
+            <input class="form-control" name="name" type="text" required>
           </div>
           <div class="address">
             <p class="dis fw-bold mb-3">Billing address</p>
@@ -308,8 +361,8 @@
 
             </select>
             <div class="d-flex">
-              <input class="form-control zip" type="text" placeholder="ZIP">
-              <input class="form-control state" type="text" placeholder="State">
+              <input class="form-control zip" type="text" placeholder="ZIP" name="zip">
+              <input class="form-control state" type="text" placeholder="State" name="state">
             </div>
             <div class=" my-3">
               <p class="dis fw-bold mb-2">VAT Number</p>
@@ -336,17 +389,43 @@
                 <p class="fw-bold">Total</p>
                 <p class="fw-bold"><span class="fas fa-dollar-sign"></span> 63.90</p>
               </div>
-              <div class="btn btn-primary mt-2">Pay<span class="fas fa-dollar-sign px-1"></span>63.90
-              </div>
-              <!-- <div class="btn btn-primary mt-2 paymentbackbtn"><a href="./search-flight.html" class="">⬅ Back</a> -->
+              <input type="submit" value="Pay Now" class="btn btn-primary mt-2" id="submit-btn"></input>
             </div>
           </div>
         </div>
+
+      </form>
+
     </div>
-    </form>
+    <div class="tick-popup" id="tick-popup">
+      <img src="/static/images/404-tick.png" alt="tick-image">
+      <h2>Thank You!</h2>
+      <p>Your details has been sent to your email</p>
+      <button type="button" id="closePopup">Go to Home</button>
+    </div>
   </div>
 </div>
-</div>
+{{end}}
+{{define "js"}}
+<script>
+  let popup = document.getElementById("tick-popup");
+  let boxx = document.getElementById("boxx-2");
+  let submitbtn = document.getElementById("submit-btn");
+  let closepopup = document.getElementById("closePopup");
+  submitbtn.addEventListener("click", (e) => {
+    boxx.classList.add("display-none");
+    openPopup();
+  })
+  function myFunction() {
+    document.getElementById("myForm").reset();
+  }
 
+  function openPopup() {
+    popup.classList.add("open-popup");
+  }
+  function closePopup() {
+    popup.classList.add("open-popup");
+  }
 
+</script>
 {{end}}

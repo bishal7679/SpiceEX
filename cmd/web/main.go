@@ -50,6 +50,7 @@ func run() (*driver.DB, error) {
 	// what am i going to put in the session
 	gob.Register(models.BookingDetails{})
 	gob.Register(models.BookingRestriction{})
+	gob.Register(models.Payment{})
 	gob.Register(models.Restriction{})
 	gob.Register(models.UserSignup{})
 
